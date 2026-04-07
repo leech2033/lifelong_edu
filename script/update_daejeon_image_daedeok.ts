@@ -1,0 +1,36 @@
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const jsonFilePath = path.join(process.cwd(), 'client/src/pages/institutions/daejeon_data.json');
+// Image path relative to public directory
+const newImage = "/images/daejeon_daedeok_lifelong_learning_center.png";
+const targetName = "대덕구 평생학습센터";
+
+try {
+  const jsonContent = fs.readFileSync(jsonFilePath, 'utf-8');
+  let institutions = JSON.parse(jsonContent);
+  
+  let updated = false;
+  institutions = institutions.map((inst: any) => {
+    if (inst.name === targetName) {
+      inst.image = newImage;
+      updated = true;
+    }
+    return inst;
+  });
+  
+  if (updated) {
+    fs.writeFileSync(jsonFilePath, JSON.stringify(institutions, null, 2), 'utf-8');
+    console.log(`Successfully updated image for "${targetName}" to "${newImage}".`);
+  } else {
+    console.log(`Institution "${targetName}" not found.`);
+  }
+} catch (error) {
+  console.error('Error updating JSON:', error);
+  process.exit(1);
+}

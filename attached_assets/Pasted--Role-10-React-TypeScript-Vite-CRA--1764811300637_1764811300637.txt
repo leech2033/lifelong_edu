@@ -1,0 +1,154 @@
+역할(Role)
+당신은 공공기관 온라인 신청 시스템을 만드는 10년차 시니어 풀스택 개발자입니다.  
+React + TypeScript + (원하는 경우 Vite 또는 CRA) 기반으로, 다단계(step1~step4) 신청 폼을 구현해야 합니다.
+
+목표(Goal)
+“2025년 생활권 중심 평생학습 지원사업” 신청을 위한 4단계(step1~step4) 온라인 신청서를 만드는 것이 목표입니다.  
+각 단계는 하나의 화면으로 구성된 다단계 폼이며, 상단에는 현재 단계가 보이는 Step Indicator가 있고, 하단에는 이전/다음 버튼이 있습니다.  
+모든 데이터는 마지막 단계에서 한 번에 제출하는 구조로 구현해주세요.
+
+기술 스택(Tech)
+- 프론트엔드: React + TypeScript
+- 스타일: CSS 모듈 또는 styled-components(편한 방식 사용, 단 일관되게)
+- 상태관리: React 훅(useState, useEffect 등) 기반으로 간단하게
+- 유효성검사: 기본적인 required 체크 + 숫자/이메일 형식 정도는 직접 구현
+
+공통 UI 요구사항
+1. 상단에 Step Indicator 컴포넌트가 있습니다.
+   - STEP 1 사업신청서
+   - STEP 2 사업요약서
+   - STEP 3 사업계획서
+   - STEP 4 파일 업로드
+   - 현재 단계는 강조(굵게 또는 색상) 처리
+
+2. 하단 버튼 영역
+   - 왼쪽: “이전 단계” (step1에서는 비활성 또는 숨김)
+   - 오른쪽: “다음 단계” 또는 마지막 단계에서는 “제출하기”
+   - 각 단계에서 필수값이 비어있으면 다음 단계로 못 넘어가게 기본 validation 적용
+
+3. 폼 레이아웃
+   - 가운데 정렬된 카드 형태의 컨테이너(최대 폭 960px 정도)
+   - label + input 구조
+   - 에러 메시지는 해당 필드 아래에 빨간색 작은 텍스트로 표시
+
+4. 최종 제출 시
+   - form 데이터 전체를 콘솔에 JSON으로 출력해 주고,
+   - 화면에는 “제출이 완료되었습니다.” 라는 메시지를 보여주는 단순한 완료 화면으로 이동
+
+────────────────
+[STEP 1: 사업신청서]
+────────────────
+필드는 다음과 같습니다.
+
+- 사업명 (text, required)
+- 사업유형 (select, required)
+  - 옵션: “민간 기본”, “민간 도약”, “공공”
+- 총사업비(totalBudget, number, required)
+- 사업지원금(supportBudget, number, required)
+- 자부담(selfBudget, number, required, 0 가능)
+  - 단, 기본 검증 로직: 총사업비 = 사업지원금 + 자부담 이 아니면 오류 메시지 표시
+
+[총괄 책임자 정보]
+- 총괄책임자 이름 (managerName, text, required)
+- 직위 (managerPosition, text, required)
+- 연락처 (managerPhone, text, required)
+
+[실무 담당자 정보]
+- 담당자 이름 (staffName, text, required)
+- 직위 (staffPosition, text, required)
+- 연락처 (staffPhone, text, required)
+- 이메일 (staffEmail, text, required, 이메일 형식 간단 체크)
+
+유효성 검사
+- 필수 필드가 비어 있으면 “필수 입력 항목입니다.” 메시지
+- 총사업비와 (지원금+자부담) 불일치 시: “총사업비는 사업지원금과 자부담의 합과 같아야 합니다.”
+
+────────────────
+[STEP 2: 사업요약서]
+────────────────
+필드는 다음과 같습니다.
+
+- 사업 목적 및 필요성 (purpose, textarea, required, 최소 30자 이상)
+- 프로그램명 (programName, text, required)
+- 대상 및 인원 (target, text, required)
+- 장소 (location, text, required)
+- 운영기간 (period, 날짜 또는 문자열로 간단히 처리, required)
+  - startDate, endDate 두 개의 input으로 구현해도 되고, 한 줄 문자열로 받아도 됩니다.
+- 소요예산 요약 (budgetSummary, text, required)
+
+유효성 검사
+- 모든 필수 필드 required
+- purpose는 최소 글자 수 30자 이상일 때만 통과
+
+────────────────
+[STEP 3: 사업계획서]
+────────────────
+이 단계는 크게 3부분입니다.
+
+(1) 사업배경 및 목적
+- 사업배경 (background, textarea, required)
+- 사업목적/목표 (goal, textarea, required)
+
+(2) 세부 프로그램 구성(배열 형태)
+프로그램 세부 구성은 배열로 관리합니다(programDetails).
+각 Row에 포함되는 필드:
+- 회기번호 (sessionNo, number, 자동 또는 수동)
+- 일시 (dateTime, text 또는 date+time 형식, required)
+- 주제 (topic, text, required)
+- 내용 (content, textarea, optional)
+- 운영시간 (hours, number, required)
+- 장소 (place, text, required)
+- 강사명 (teacherName, text, required)
+
+UI 요구:
+- “행 추가” 버튼으로 Row를 추가할 수 있어야 함
+- 각 Row 오른쪽에 “삭제” 아이콘 또는 버튼
+- 우측 상단에 “총 운영시간: XX시간” 표시 (hours 합산)
+
+기본 검증 로직:
+- 최소 1개의 프로그램 행이 있어야 함
+- 운영시간(hours) 총합이 20시간 이상이어야 다음 단계로 이동 가능
+- 20시간 미만이면 “총 운영시간은 최소 20시간 이상이어야 합니다.” 메시지 표시
+
+(3) 성과지표(배열)
+성과지표 리스트(performanceIndicators) – 배열 형태
+각 항목:
+- 지표명 (indicatorName, text, required)
+- 목표값 (targetValue, text, required)
+
+기본으로 3~5개 입력 행이 보이도록 초기값 생성 가능
+“행 추가” 버튼으로 더 추가 가능
+
+────────────────
+[STEP 4: 파일 업로드]
+────────────────
+실제 파일 업로드 기능은 구현이 복잡할 수 있으므로,
+MVP에서는 다음과 같이 “파일명(문자열)”을 입력받는 방식으로 대체해 주세요.
+(향후 실제 file input으로 변경할 수 있게 컴포넌트 분리)
+
+필드 목록:
+- 기관 소개서 (orgIntroFile, text 또는 file input)
+- 기관 등록증 (orgLicenseFile)
+- 예산 산출내역(엑셀) (budgetExcelFile)
+- 강사 이력서 (teacherCvFile)
+- 세부 일정표 (scheduleFile)
+
+각 필드는 required 처리하고, 값이 없으면
+“해당 문서는 필수 업로드 항목입니다.”라는 에러 메시지 표시.
+
+이 단계에서:
+- 이전 단계로 돌아갈 수 있는 버튼
+- “제출하기” 버튼 클릭 시, 전체 step의 데이터 유효성 검사를 한 번 더 실행
+- 모든 검증 통과 시, form 전체 데이터를 콘솔에 JSON.stringify 형태로 출력
+- 화면은 “제출이 완료되었습니다.”라는 간단한 완료 화면으로 전환
+
+────────────────
+UX 요구사항
+1. 각 단계 이동 시, 현재 단계의 입력값은 state에 유지되어야 하며, 뒤로 갔다 와도 내용이 사라지지 않아야 합니다.
+2. 필수값이 누락된 상태에서 다음 단계 버튼을 누르면, 해당 필드 아래에 에러 메시지를 표시해 주세요.
+3. 전체 코드는 하나의 App.tsx에서 시작해도 좋고, Step1~4를 별도의 컴포넌트로 분리해도 좋습니다. 다만 구조가 명확하게 보이도록 설계해 주세요.
+4. 마지막에 전체 코드를 실행했을 때 바로 동작 가능한 형태로 만들어 주세요.
+
+출력 형식
+- React + TypeScript 기준으로, 실행 가능한 전체 코드(App, main, 컴포넌트 등)를 작성해 주세요.
+- 주요 부분에는 간단한 주석을 달아서 어떤 역할인지 이해할 수 있게 해 주세요.

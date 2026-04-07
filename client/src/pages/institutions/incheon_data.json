@@ -1,0 +1,2432 @@
+[
+  {
+    "id": 16001,
+    "name": "인천시청",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 남동구 정각로 29",
+    "phone": "032-120",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.incheon.go.kr/"
+  },
+  {
+    "id": 16002,
+    "name": "중구청",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 중구 신포로27번길 80",
+    "phone": "032-760-7114",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/"
+  },
+  {
+    "id": 16003,
+    "name": "연안동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 축항대로86번길 44",
+    "phone": "032-760-6120",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=19"
+  },
+  {
+    "id": 16004,
+    "name": "신포동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 제물량로 168",
+    "phone": "032-760-6100",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=18"
+  },
+  {
+    "id": 16005,
+    "name": "신흥동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 제물량로80번길 3-14",
+    "phone": "032-760-6140",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=20"
+  },
+  {
+    "id": 16006,
+    "name": "도원동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 도원동 69",
+    "phone": "032-760-6160",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://icjg.go.kr/dong/?dong_code=21"
+  },
+  {
+    "id": 16007,
+    "name": "율목동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 서해대로48번길 3",
+    "phone": "032-760-6180",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=22"
+  },
+  {
+    "id": 16008,
+    "name": "동인천동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 참외전로72번길 25",
+    "phone": "032-760-6200",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=23"
+  },
+  {
+    "id": 16009,
+    "name": "북성동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 차이나타운로44번길 13-2",
+    "phone": "032-760-6220",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=24"
+  },
+  {
+    "id": 16010,
+    "name": "송월동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 참외전로59번길 60",
+    "phone": "032-760-6240",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=25"
+  },
+  {
+    "id": 16011,
+    "name": "영종동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 운남동 687",
+    "phone": "032-760-8880",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=26"
+  },
+  {
+    "id": 16012,
+    "name": "운서동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 흰바위로27번길 10",
+    "phone": "032-760-6260",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=56"
+  },
+  {
+    "id": 16013,
+    "name": "용유동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 중구",
+    "category": "주민자치기관",
+    "address": "인천광역시 중구 마시란로 308-13",
+    "phone": "032-760-6280",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icjg.go.kr/dong/?dong_code=27"
+  },
+  {
+    "id": 16014,
+    "name": "동구청",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 동구 금곡로 67",
+    "phone": "032-770-6114",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/"
+  },
+  {
+    "id": 16015,
+    "name": "만석동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 석수로 96",
+    "phone": "032-770-5760",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=18"
+  },
+  {
+    "id": 16016,
+    "name": "화수1, 화평동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 화도로 41",
+    "phone": "032-770-5780",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=26"
+  },
+  {
+    "id": 16017,
+    "name": "화수2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 화수안로 42",
+    "phone": "032-770-5800",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=27"
+  },
+  {
+    "id": 16018,
+    "name": "송현1,2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 송현동 48-1",
+    "phone": "032-770-5820",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=24"
+  },
+  {
+    "id": 16019,
+    "name": "송현3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 샛골로 230-21",
+    "phone": "032-770-5840",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=25"
+  },
+  {
+    "id": 16020,
+    "name": "송림1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 송림로43번길 42",
+    "phone": "032-770-5860",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=19"
+  },
+  {
+    "id": 16021,
+    "name": "송림2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 안송로6번길 5",
+    "phone": "032-770-5880",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=20"
+  },
+  {
+    "id": 16022,
+    "name": "송림3,5동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 새천년로 72",
+    "phone": "032-770-5900",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=21"
+  },
+  {
+    "id": 16023,
+    "name": "송림4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 육송로10번길 31",
+    "phone": "032-770-5920",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=22"
+  },
+  {
+    "id": 16024,
+    "name": "송림6동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 샛골로162번길 56",
+    "phone": "032-770-5940",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=23"
+  },
+  {
+    "id": 16025,
+    "name": "금창동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 동구 금곡로36번길 16",
+    "phone": "032-770-5960",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icdonggu.go.kr/open_content/dong/?dong=17"
+  },
+  {
+    "id": 16026,
+    "name": "남구청",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 남구 독정이로 95",
+    "phone": "032-887-1011",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namgu.incheon.kr/"
+  },
+  {
+    "id": 16027,
+    "name": "숭의1,3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 석정로92번길 21-17",
+    "phone": "032-728-6101",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=24"
+  },
+  {
+    "id": 16028,
+    "name": "숭의2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 경인로34번길 20",
+    "phone": "032-728-6121",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=25"
+  },
+  {
+    "id": 16029,
+    "name": "숭의4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 경인로156번길 32",
+    "phone": "032-728-6141",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=27"
+  },
+  {
+    "id": 16030,
+    "name": "용현1,4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 인주대로 198",
+    "phone": "032-728-6161",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=28"
+  },
+  {
+    "id": 16031,
+    "name": "용현2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 낙섬중로 101",
+    "phone": "032-728-6181",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=29"
+  },
+  {
+    "id": 16032,
+    "name": "용현3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 인주대로 133",
+    "phone": "032-728-6201",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=30"
+  },
+  {
+    "id": 16033,
+    "name": "용현5동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 토금북로 60",
+    "phone": "032-728-6221",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=32"
+  },
+  {
+    "id": 16034,
+    "name": "학익1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 매소홀로 380",
+    "phone": "032-728-6241",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=51"
+  },
+  {
+    "id": 16035,
+    "name": "학익2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 한나루로 444",
+    "phone": "032-728-6261",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=52"
+  },
+  {
+    "id": 16036,
+    "name": "도화1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 경인로 295",
+    "phone": "032-728-6281",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=15"
+  },
+  {
+    "id": 16037,
+    "name": "도화2,3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 숙골로43번길 14-21",
+    "phone": "032-728-6301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=16"
+  },
+  {
+    "id": 16038,
+    "name": "주안1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 주안1동 266-2",
+    "phone": "032-728-6321",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=39"
+  },
+  {
+    "id": 16039,
+    "name": "주안2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 남주길43번길 14-29",
+    "phone": "032-880-4675",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=40"
+  },
+  {
+    "id": 16040,
+    "name": "주안3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 주승로31번길 28-10",
+    "phone": "032-728-6361",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=41"
+  },
+  {
+    "id": 16041,
+    "name": "주안4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 구월남로 5",
+    "phone": "032-728-6381",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=42"
+  },
+  {
+    "id": 16042,
+    "name": "주안5동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 석정로 462",
+    "phone": "032-728-6401",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=43"
+  },
+  {
+    "id": 16043,
+    "name": "주안6동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 경원대로864번길 59",
+    "phone": "032-728-6421",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=44"
+  },
+  {
+    "id": 16044,
+    "name": "주안7동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 인하로 265",
+    "phone": "032-728-6441",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=45"
+  },
+  {
+    "id": 16045,
+    "name": "주안8동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 인주대로470번길 24",
+    "phone": "032-728-6461",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=46"
+  },
+  {
+    "id": 16046,
+    "name": "관교동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 인하로 452",
+    "phone": "032-728-6481",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=6"
+  },
+  {
+    "id": 16047,
+    "name": "문학동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남구 소성로 339",
+    "phone": "032-728-6501",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://namgu.incheon.kr/dongoffice/index.asp?dong_idx=18"
+  },
+  {
+    "id": 16048,
+    "name": "연수구청",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 연수구 원인재로 115",
+    "phone": "032-749-7114",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/"
+  },
+  {
+    "id": 16049,
+    "name": "옥련1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 비류대로186번길 14",
+    "phone": "032-749-6000",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=17"
+  },
+  {
+    "id": 16050,
+    "name": "옥련2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 옥련로 82",
+    "phone": "032-749-6050",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=18"
+  },
+  {
+    "id": 16051,
+    "name": "선학동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 선학로 54",
+    "phone": "032-749-6100",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=19"
+  },
+  {
+    "id": 16052,
+    "name": "연수1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 함박뫼로 127",
+    "phone": "032-749-6150",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=20"
+  },
+  {
+    "id": 16053,
+    "name": "연수2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 원인재로 158",
+    "phone": "032-749-6200",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=21"
+  },
+  {
+    "id": 16054,
+    "name": "연수3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 원인재로 283",
+    "phone": "032-749-6250",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=22"
+  },
+  {
+    "id": 16055,
+    "name": "청학동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 비류대로294번길 26",
+    "phone": "032-749-6300",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=23"
+  },
+  {
+    "id": 16056,
+    "name": "동춘1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 먼우금로 117",
+    "phone": "032-749-6350",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=24"
+  },
+  {
+    "id": 16057,
+    "name": "동춘2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 먼우금로 41",
+    "phone": "032-749-6400",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=25"
+  },
+  {
+    "id": 16058,
+    "name": "동춘3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 원인재로 110",
+    "phone": "032-749-6450",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=26"
+  },
+  {
+    "id": 16059,
+    "name": "송도1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 하모니로35번길 8",
+    "phone": "032-749-6500",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=39"
+  },
+  {
+    "id": 16060,
+    "name": "송도2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 신송로 248",
+    "phone": "032-749-6550",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=53"
+  },
+  {
+    "id": 16061,
+    "name": "송도3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 연수구",
+    "category": "주민자치기관",
+    "address": "인천광역시 연수구 송도과학로 32",
+    "phone": "032-749-6780",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.yeonsu.go.kr/dong/?dong_idx=64"
+  },
+  {
+    "id": 16062,
+    "name": "남동구청",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 남동구 소래로 633",
+    "phone": "032-466-3811",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/"
+  },
+  {
+    "id": 16063,
+    "name": "구월1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 독점로30번길 15",
+    "phone": "032-468-0561",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=26"
+  },
+  {
+    "id": 16064,
+    "name": "구월2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 구월로 208",
+    "phone": "032-453-5240",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=27"
+  },
+  {
+    "id": 16065,
+    "name": "구월3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 문화서로 84",
+    "phone": "032-453-5260",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=28"
+  },
+  {
+    "id": 16066,
+    "name": "구월4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 구월말로 7",
+    "phone": "032-468-6011",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=29"
+  },
+  {
+    "id": 16067,
+    "name": "간석1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 구월로137번길 39",
+    "phone": "032-422-0560",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=22"
+  },
+  {
+    "id": 16068,
+    "name": "간석2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 석촌로 13",
+    "phone": "032-453-5320",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=23"
+  },
+  {
+    "id": 16069,
+    "name": "간석3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 용천로 186",
+    "phone": "032-423-4304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=24"
+  },
+  {
+    "id": 16070,
+    "name": "간석4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 벽돌말로19번길 7",
+    "phone": "032-432-6925",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=25"
+  },
+  {
+    "id": 16071,
+    "name": "논현1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 소래역로 115",
+    "phone": "032-453-5560",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=38"
+  },
+  {
+    "id": 16072,
+    "name": "논현2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 논현고잔로 248",
+    "phone": "032-442-6028",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/?dong_idx=53"
+  },
+  {
+    "id": 16073,
+    "name": "논현고잔동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 앵고개로847번길 32",
+    "phone": "032-453-5580",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/?dong_idx=87"
+  },
+  {
+    "id": 16074,
+    "name": "만수1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 인주대로 851",
+    "phone": "032-464-3967",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=31"
+  },
+  {
+    "id": 16075,
+    "name": "만수2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 만수서로 46",
+    "phone": "032-463-0002",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=32"
+  },
+  {
+    "id": 16076,
+    "name": "만수3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 서판로 11",
+    "phone": "032-453-5420",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=33"
+  },
+  {
+    "id": 16077,
+    "name": "만수4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 만수로50번길 39",
+    "phone": "032-461-3005",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=34"
+  },
+  {
+    "id": 16078,
+    "name": "만수5동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 만경로28번길 3",
+    "phone": "032-465-4815",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=35"
+  },
+  {
+    "id": 16079,
+    "name": "만수6동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 장승남로 47",
+    "phone": "032-467-9011",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=36"
+  },
+  {
+    "id": 16080,
+    "name": "장수서창동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 독곡로 28",
+    "phone": "032-453-5500",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=30"
+  },
+  {
+    "id": 16081,
+    "name": "남촌도림동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "주민자치기관",
+    "address": "인천광역시 남동구 남촌동로 32",
+    "phone": "032-468-1864",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.namdong.go.kr/center/index.asp?dong_idx=37"
+  },
+  {
+    "id": 16082,
+    "name": "부평구청",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 부평구 부평대로 168",
+    "phone": "032-509-6114",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr"
+  },
+  {
+    "id": 16083,
+    "name": "부평1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 부평문화로37번길 1",
+    "phone": "032-509-8300",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=36"
+  },
+  {
+    "id": 16084,
+    "name": "부평2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 부영로16번길 5",
+    "phone": "032-509-8310",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=37"
+  },
+  {
+    "id": 16085,
+    "name": "부평3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 마장로 82",
+    "phone": "032-509-8320",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=38"
+  },
+  {
+    "id": 16086,
+    "name": "부평4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 주부토로 65",
+    "phone": "032-509-8330",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=39"
+  },
+  {
+    "id": 16087,
+    "name": "부평5동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 부평문화로106번길 17",
+    "phone": "032-509-8340",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=40"
+  },
+  {
+    "id": 16088,
+    "name": "부평6동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 동수로 70",
+    "phone": "032-509-8350",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=41"
+  },
+  {
+    "id": 16089,
+    "name": "산곡1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 마장로319번길 52",
+    "phone": "032-509-8360",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=42"
+  },
+  {
+    "id": 16090,
+    "name": "산곡2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 안남로 255",
+    "phone": "032-509-8370",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=43"
+  },
+  {
+    "id": 16091,
+    "name": "산곡3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 경원대로 1269-2",
+    "phone": "032-509-8380",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=44"
+  },
+  {
+    "id": 16092,
+    "name": "산곡4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 부흥로173번길 68",
+    "phone": "032-509-8390",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=45"
+  },
+  {
+    "id": 16093,
+    "name": "청천1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 청천1동 48-438",
+    "phone": "032-509-8400",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=46"
+  },
+  {
+    "id": 16094,
+    "name": "청천2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 청천2동 178-44",
+    "phone": "032-509-8410",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=47"
+  },
+  {
+    "id": 16095,
+    "name": "갈산1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 주부토로 254",
+    "phone": "032-509-8420",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=48"
+  },
+  {
+    "id": 16096,
+    "name": "갈산2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 주부토로 173",
+    "phone": "032-509-8430",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=49"
+  },
+  {
+    "id": 16097,
+    "name": "삼산1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 후정동로 9",
+    "phone": "032-509-8440",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=50"
+  },
+  {
+    "id": 16098,
+    "name": "삼산2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 굴포로 137",
+    "phone": "032-509-8450",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=51"
+  },
+  {
+    "id": 16099,
+    "name": "부개1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 동수로162번길 11",
+    "phone": "032-509-8460",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=52"
+  },
+  {
+    "id": 16100,
+    "name": "부개2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 동수천로 104",
+    "phone": "032-509-8470",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=53"
+  },
+  {
+    "id": 16101,
+    "name": "부개3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 길주남로 117",
+    "phone": "032-509-8480",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=54"
+  },
+  {
+    "id": 16102,
+    "name": "일신동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 경인로1148번길 5",
+    "phone": "032-509-8490",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=55"
+  },
+  {
+    "id": 16103,
+    "name": "십정1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 열우물로 103",
+    "phone": "032-509-8600",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=56"
+  },
+  {
+    "id": 16104,
+    "name": "십정2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 부평구",
+    "category": "주민자치기관",
+    "address": "인천광역시 부평구 동암산로33번길 6-7",
+    "phone": "032-509-8610",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.icbp.go.kr/open_content/dong/index2.jsp?dong=57"
+  },
+  {
+    "id": 16105,
+    "name": "계양구청",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 계양구 계산새로 88",
+    "phone": "032-551-5701",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/"
+  },
+  {
+    "id": 16106,
+    "name": "효성1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 봉오대로569번길 22",
+    "phone": "032-450-4700",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/?dong=22"
+  },
+  {
+    "id": 16107,
+    "name": "효성2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 아나지로 162",
+    "phone": "032-450-4720",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/?dong=23"
+  },
+  {
+    "id": 16108,
+    "name": "계산1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 향교로 24",
+    "phone": "032-450-4740",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=24"
+  },
+  {
+    "id": 16109,
+    "name": "계산2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 주부토로 559",
+    "phone": "032-450-4760",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=25"
+  },
+  {
+    "id": 16110,
+    "name": "계산3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 계산로154번길 4",
+    "phone": "032-450-4780",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/?dong=26"
+  },
+  {
+    "id": 16111,
+    "name": "계산4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 용종로 12-8",
+    "phone": "032-450-4960",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/?dong=27"
+  },
+  {
+    "id": 16112,
+    "name": "작전1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 봉오대로 727",
+    "phone": "032-450-4800",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=28"
+  },
+  {
+    "id": 16113,
+    "name": "작전2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 봉오대로677번길 23",
+    "phone": "032-450-4820",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=29"
+  },
+  {
+    "id": 16114,
+    "name": "작전서운동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 효서로 361",
+    "phone": "032-450-4840",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/?dong=30"
+  },
+  {
+    "id": 16115,
+    "name": "계양1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 장기서로 8",
+    "phone": "032-450-4860",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=31"
+  },
+  {
+    "id": 16116,
+    "name": "계양2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 장제로 853",
+    "phone": "032-450-4880",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=32"
+  },
+  {
+    "id": 16117,
+    "name": "계양3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 계양구",
+    "category": "주민자치기관",
+    "address": "인천광역시 계양구 동양로 129",
+    "phone": "032-430-7910",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.gyeyang.go.kr/open_content/dong/index.jsp?dong=64"
+  },
+  {
+    "id": 16118,
+    "name": "서구청",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 서구 서곶로 307",
+    "phone": "032-562-5301",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/"
+  },
+  {
+    "id": 16119,
+    "name": "검암경서동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 승학로 480",
+    "phone": "032-560-4601",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gumam"
+  },
+  {
+    "id": 16120,
+    "name": "연희동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 간촌로 12",
+    "phone": "032-560-4602",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=yoenhi"
+  },
+  {
+    "id": 16121,
+    "name": "청라1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 청라라임로 58",
+    "phone": "032-560-4618",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=cheongna1"
+  },
+  {
+    "id": 16122,
+    "name": "청라2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 청라커낼로 269",
+    "phone": "032-560-4619",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=cheongna2"
+  },
+  {
+    "id": 16123,
+    "name": "청라3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 푸른로8번길 5",
+    "phone": "032-560-0840",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=cheongna3"
+  },
+  {
+    "id": 16124,
+    "name": "가정1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 가정로 420",
+    "phone": "032-560-4603",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajeong1"
+  },
+  {
+    "id": 16125,
+    "name": "가정2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 봉오대로253번길 17",
+    "phone": "032-560-4604",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajeong2"
+  },
+  {
+    "id": 16126,
+    "name": "가정3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 서달로179번길 12-16",
+    "phone": "032-560-4605",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajeong3"
+  },
+  {
+    "id": 16127,
+    "name": "신현원창동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 가정로335번길 3",
+    "phone": "032-560-4606",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=sinhyun"
+  },
+  {
+    "id": 16128,
+    "name": "석남1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 가정로294번길 17",
+    "phone": "032-560-4607",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=seoknam1"
+  },
+  {
+    "id": 16129,
+    "name": "석남2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 거북로 116",
+    "phone": "032-560-4608",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=seoknam2"
+  },
+  {
+    "id": 16130,
+    "name": "석남3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 서달로 107",
+    "phone": "032-560-4609",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=seoknam3"
+  },
+  {
+    "id": 16131,
+    "name": "가좌1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 가정로112번길 10",
+    "phone": "032-560-3181",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajwa1"
+  },
+  {
+    "id": 16132,
+    "name": "가좌2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 장고개로309번길 4",
+    "phone": "032-560-4611",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajwa2"
+  },
+  {
+    "id": 16133,
+    "name": "가좌3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 원적로57번길 4",
+    "phone": "032-560-4612",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajwa3"
+  },
+  {
+    "id": 16134,
+    "name": "가좌4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 장고개로280번길 14",
+    "phone": "032-560-4613",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gajwa4"
+  },
+  {
+    "id": 16135,
+    "name": "검단1동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 검단로529번길 14",
+    "phone": "032-560-4614",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gumdan1"
+  },
+  {
+    "id": 16136,
+    "name": "검단2동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 검단로 814",
+    "phone": "032-560-4615",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gumdan2"
+  },
+  {
+    "id": 16137,
+    "name": "검단3동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 고산로 24",
+    "phone": "032-560-4616",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gumdan3"
+  },
+  {
+    "id": 16138,
+    "name": "검단4동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 당하동 925-10",
+    "phone": "032-560-4617",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gumdan4"
+  },
+  {
+    "id": 16139,
+    "name": "검단5동 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 서구",
+    "category": "주민자치기관",
+    "address": "인천광역시 서구 봉화로 49",
+    "phone": "032-560-3370",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.seo.incheon.kr/open_content/dong/?dong=gumdan5"
+  },
+  {
+    "id": 16140,
+    "name": "강화군청",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 강화군 강화읍 강화대로 394",
+    "phone": "032-930-3114",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/"
+  },
+  {
+    "id": 16141,
+    "name": "강화읍 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 강화읍 강화대로440번길 10",
+    "phone": "032-930-4400",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16142,
+    "name": "선원면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 선원면 대문고개로 22",
+    "phone": "032-930-4410",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16143,
+    "name": "불은면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 불은면 강화동로 562-3",
+    "phone": "032-930-4420",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16144,
+    "name": "길상면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 길상면 강화동로 15-1",
+    "phone": "032-930-4430",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16145,
+    "name": "화도면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 화도면 마니산로 703-14",
+    "phone": "032-930-4440",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16146,
+    "name": "양도면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 양도면 강화남로 708-2",
+    "phone": "032-930-4450",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16147,
+    "name": "내가면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 내가면 강화서로 249",
+    "phone": "032-930-4460",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16148,
+    "name": "하점면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 하점면 강화대로 1220",
+    "phone": "032-930-4470",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16149,
+    "name": "양사면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 양사면 전망대로 1391",
+    "phone": "032-930-4480",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16150,
+    "name": "송해면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 송해면 전망대로 29",
+    "phone": "032-930-4490",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16151,
+    "name": "교동면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 교동면 교동동로 485-13",
+    "phone": "032-930-4500",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16152,
+    "name": "삼산면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 삼산면 삼산북로471번길 15",
+    "phone": "032-930-4510",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16153,
+    "name": "서도면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 강화군",
+    "category": "주민자치기관",
+    "address": "인천광역시 강화군 서도면 주문도1길 16",
+    "phone": "032-930-4520",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ganghwa.go.kr/open_content/dong/"
+  },
+  {
+    "id": 16154,
+    "name": "옹진군청",
+    "region": "인천광역시",
+    "detail_region": "인천 남구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 남구 매소홀로 120",
+    "phone": "032-899-2114",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/"
+  },
+  {
+    "id": 16155,
+    "name": "북도면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 북도면 시도로61번길 65-4",
+    "phone": "032-899-3410",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=bukdo"
+  },
+  {
+    "id": 16156,
+    "name": "백령면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 백령면 백령로278번길 61-2",
+    "phone": "032-899-3510",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=baekryeong"
+  },
+  {
+    "id": 16157,
+    "name": "대청면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 대청면 대청로19번길 59",
+    "phone": "032-899-3610",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=daecheong"
+  },
+  {
+    "id": 16158,
+    "name": "덕적면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 덕적면 덕적북로 130",
+    "phone": "032-899-3710",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=deokjeok"
+  },
+  {
+    "id": 16159,
+    "name": "영흥면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 영흥면 영흥로251번길 90",
+    "phone": "032-899-3810",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=yeongheung"
+  },
+  {
+    "id": 16160,
+    "name": "자월면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 자월면 자월서로 164",
+    "phone": "032-899-3750",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=jawol"
+  },
+  {
+    "id": 16161,
+    "name": "연평면 주민센터",
+    "region": "인천광역시",
+    "detail_region": "인천 옹진군",
+    "category": "주민자치기관",
+    "address": "인천광역시 옹진군 연평면 411-3",
+    "phone": "032-899-3450",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.ongjin.go.kr/open_content/dong/index.jsp?dong=yeonpyeong"
+  },
+  {
+    "id": 16162,
+    "name": "인천평생교육진흥원",
+    "region": "인천광역시",
+    "detail_region": "인천 남동구",
+    "category": "국가 및 지자체",
+    "address": "인천광역시 남동구 정각로 8 (인천YWCA 4층)",
+    "phone": "032-722-7290",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "https://www.damoa.incheon.kr"
+  }
+]

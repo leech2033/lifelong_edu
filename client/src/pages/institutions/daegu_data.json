@@ -1,0 +1,2237 @@
+[
+  {
+    "id": 18001,
+    "name": "대구시청",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 중구 공평로 88",
+    "phone": "053-120",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.daegu.go.kr/"
+  },
+  {
+    "id": 18002,
+    "name": "중구청",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 중구 국채보상로139길 1",
+    "phone": "053-661-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/"
+  },
+  {
+    "id": 18003,
+    "name": "동인동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 국채보상로142길 19-5",
+    "phone": "053-661-3301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18004,
+    "name": "삼덕동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 달구벌대로447길 72-11",
+    "phone": "053-661-3303",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18005,
+    "name": "성내1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 동성로3길 87",
+    "phone": "053-661-3304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18006,
+    "name": "성내2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 달구벌대로415길 48",
+    "phone": "053-661-3305",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18007,
+    "name": "성내3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 서성로13길 32-10",
+    "phone": "053-661-3306",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18008,
+    "name": "대신동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 큰장로26안길 66",
+    "phone": "053-661-3307",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18009,
+    "name": "남산1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 2·28길 18-15",
+    "phone": "053-661-3308",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18010,
+    "name": "남산2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 명륜로 27-1",
+    "phone": "053-661-3309",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18011,
+    "name": "남산3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 남산로4길 70",
+    "phone": "053-661-3733",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18012,
+    "name": "남산4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 남산로1길 42",
+    "phone": "053-661-3311",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18013,
+    "name": "대봉1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 달구벌대로440길 27",
+    "phone": "053-661-3312",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18014,
+    "name": "대봉2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 중구",
+    "category": "주민자치기관",
+    "address": "대구광역시 중구 대봉로45길 29",
+    "phone": "053-661-3313",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.jung.daegu.kr/new/dong/pages/main/"
+  },
+  {
+    "id": 18015,
+    "name": "동구청",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 동구 아양로 207",
+    "phone": "053-662-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/"
+  },
+  {
+    "id": 18016,
+    "name": "신암1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 아양로7길 27",
+    "phone": "053-662-3301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sa1/"
+  },
+  {
+    "id": 18017,
+    "name": "신암2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 신성로 56",
+    "phone": "053-662-3302",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sa2/"
+  },
+  {
+    "id": 18018,
+    "name": "신암3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 신암남로 67",
+    "phone": "053-662-3303",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sa3/"
+  },
+  {
+    "id": 18019,
+    "name": "신암4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 신암남로23길 53",
+    "phone": "053-662-3304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sa4/"
+  },
+  {
+    "id": 18020,
+    "name": "신암5동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 아양로37길 92",
+    "phone": "053-662-3305",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sa5/"
+  },
+  {
+    "id": 18021,
+    "name": "신천1,2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 국채보상로159길 41",
+    "phone": "053-662-3306",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sc12/"
+  },
+  {
+    "id": 18022,
+    "name": "신천3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 장등로 90",
+    "phone": "053-662-3724",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sc3/"
+  },
+  {
+    "id": 18023,
+    "name": "신천4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 동부로30길 61-7",
+    "phone": "053-662-3308",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/sc4/"
+  },
+  {
+    "id": 18024,
+    "name": "효목1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 화랑로41길 46",
+    "phone": "053-662-3309",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/hm1/"
+  },
+  {
+    "id": 18025,
+    "name": "효목2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 화랑로25길 45",
+    "phone": "053-662-3781",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/hm2/"
+  },
+  {
+    "id": 18026,
+    "name": "도평동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 팔공로24길 171",
+    "phone": "053-662-3311",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/dp/"
+  },
+  {
+    "id": 18027,
+    "name": "불로봉무동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 팔공로25길 16",
+    "phone": "053-662-3312",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/bb/"
+  },
+  {
+    "id": 18028,
+    "name": "지저동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 해동로3길 80",
+    "phone": "053-662-3313",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/jj/"
+  },
+  {
+    "id": 18029,
+    "name": "동촌동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 동촌로11길 5",
+    "phone": "053-662-3314",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/dc/"
+  },
+  {
+    "id": 18030,
+    "name": "방촌동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 동촌로48길 26",
+    "phone": "053-662-3315",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/bc/"
+  },
+  {
+    "id": 18031,
+    "name": "해안동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 방촌로29길 46",
+    "phone": "053-662-3316",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/ha/"
+  },
+  {
+    "id": 18032,
+    "name": "안심1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 율하동로 121",
+    "phone": "053-662-3317",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/as1/"
+  },
+  {
+    "id": 18033,
+    "name": "안심2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 반야월로1길 28",
+    "phone": "053-662-3318",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/as2/"
+  },
+  {
+    "id": 18034,
+    "name": "안심3,4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 안심로49길 98",
+    "phone": "053-662-3319",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/as34/"
+  },
+  {
+    "id": 18035,
+    "name": "공산동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 동구",
+    "category": "주민자치기관",
+    "address": "대구광역시 동구 팔공로91길 9",
+    "phone": "053-662-3320",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dong.daegu.kr/ch/gs/"
+  },
+  {
+    "id": 18036,
+    "name": "서구청",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 서구 국채보상로 257",
+    "phone": "053-663-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/"
+  },
+  {
+    "id": 18037,
+    "name": "내당1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 서대구로4길 35",
+    "phone": "053-663-3301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/nd1/"
+  },
+  {
+    "id": 18038,
+    "name": "내당2,3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 큰장로15길 11-1",
+    "phone": "053-663-3302",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/nd23/"
+  },
+  {
+    "id": 18039,
+    "name": "내당4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 서대구로3길 46",
+    "phone": "053-663-3303",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/nd4/"
+  },
+  {
+    "id": 18040,
+    "name": "비산1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 북비산로65길 18",
+    "phone": "053-663-3304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/bs1/"
+  },
+  {
+    "id": 18041,
+    "name": "비산2,3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 국채보상로81길 43",
+    "phone": "053-663-3305",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/bs23/"
+  },
+  {
+    "id": 18042,
+    "name": "비산4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 국채보상로78길 29-4",
+    "phone": "053-663-3306",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/bs4/"
+  },
+  {
+    "id": 18043,
+    "name": "비산5동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 달서천로65길 17",
+    "phone": "053-663-3307",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/bs5/"
+  },
+  {
+    "id": 18044,
+    "name": "비산6동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 문화로67길 3",
+    "phone": "053-663-3308",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/bs6/"
+  },
+  {
+    "id": 18045,
+    "name": "비산7동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 염색공단로5길 4",
+    "phone": "053-663-3309",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/bs7/"
+  },
+  {
+    "id": 18046,
+    "name": "평리1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 문화로 280",
+    "phone": "053-663-3310",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/pn1/"
+  },
+  {
+    "id": 18047,
+    "name": "평리2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 국채보상로60길 6",
+    "phone": "053-663-3311",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/pn2/"
+  },
+  {
+    "id": 18048,
+    "name": "평리3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 문화로 261",
+    "phone": "053-663-3312",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/pn3/"
+  },
+  {
+    "id": 18049,
+    "name": "평리4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 국채보상로46길 37-3",
+    "phone": "053-663-3313",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/pn4/"
+  },
+  {
+    "id": 18050,
+    "name": "평리5동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 서대구로37길 48",
+    "phone": "053-663-3314",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/pn5/"
+  },
+  {
+    "id": 18051,
+    "name": "평리6동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 당산로86길 13",
+    "phone": "053-663-3315",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/pn6/"
+  },
+  {
+    "id": 18052,
+    "name": "상중이동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 당산로 343",
+    "phone": "053-663-3316",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/sj/"
+  },
+  {
+    "id": 18053,
+    "name": "원대동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 서구 달서로55길 5",
+    "phone": "053-663-3317",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dgs.go.kr/dg/wd/"
+  },
+  {
+    "id": 18054,
+    "name": "남구청",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 남구 이천로 51",
+    "phone": "053-664-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.nam.daegu.kr/"
+  },
+  {
+    "id": 18055,
+    "name": "이천동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 이천로28길 18",
+    "phone": "053-664-3711",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001855"
+  },
+  {
+    "id": 18056,
+    "name": "봉덕1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 이천로 51",
+    "phone": "053-664-3731",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001856"
+  },
+  {
+    "id": 18057,
+    "name": "봉덕2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 이천로10길 50",
+    "phone": "053-664-3751",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001857"
+  },
+  {
+    "id": 18058,
+    "name": "봉덕3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 중앙대로22길 100",
+    "phone": "053-664-3771",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001858"
+  },
+  {
+    "id": 18059,
+    "name": "대명1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 두류공원로 38",
+    "phone": "053-664-3791",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001859"
+  },
+  {
+    "id": 18060,
+    "name": "대명2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 명덕로32길 30",
+    "phone": "053-664-3811",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001860"
+  },
+  {
+    "id": 18061,
+    "name": "대명3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 명덕로20길 115",
+    "phone": "053-664-3831",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001861"
+  },
+  {
+    "id": 18062,
+    "name": "대명4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 두류공원로20길 19",
+    "phone": "053-664-3851",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001862"
+  },
+  {
+    "id": 18063,
+    "name": "대명5동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 대명로58길 11",
+    "phone": "053-664-3871",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001863"
+  },
+  {
+    "id": 18064,
+    "name": "대명6동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 대명남로 73",
+    "phone": "053-664-3891",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001864"
+  },
+  {
+    "id": 18065,
+    "name": "대명9동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 큰골길 53",
+    "phone": "053-664-3911",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001865"
+  },
+  {
+    "id": 18066,
+    "name": "대명10동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 대명복개로4길 166",
+    "phone": "053-664-3931",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001866"
+  },
+  {
+    "id": 18067,
+    "name": "대명11동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 남구",
+    "category": "주민자치기관",
+    "address": "대구광역시 남구 대명로 16",
+    "phone": "053-664-3951",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://nam.daegu.kr/dong/index.do?menu_id=00001867"
+  },
+  {
+    "id": 18068,
+    "name": "북구청",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 북구 옥산로 65",
+    "phone": "053-665-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/"
+  },
+  {
+    "id": 18069,
+    "name": "고성동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 고성로31길 21",
+    "phone": "053-665-3301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000392"
+  },
+  {
+    "id": 18070,
+    "name": "칠성동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 칠성로19길 4",
+    "phone": "053-665-3302",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000393"
+  },
+  {
+    "id": 18071,
+    "name": "침산1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 침산남로13길 16",
+    "phone": "053-665-3303",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000394"
+  },
+  {
+    "id": 18072,
+    "name": "침산2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 침산남로 195",
+    "phone": "053-665-3304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000395"
+  },
+  {
+    "id": 18073,
+    "name": "침산3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 성북로 55",
+    "phone": "053-665-3305",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000396"
+  },
+  {
+    "id": 18074,
+    "name": "산격1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 연암로36길 6",
+    "phone": "053-665-3308",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000398"
+  },
+  {
+    "id": 18075,
+    "name": "산격2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 동북로31길 30",
+    "phone": "053-665-3309",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000399"
+  },
+  {
+    "id": 18076,
+    "name": "산격3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 대학로17길 11",
+    "phone": "053-665-3310",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000400"
+  },
+  {
+    "id": 18077,
+    "name": "산격4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 대구체육관로 48",
+    "phone": "053-665-3311",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000401"
+  },
+  {
+    "id": 18078,
+    "name": "대현동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 대현남로 25",
+    "phone": "053-665-3315",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000404"
+  },
+  {
+    "id": 18079,
+    "name": "복현1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 동북로52길 7",
+    "phone": "053-665-3312",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000402"
+  },
+  {
+    "id": 18080,
+    "name": "복현2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 복현로8길 16-5",
+    "phone": "053-665-3313",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000403"
+  },
+  {
+    "id": 18081,
+    "name": "검단동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 검단로41길 12",
+    "phone": "053-665-3316",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000405"
+  },
+  {
+    "id": 18082,
+    "name": "노원동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 노원로10길 166",
+    "phone": "053-665-3306",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000397"
+  },
+  {
+    "id": 18083,
+    "name": "무태조야동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 호국로43길 20",
+    "phone": "053-665-3317",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000406"
+  },
+  {
+    "id": 18084,
+    "name": "관문동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 매천로18길 34",
+    "phone": "053-665-3318",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000407"
+  },
+  {
+    "id": 18085,
+    "name": "태전1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 태전로7길 10-24",
+    "phone": "053-665-3319",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000408"
+  },
+  {
+    "id": 18086,
+    "name": "태전2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 칠곡중앙대로52길 32",
+    "phone": "053-665-3320",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000409"
+  },
+  {
+    "id": 18087,
+    "name": "구암동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 구암서로 32",
+    "phone": "053-665-3321",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000410"
+  },
+  {
+    "id": 18088,
+    "name": "관음동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 관음동로 125",
+    "phone": "053-665-3322",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000411"
+  },
+  {
+    "id": 18089,
+    "name": "읍내동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 칠곡중앙대로 561",
+    "phone": "053-665-3323",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000412"
+  },
+  {
+    "id": 18090,
+    "name": "동천동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 대천로 81",
+    "phone": "053-665-3324",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000413"
+  },
+  {
+    "id": 18091,
+    "name": "국우동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 북구",
+    "category": "주민자치기관",
+    "address": "대구광역시 북구 구리로 188",
+    "phone": "053-665-3325",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.buk.daegu.kr/dong/index.do?menu_id=00000414"
+  },
+  {
+    "id": 18092,
+    "name": "수성구청",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 수성구 달구벌대로 2450",
+    "phone": "053-666-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/"
+  },
+  {
+    "id": 18093,
+    "name": "범어1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 범어천로 97",
+    "phone": "053-666-3301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00000271"
+  },
+  {
+    "id": 18094,
+    "name": "범어2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 달구벌대로489안길 7",
+    "phone": "053-666-3302",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001231"
+  },
+  {
+    "id": 18095,
+    "name": "범어3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 들안로 403-1",
+    "phone": "053-666-3303",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001232"
+  },
+  {
+    "id": 18096,
+    "name": "범어4동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 범어로20길 97",
+    "phone": "053-666-3304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001233"
+  },
+  {
+    "id": 18097,
+    "name": "만촌1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 국채보상로 1001",
+    "phone": "053-666-3305",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001234"
+  },
+  {
+    "id": 18098,
+    "name": "만촌2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 무열로 12",
+    "phone": "053-666-3306",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001235"
+  },
+  {
+    "id": 18099,
+    "name": "만촌3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 교학로2길 45",
+    "phone": "053-666-3307",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001236"
+  },
+  {
+    "id": 18100,
+    "name": "수성1가동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 명덕로73길 7",
+    "phone": "053-666-3308",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001237"
+  },
+  {
+    "id": 18101,
+    "name": "수성2,3가동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 명덕로 443-2",
+    "phone": "053-666-3309",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001238"
+  },
+  {
+    "id": 18102,
+    "name": "수성4가동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 들안로67길 64",
+    "phone": "053-666-3310",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001239"
+  },
+  {
+    "id": 18103,
+    "name": "황금1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 청호로57길 10",
+    "phone": "053-666-3311",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001240"
+  },
+  {
+    "id": 18104,
+    "name": "황금2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 청수로31길 45",
+    "phone": "053-666-3312",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001241"
+  },
+  {
+    "id": 18105,
+    "name": "중동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 수성로50길 38",
+    "phone": "053-666-3313",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001242"
+  },
+  {
+    "id": 18106,
+    "name": "상동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 들안로9길 56",
+    "phone": "053-666-3314",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001243"
+  },
+  {
+    "id": 18107,
+    "name": "파동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 파동로 136",
+    "phone": "053-666-3315",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001244"
+  },
+  {
+    "id": 18108,
+    "name": "두산동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 무학로 112",
+    "phone": "053-666-3316",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001245"
+  },
+  {
+    "id": 18109,
+    "name": "지산1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 지범로21길 16",
+    "phone": "053-666-3317",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001246"
+  },
+  {
+    "id": 18110,
+    "name": "지산2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 용학로33길 9",
+    "phone": "053-666-3318",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001247"
+  },
+  {
+    "id": 18111,
+    "name": "범물1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 범안로 76",
+    "phone": "053-666-3319",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001248"
+  },
+  {
+    "id": 18112,
+    "name": "범물2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 범안로 52",
+    "phone": "053-666-3320",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001249"
+  },
+  {
+    "id": 18113,
+    "name": "고산1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 달구벌대로 3260-2",
+    "phone": "053-666-3321",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001250"
+  },
+  {
+    "id": 18114,
+    "name": "고산2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 달구벌대로 3091",
+    "phone": "053-666-3322",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001251"
+  },
+  {
+    "id": 18115,
+    "name": "고산3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "주민자치기관",
+    "address": "대구광역시 수성구 고산로 152",
+    "phone": "053-666-3323",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.suseong.kr/dong/index.do?menu_id=00001252"
+  },
+  {
+    "id": 18116,
+    "name": "달서구청",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 달서구 학산로 45",
+    "phone": "053-667-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/"
+  },
+  {
+    "id": 18117,
+    "name": "성당동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 야외음악당로 38",
+    "phone": "053-667-4011",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/seongdang/"
+  },
+  {
+    "id": 18118,
+    "name": "두류1,2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 성당로51길 32",
+    "phone": "053-667-4061",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/dury12/"
+  },
+  {
+    "id": 18119,
+    "name": "두류3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 야외음악당로39길 24",
+    "phone": "053-667-4115",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/dury3/"
+  },
+  {
+    "id": 18120,
+    "name": "본리동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 당산로 37-14",
+    "phone": "053-667-4141",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/bolli/"
+  },
+  {
+    "id": 18121,
+    "name": "감삼동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 감삼북길 119-10",
+    "phone": "053-667-4172",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/gamsam/"
+  },
+  {
+    "id": 18122,
+    "name": "죽전동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 와룡로54길 28",
+    "phone": "053-667-4201",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/jukjeon/"
+  },
+  {
+    "id": 18123,
+    "name": "장기동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 장기로 277",
+    "phone": "053-667-4231",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/janggi/"
+  },
+  {
+    "id": 18124,
+    "name": "용산1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 용산로 212-7",
+    "phone": "053-667-4261",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/yongsan1/"
+  },
+  {
+    "id": 18125,
+    "name": "용산2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 선원로 278",
+    "phone": "053-667-4304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/yongsan2/"
+  },
+  {
+    "id": 18126,
+    "name": "이곡1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 달구벌대로 1309",
+    "phone": "053-667-4321",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/igok1/"
+  },
+  {
+    "id": 18127,
+    "name": "이곡2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 계대동문로 77",
+    "phone": "053-667-4357",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/igok2/"
+  },
+  {
+    "id": 18128,
+    "name": "신당동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 선원로 60",
+    "phone": "053-667-4381",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/sindang/"
+  },
+  {
+    "id": 18129,
+    "name": "월성1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 조암남로 97",
+    "phone": "053-667-4411",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/wolseong1/"
+  },
+  {
+    "id": 18130,
+    "name": "월성2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 월성로 65",
+    "phone": "053-667-4441",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/wolseong2/"
+  },
+  {
+    "id": 18131,
+    "name": "진천동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 진천로9길 33",
+    "phone": "053-667-4477",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/jincheon/"
+  },
+  {
+    "id": 18132,
+    "name": "상인1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 상인서로 40",
+    "phone": "053-667-4601",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/sangin1/"
+  },
+  {
+    "id": 18133,
+    "name": "상인2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 상원로 27",
+    "phone": "053-667-4635",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/sangin2/"
+  },
+  {
+    "id": 18134,
+    "name": "상인3동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 상인로 25",
+    "phone": "053-667-4661",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/sangin3/"
+  },
+  {
+    "id": 18135,
+    "name": "도원동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 한실로 53",
+    "phone": "053-667-4691",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/dowon/"
+  },
+  {
+    "id": 18136,
+    "name": "송현1동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 중흥로8길 41",
+    "phone": "053-667-4721",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/songhyeon1/"
+  },
+  {
+    "id": 18137,
+    "name": "송현2동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 월배로83길 120-14",
+    "phone": "053-667-4751",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/songhyeon2/"
+  },
+  {
+    "id": 18138,
+    "name": "본동 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달서구",
+    "category": "주민자치기관",
+    "address": "대구광역시 달서구 구마로26길 62",
+    "phone": "053-667-4781",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseo.daegu.kr/dong/bon/"
+  },
+  {
+    "id": 18139,
+    "name": "달성군청",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 달성군 논공읍 달성군청로 33",
+    "phone": "053-668-2000",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/dalseong/main/main.html"
+  },
+  {
+    "id": 18140,
+    "name": "화원읍 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 화원읍 비슬로 2594",
+    "phone": "053-668-3301",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/hwawon/html/main.html"
+  },
+  {
+    "id": 18141,
+    "name": "논공읍 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 논공읍 비슬로 1779",
+    "phone": "053-668-5471",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/nonggong/html/main.html"
+  },
+  {
+    "id": 18142,
+    "name": "다사읍 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 다사읍 매곡로 7",
+    "phone": "053-668-5523",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/dasa/html/main.html"
+  },
+  {
+    "id": 18143,
+    "name": "가창면 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 가창면 가창로 1100",
+    "phone": "053-668-3304",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/gachang/html/main.html"
+  },
+  {
+    "id": 18144,
+    "name": "하빈면 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 하빈면 하빈로84길 1",
+    "phone": "053-668-3305",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/habin/html/main.html"
+  },
+  {
+    "id": 18145,
+    "name": "옥포면 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 옥포면 비슬로 2215",
+    "phone": "053-668-5651",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/okpo/html/main.html"
+  },
+  {
+    "id": 18146,
+    "name": "현풍면 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 현풍면 비슬로134길 157",
+    "phone": "053-668-3307",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/hyeonpung/html/main.html"
+  },
+  {
+    "id": 18147,
+    "name": "유가면 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 유가면 테크노상업로 95",
+    "phone": "053-668-3308",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/yuga/html/main.html"
+  },
+  {
+    "id": 18148,
+    "name": "구지면 주민센터",
+    "region": "대구광역시",
+    "detail_region": "대구 달성군",
+    "category": "주민자치기관",
+    "address": "대구광역시 달성군 구지면 창리로11길 38",
+    "phone": "053-668-3309",
+    "tags": [
+      "공공",
+      "주민자치기관"
+    ],
+    "status": "운영중",
+    "homepage": "http://www.dalseong.daegu.kr/new/town/guji/html/main.html"
+  },
+  {
+    "id": 18149,
+    "name": "대구평생교육진흥원",
+    "region": "대구광역시",
+    "detail_region": "대구 수성구",
+    "category": "국가 및 지자체",
+    "address": "대구광역시 수성구 청수로 43 대구파이낸스센터 17층",
+    "phone": "053-770-5043",
+    "tags": [
+      "공공",
+      "국가 및 지자체"
+    ],
+    "status": "운영중",
+    "homepage": "http://tong.daegu.go.kr/"
+  }
+]
