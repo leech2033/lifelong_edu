@@ -1,0 +1,181 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - img [ref=e8]
+          - text: 관련 사이트 바로가기
+        - generic [ref=e11]:
+          - img [ref=e12]
+          - text: 고객센터 1588-0000
+      - generic [ref=e14]:
+        - link "로그인" [ref=e15] [cursor=pointer]:
+          - /url: /login
+        - link "회원가입" [ref=e16] [cursor=pointer]:
+          - /url: /register
+        - link "사이트맵" [ref=e17] [cursor=pointer]:
+          - /url: /sitemap
+    - banner [ref=e18]:
+      - generic [ref=e19]:
+        - link "L 평생교육 Platform" [ref=e20] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e21]: L
+          - generic [ref=e22]:
+            - generic [ref=e23]: 평생교육
+            - generic [ref=e24]: Platform
+        - button [ref=e26]:
+          - img
+    - main [ref=e27]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: 기관 웹크롤링 관리
+        - heading "대전 기관 수집 검토 및 등록" [level=1] [ref=e32]
+        - paragraph [ref=e33]: 공식 수집 목록을 보정하고, 관리자 검토를 거쳐 서비스용 기관 데이터로 등록하는 내부 페이지입니다.
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e37]:
+            - img [ref=e38]
+            - text: 조회 조건
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - text: 지역
+              - combobox [ref=e42]:
+                - generic: 대전
+                - img [ref=e43]
+            - generic [ref=e45]:
+              - text: 구
+              - combobox [ref=e46]:
+                - generic: 전체
+                - img [ref=e47]
+            - generic [ref=e49]:
+              - text: 유형
+              - combobox [ref=e50]:
+                - generic: 전체
+                - img [ref=e51]
+            - generic [ref=e53]:
+              - text: 소스
+              - combobox [ref=e54]:
+                - generic: 전체
+                - img [ref=e55]
+            - generic [ref=e57]:
+              - text: 검토 상태
+              - combobox [ref=e58]:
+                - generic: 전체
+                - img [ref=e59]
+            - generic [ref=e61]:
+              - text: 검색
+              - generic [ref=e62]:
+                - img [ref=e63]
+                - textbox "기관명, 운영주체, 주소, 전화번호 검색" [ref=e66]
+            - generic [ref=e68]:
+              - button "대덕구 공식 현황 가져오기" [ref=e69]
+              - button "동구 포털 가져오기" [ref=e70]
+              - button "중구 포털 가져오기" [ref=e71]
+              - button "서구 포털 가져오기" [ref=e72]
+              - button "유성구 포털 가져오기" [ref=e73]
+              - button "대덕구 포털 가져오기" [ref=e74]
+              - button "필터 결과 승인 (0)" [disabled]
+              - button "필터 결과 반려 (0)" [disabled]
+              - button "승인 기관 등록 (0)" [disabled]:
+                - img
+                - text: 승인 기관 등록 (0)
+              - link "등록 목록 JSON 보기" [ref=e75] [cursor=pointer]:
+                - /url: /api/internal/crawl-registered-export?region=daejeon
+                - img
+                - text: 등록 목록 JSON 보기
+        - generic [ref=e76]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - paragraph [ref=e80]: 기관 수
+              - paragraph [ref=e81]: ...
+            - img [ref=e82]
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - paragraph [ref=e89]: 검토 필요
+              - paragraph [ref=e90]: ...
+            - img [ref=e91]
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - paragraph [ref=e96]: 전화 확보
+              - paragraph [ref=e97]: ...
+            - img [ref=e98]
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - paragraph [ref=e103]: 주소 확보
+              - paragraph [ref=e104]: ...
+            - img [ref=e105]
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: 승인
+            - paragraph [ref=e112]: "0"
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: 검토중
+            - paragraph [ref=e117]: "0"
+          - generic [ref=e120]:
+            - paragraph [ref=e121]: 반려
+            - paragraph [ref=e122]: "0"
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: 등록 완료
+              - paragraph [ref=e127]: "0"
+            - img [ref=e128]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - generic [ref=e134]: 크롤링 기관 목록
+            - table [ref=e137]:
+              - rowgroup [ref=e138]:
+                - row "No 기관명 공공 / 민간 지역 등록 전화 주소" [ref=e139]:
+                  - columnheader "No" [ref=e140]
+                  - columnheader "기관명" [ref=e141]
+                  - columnheader "공공 / 민간" [ref=e142]
+                  - columnheader "지역" [ref=e143]
+                  - columnheader "등록" [ref=e144]
+                  - columnheader "전화" [ref=e145]
+                  - columnheader "주소" [ref=e146]
+              - rowgroup
+          - generic [ref=e147]:
+            - generic [ref=e149]: 기관 상세 검토
+            - paragraph [ref=e151]: 기관을 선택해 주세요.
+    - contentinfo [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]: L
+              - generic [ref=e158]: 평생교육 통합지원시스템
+            - paragraph [ref=e159]:
+              - text: 모든 국민이 언제 어디서나 원하는 교육을 받을 수 있도록
+              - text: 평생교육기관과 학습자를 연결하는 열린 플랫폼입니다.
+          - generic [ref=e160]:
+            - heading "바로가기" [level=4] [ref=e161]
+            - list [ref=e162]:
+              - listitem [ref=e163]:
+                - link "평생교육기관 찾기" [ref=e164] [cursor=pointer]:
+                  - /url: /institutions
+              - listitem [ref=e165]:
+                - link "공모사업 안내" [ref=e166] [cursor=pointer]:
+                  - /url: /contests
+              - listitem [ref=e167]:
+                - link "사업신청" [ref=e168] [cursor=pointer]:
+                  - /url: /application
+              - listitem [ref=e169]:
+                - link "자주 묻는 질문" [ref=e170] [cursor=pointer]:
+                  - /url: /faq
+          - generic [ref=e171]:
+            - heading "문의처" [level=4] [ref=e172]
+            - list [ref=e173]:
+              - listitem [ref=e174]:
+                - img [ref=e175]
+                - text: 1588-0000
+              - listitem [ref=e177]: 평일 09:00 ~ 18:00 (주말/공휴일 휴무)
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - link "이용약관" [ref=e180] [cursor=pointer]:
+              - /url: "#"
+            - link "개인정보처리방침" [ref=e181] [cursor=pointer]:
+              - /url: "#"
+            - link "이메일무단수집거부" [ref=e182] [cursor=pointer]:
+              - /url: "#"
+            - link "웹접근성정책" [ref=e183] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=e184]: Copyright 2024 Lifelong Education Platform. All rights reserved.

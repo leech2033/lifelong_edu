@@ -77,6 +77,7 @@ const CRAWL_REGIONS: CrawlRegionConfig[] = [
     masterFile: "script/daejeon_crawler/output/parsed/institutions_master_curated.json",
     extraMasterFiles: [
       "script/daejeon_crawler/output/parsed/institutions_master_curated_b.json",
+      "script/daejeon_crawler/output/parsed/institutions_daejeon_office_public_notice.json",
       "script/daejeon_crawler/output/parsed/institutions_daedeok_official.json",
       "script/daejeon_crawler/output/parsed/institutions_donggu_portal.json",
       "script/daejeon_crawler/output/parsed/institutions_junggu_portal.json",
@@ -307,6 +308,9 @@ function sourceLabelFromIds(sourceIds: string[]) {
   }
   if (sourceIds.some((item) => item.includes("daedeok_official_status"))) {
     return "대덕구 공식 현황";
+  }
+  if (sourceIds.some((item) => item.includes("daejeon_office_public_notice"))) {
+    return "대전광역시교육청 정보공시";
   }
   if (sourceIds.some((item) => item.includes("dj_nurim_recognized_2025"))) {
     return "대전 인정기관";

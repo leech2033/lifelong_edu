@@ -132,6 +132,9 @@ function sourceLabelFromIds(sourceIds: string[] | string) {
   if (items.some((item) => String(item).includes("daedeok_official_status"))) {
     return "대덕구 공식 현황";
   }
+  if (items.some((item) => String(item).includes("daejeon_office_public_notice"))) {
+    return "대전광역시교육청 정보공시";
+  }
   if (items.some((item) => String(item).includes("dj_donggu_lifelong_home"))) {
     return "동구 포털";
   }
@@ -194,6 +197,7 @@ export default function CrawlPreviewPage() {
 
   useEffect(() => {
     let active = true;
+
     async function load() {
       try {
         setLoading(true);
@@ -212,6 +216,7 @@ export default function CrawlPreviewPage() {
         if (active) setLoading(false);
       }
     }
+
     load();
     return () => {
       active = false;
@@ -275,6 +280,7 @@ export default function CrawlPreviewPage() {
           item.eupmyeondong,
           item.road_address,
           item.operator_name,
+          item.phone,
         ]
           .filter(Boolean)
           .some((value) => String(value).toLowerCase().includes(normalized));
@@ -282,8 +288,7 @@ export default function CrawlPreviewPage() {
         selectedSigungu === ALL_VALUE || (item.sigungu || "미분류") === selectedSigungu;
       const matchesType = selectedType === ALL_VALUE || item.institution_type === selectedType;
       const sourceLabels = [sourceLabelFromIds(item.source_ids)];
-      const matchesSource =
-        selectedSource === ALL_VALUE || sourceLabels.includes(selectedSource);
+      const matchesSource = selectedSource === ALL_VALUE || sourceLabels.includes(selectedSource);
       const matchesReview =
         selectedReviewStatus === ALL_VALUE || reviewStatus === selectedReviewStatus;
       return matchesQuery && matchesSigungu && matchesType && matchesSource && matchesReview;
@@ -296,6 +301,7 @@ export default function CrawlPreviewPage() {
   );
 
   const selectedDraft = selectedInstitutionId ? drafts[selectedInstitutionId] : null;
+
   const bulkRegisterableIds = useMemo(
     () =>
       filteredInstitutions
@@ -303,6 +309,7 @@ export default function CrawlPreviewPage() {
         .map((item) => item.institution_id),
     [filteredInstitutions],
   );
+
   const bulkReviewTargetIds = useMemo(
     () =>
       filteredInstitutions
@@ -344,10 +351,7 @@ export default function CrawlPreviewPage() {
               ...current,
               institutions: current.institutions.map((item) =>
                 item.institution_id === selectedInstitution.institution_id
-                  ? {
-                      ...item,
-                      ...payload.institutionOverride,
-                    }
+                  ? { ...item, ...payload.institutionOverride }
                   : item,
               ),
             }
@@ -490,9 +494,7 @@ export default function CrawlPreviewPage() {
       if (!response.ok) throw new Error(payload.message || "Failed to update review states");
 
       const reviewStates = (payload.reviewStates || []) as ReviewState[];
-      const stateMap = new Map<string, ReviewState>(
-        reviewStates.map((item) => [item.itemKey, item]),
-      );
+      const stateMap = new Map<string, ReviewState>(reviewStates.map((item) => [item.itemKey, item]));
 
       setData((current) =>
         current
@@ -563,20 +565,20 @@ export default function CrawlPreviewPage() {
   return (
     <Layout>
       <div className="border-b border-slate-200 bg-slate-50">
-        <div className="container mx-auto px-4 py-10">
-          <div className="space-y-3">
+        <div className="container mx-auto px-4 py-8 sm:py-10 lg:py-12">
+          <div className="space-y-3 lg:max-w-4xl">
             <Badge variant="outline" className="bg-white text-slate-700">
-              기관 크롤링 관리
+              기관 웹크롤링 관리
             </Badge>
-            <h1 className="text-3xl font-bold text-slate-900">대전 기관 수집 검토 및 등록</h1>
-            <p className="max-w-3xl text-slate-600">
-              공식 수집 목록을 보정하고, 관리자 검토 후 서비스용 기관 데이터로 등록하는 내부 페이지입니다.
+            <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">대전 기관 수집 검토 및 등록</h1>
+            <p className="max-w-3xl text-sm leading-6 text-slate-600 sm:text-base">
+              공식 수집 목록을 보정하고, 관리자 검토를 거쳐 서비스용 기관 데이터로 등록하는 내부 페이지입니다.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto space-y-6 px-4 py-8">
+      <div className="container mx-auto space-y-6 px-4 py-6 sm:py-8">
         {error && (
           <Alert variant="destructive">
             <AlertTriangle className="h-4 w-4" />
@@ -586,48 +588,39 @@ export default function CrawlPreviewPage() {
         )}
 
         <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-lg">
+          <CardHeader className="pb-4">
+            <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
               <Filter className="h-5 w-5 text-slate-500" />
               조회 조건
             </CardTitle>
           </CardHeader>
-          <CardContent className="grid gap-4 md:grid-cols-4">
+          <CardContent className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             <FilterSelect
               label="지역"
               value={selectedRegion}
               onValueChange={setSelectedRegion}
               options={(data?.availableRegions ?? [{ id: "daejeon", name: "대전" }]).map((item) => ({
                 value: item.id,
-                label: item.name,
+                label: formatRegionNameClean(item.id, item.name),
               }))}
             />
             <FilterSelect
               label="구"
               value={selectedSigungu}
               onValueChange={setSelectedSigungu}
-              options={[
-                { value: ALL_VALUE, label: "전체" },
-                ...sigunguOptions.map((item) => ({ value: item, label: item })),
-              ]}
+              options={[{ value: ALL_VALUE, label: "전체" }, ...sigunguOptions.map((item) => ({ value: item, label: item }))]}
             />
             <FilterSelect
               label="유형"
               value={selectedType}
               onValueChange={setSelectedType}
-              options={[
-                { value: ALL_VALUE, label: "전체" },
-                ...typeOptions.map((item) => ({ value: item, label: item })),
-              ]}
+              options={[{ value: ALL_VALUE, label: "전체" }, ...typeOptions.map((item) => ({ value: item, label: formatInstitutionTypeLabel(item) }))]}
             />
             <FilterSelect
               label="소스"
               value={selectedSource}
               onValueChange={setSelectedSource}
-              options={[
-                { value: ALL_VALUE, label: "전체" },
-                ...sourceOptions.map((item) => ({ value: item, label: item })),
-              ]}
+              options={[{ value: ALL_VALUE, label: "전체" }, ...sourceOptions.map((item) => ({ value: item, label: formatSourceLabelClean(item) }))]}
             />
             <FilterSelect
               label="검토 상태"
@@ -635,73 +628,61 @@ export default function CrawlPreviewPage() {
               onValueChange={setSelectedReviewStatus}
               options={[
                 { value: ALL_VALUE, label: "전체" },
-                { value: "approved", label: "approved" },
-                { value: "pending", label: "pending" },
-                { value: "rejected", label: "rejected" },
-                { value: "unreviewed", label: "unreviewed" },
+                { value: "approved", label: formatReviewStatusLabelClean("approved") },
+                { value: "pending", label: formatReviewStatusLabelClean("pending") },
+                { value: "rejected", label: formatReviewStatusLabelClean("rejected") },
+                { value: "unreviewed", label: formatReviewStatusLabelClean("unreviewed") },
               ]}
             />
-            <div className="space-y-2 md:col-span-2">
+            <div className="space-y-2 sm:col-span-2">
               <label className="text-sm font-medium text-slate-700">검색</label>
               <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
                 <Input
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
-                  placeholder="기관명, 구, 주소, 운영주체 검색"
+                  placeholder="기관명, 운영주체, 주소, 전화번호 검색"
                   className="pl-9"
                 />
               </div>
             </div>
-            <div className="md:col-span-2 flex items-end justify-end">
-              <div className="flex flex-wrap justify-end gap-2">
-                {selectedSource !== ALL_VALUE && (
-                  <Button
-                    variant="secondary"
-                    onClick={() => updateFilteredReviewStatus("approved")}
-                    disabled={bulkReviewing !== null || bulkReviewTargetIds.length === 0}
-                  >
-                    {bulkReviewing === "approved"
-                      ? "승인 중..."
-                      : `${selectedSource} 승인 (${bulkReviewTargetIds.length})`}
-                  </Button>
-                )}
-                <Button variant="outline" onClick={importDaedeokOfficial} disabled={importingDaedeok}>
+            <div className="sm:col-span-2 xl:col-span-2 flex items-end justify-stretch sm:justify-end">
+              <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-end">
+                <Button className="w-full sm:w-auto" variant="outline" onClick={importDaedeokOfficial} disabled={importingDaedeok}>
                   {importingDaedeok ? "가져오는 중..." : "대덕구 공식 현황 가져오기"}
                 </Button>
                 {DISTRICT_IMPORT_BUTTONS.map((button) => (
                   <Button
+                    className="w-full sm:w-auto"
                     key={button.id}
                     variant="outline"
                     onClick={() => importDistrictSource(button.id)}
                     disabled={importingDistrictId !== null}
                   >
-                    {importingDistrictId === button.id ? "가져오는 중..." : button.label}
+                    {importingDistrictId === button.id ? "가져오는 중..." : getDistrictImportLabelClean(button.id)}
                   </Button>
                 ))}
                 <Button
+                  className="w-full sm:w-auto"
                   variant="secondary"
                   onClick={() => updateFilteredReviewStatus("approved")}
                   disabled={bulkReviewing !== null || bulkReviewTargetIds.length === 0}
                 >
-                  {bulkReviewing === "approved"
-                    ? "Approving..."
-                    : `Approve Filtered (${bulkReviewTargetIds.length})`}
+                  {bulkReviewing === "approved" ? "승인 중..." : `필터 결과 승인 (${bulkReviewTargetIds.length})`}
                 </Button>
                 <Button
+                  className="w-full sm:w-auto"
                   variant="secondary"
                   onClick={() => updateFilteredReviewStatus("rejected")}
                   disabled={bulkReviewing !== null || bulkReviewTargetIds.length === 0}
                 >
-                  {bulkReviewing === "rejected"
-                    ? "Rejecting..."
-                    : `Reject Filtered (${bulkReviewTargetIds.length})`}
+                  {bulkReviewing === "rejected" ? "반려 중..." : `필터 결과 반려 (${bulkReviewTargetIds.length})`}
                 </Button>
-                <Button onClick={registerApprovedInstitutions} disabled={bulkRegistering || bulkRegisterableIds.length === 0}>
+                <Button className="w-full sm:w-auto" onClick={registerApprovedInstitutions} disabled={bulkRegistering || bulkRegisterableIds.length === 0}>
                   <Upload className="mr-2 h-4 w-4" />
-                  {bulkRegistering ? "Registering..." : `Register Approved (${bulkRegisterableIds.length})`}
+                  {bulkRegistering ? "등록 중..." : `승인 기관 등록 (${bulkRegisterableIds.length})`}
                 </Button>
-                <Button asChild variant="outline">
+                <Button className="w-full sm:w-auto" asChild variant="outline">
                   <a href={`/api/internal/crawl-registered-export?region=${selectedRegion}`} target="_blank" rel="noreferrer">
                     <Upload className="mr-2 h-4 w-4" />
                     등록 목록 JSON 보기
@@ -712,31 +693,81 @@ export default function CrawlPreviewPage() {
           </CardContent>
         </Card>
 
-        <div className="grid gap-4 md:grid-cols-4 xl:grid-cols-8">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 xl:grid-cols-8">
           <MetricCard title="기관 수" value={data?.stats.totalInstitutions ?? (loading ? "..." : 0)} icon={<Database className="h-4 w-4 text-blue-600" />} />
           <MetricCard title="검토 필요" value={data?.stats.totalReviewItems ?? (loading ? "..." : 0)} icon={<AlertTriangle className="h-4 w-4 text-amber-600" />} />
           <MetricCard title="전화 확보" value={data?.stats.withPhone ?? (loading ? "..." : 0)} icon={<Phone className="h-4 w-4 text-emerald-600" />} />
           <MetricCard title="주소 확보" value={data?.stats.withAddress ?? (loading ? "..." : 0)} icon={<MapPin className="h-4 w-4 text-rose-600" />} />
-          <MetricCard title="approved" value={reviewStats.approved} />
-          <MetricCard title="pending" value={reviewStats.pending} />
-          <MetricCard title="rejected" value={reviewStats.rejected} />
-          <MetricCard title="registered" value={data?.stats.registeredCount ?? 0} icon={<CheckCircle2 className="h-4 w-4 text-emerald-600" />} />
+          <MetricCard title="승인" value={reviewStats.approved} />
+          <MetricCard title="검토중" value={reviewStats.pending} />
+          <MetricCard title="반려" value={reviewStats.rejected} />
+          <MetricCard title="등록 완료" value={data?.stats.registeredCount ?? 0} icon={<CheckCircle2 className="h-4 w-4 text-emerald-600" />} />
         </div>
 
-        <div className="grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] xl:grid-cols-[minmax(0,1.2fr)_minmax(360px,0.8fr)]">
           <Card>
-            <CardHeader>
-              <CardTitle>크롤링 기관 목록</CardTitle>
+            <CardHeader className="pb-4">
+              <CardTitle className="text-base sm:text-lg">크롤링 기관 목록</CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="overflow-x-auto rounded-xl border border-slate-200">
+            <CardContent className="px-0 sm:px-6">
+              <div className="space-y-3 px-4 sm:hidden">
+                {filteredInstitutions.map((item, index) => (
+                  <button
+                    key={item.institution_id}
+                    type="button"
+                    className={`w-full rounded-xl border p-4 text-left shadow-sm transition ${selectedInstitutionId === item.institution_id ? "border-blue-400 bg-blue-50 ring-2 ring-blue-100" : "border-slate-200 bg-white"}`}
+                    onClick={() => setSelectedInstitutionId(item.institution_id)}
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0 space-y-2">
+                        <div className="text-xs font-medium text-slate-500">No. {filteredInstitutions.length - index}</div>
+                        <div className="break-words font-semibold text-slate-900">{item.canonical_name}</div>
+                        <div className="flex flex-wrap gap-2">
+                          <Badge variant="outline">{classifyOwnership(item)}</Badge>
+                          <Badge variant="outline">{formatRegionLabel(item)}</Badge>
+                          {item.isRegistered ? <Badge className="bg-emerald-600">등록됨</Badge> : <Badge variant="secondary">미등록</Badge>}
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-xs text-slate-500">
+                          <span>{formatInstitutionTypeLabel(item.institution_type)}</span>
+                          <span>·</span>
+                          <span>{sourceLabelFromIds(item.source_ids)}</span>
+                        </div>
+                      </div>
+                      {item.homepage_url ? (
+                        <a
+                          href={item.homepage_url}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(event) => event.stopPropagation()}
+                          className="inline-flex shrink-0 items-center rounded-full border border-slate-200 p-2 text-slate-600"
+                          aria-label={`${item.canonical_name} 홈페이지`}
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      ) : null}
+                    </div>
+                    <div className="mt-3 space-y-2 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <Phone className="h-4 w-4 shrink-0 text-slate-400" />
+                        <span>{item.phone || "-"}</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-slate-400" />
+                        <span className="break-words">{item.road_address || "-"}</span>
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+
+              <div className="hidden overflow-x-auto rounded-xl border border-slate-200 sm:block">
                 <table className="w-full min-w-[980px] text-sm">
                   <thead className="bg-slate-50 text-left text-slate-500">
                     <tr>
                       <th className="px-4 py-3 font-medium">No</th>
                       <th className="px-4 py-3 font-medium">기관명</th>
-                      <th className="px-4 py-3 font-medium">공공 or 민간</th>
-                      <th className="px-4 py-3 font-medium">지역구분</th>
+                      <th className="px-4 py-3 font-medium">공공 / 민간</th>
+                      <th className="px-4 py-3 font-medium">지역</th>
                       <th className="px-4 py-3 font-medium">등록</th>
                       <th className="px-4 py-3 font-medium">전화</th>
                       <th className="px-4 py-3 font-medium">주소</th>
@@ -749,27 +780,22 @@ export default function CrawlPreviewPage() {
                         className={`cursor-pointer border-t border-slate-100 align-top ${selectedInstitutionId === item.institution_id ? "bg-blue-50/70" : "hover:bg-slate-50"}`}
                         onClick={() => setSelectedInstitutionId(item.institution_id)}
                       >
-                        <td className="px-4 py-3 font-medium text-slate-900">{index + 1}</td>
+                        <td className="px-4 py-3 font-medium text-slate-900">{filteredInstitutions.length - index}</td>
                         <td className="px-4 py-3">
                           <div className="font-medium text-slate-900">{item.canonical_name}</div>
-                          <div className="mt-1 text-xs text-slate-500">{item.operator_name || "-"}</div>
                         </td>
                         <td className="px-4 py-3">
                           <Badge variant="outline">{classifyOwnership(item)}</Badge>
                         </td>
                         <td className="px-4 py-3 text-slate-600">{formatRegionLabel(item)}</td>
                         <td className="px-4 py-3">
-                          {item.isRegistered ? (
-                            <Badge className="bg-emerald-600">registered</Badge>
-                          ) : (
-                            <Badge variant="secondary">not yet</Badge>
-                          )}
+                          {item.isRegistered ? <Badge className="bg-emerald-600">등록됨</Badge> : <Badge variant="secondary">미등록</Badge>}
                         </td>
                         <td className="px-4 py-3 text-slate-600">{item.phone || "-"}</td>
                         <td className="px-4 py-3 text-slate-600">
                           <div className="flex items-start gap-2">
                             {item.homepage_url ? (
-                              <span className="mt-0.5 inline-flex shrink-0 items-center gap-1">
+                              <span className="mt-0.5 inline-flex shrink-0 items-center">
                                 <a
                                   href={item.homepage_url}
                                   target="_blank"
@@ -786,7 +812,7 @@ export default function CrawlPreviewPage() {
                                   target="_blank"
                                   rel="noreferrer"
                                   onClick={(event) => event.stopPropagation()}
-                                  className="text-xs font-medium text-blue-600 hover:text-blue-700"
+                                  className="hidden"
                                 >
                                   홈페이지
                                 </a>
@@ -803,37 +829,36 @@ export default function CrawlPreviewPage() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>기관 상세 검토</CardTitle>
+          <Card className="lg:sticky lg:top-6 self-start">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-base sm:text-lg">기관 상세 검토</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 px-4 pb-4 sm:px-6 sm:pb-6">
               {!selectedInstitution || !selectedDraft ? (
-                <p className="text-sm text-slate-500">기관을 선택하세요.</p>
+                <p className="text-sm text-slate-500">기관을 선택해 주세요.</p>
               ) : (
                 <>
                   <div className="space-y-2">
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <h2 className="text-lg font-semibold text-slate-900">{selectedInstitution.canonical_name}</h2>
                       <ReviewStatusBadge status={(selectedInstitution.reviewState?.status || "unreviewed") as ReviewStatus} />
-                      {selectedInstitution.isRegistered && <Badge className="bg-emerald-600">registered</Badge>}
+                      {selectedInstitution.isRegistered && <Badge className="bg-emerald-600">등록됨</Badge>}
                     </div>
                     <p className="text-sm text-slate-500">
                       {selectedInstitution.matchedExisting
-                        ? `기존 대전 데이터와 이름 매칭됨: ${selectedInstitution.matchedExisting.name}`
-                        : "기존 대전 데이터와 이름 매칭 없음"}
+                        ? `기존 서비스 데이터와 이름 매칭됨: ${selectedInstitution.matchedExisting.name}`
+                        : "기존 서비스 데이터와 이름 매칭 없음"}
                     </p>
                   </div>
-
                   <div className="grid gap-3">
                     <EditableField label="기관명" value={selectedDraft.canonical_name} onChange={(value) => updateDraft("canonical_name", value)} />
                     <EditableField label="표시명" value={selectedDraft.display_name} onChange={(value) => updateDraft("display_name", value)} />
                     <EditableField label="운영주체" value={selectedDraft.operator_name} onChange={(value) => updateDraft("operator_name", value)} />
-                    <EditableField label="기관유형" value={selectedDraft.institution_type} onChange={(value) => updateDraft("institution_type", value)} />
+                    <EditableField label="기관 유형" value={selectedDraft.institution_type} onChange={(value) => updateDraft("institution_type", value)} />
                     <EditableField label="홈페이지" value={selectedDraft.homepage_url} onChange={(value) => updateDraft("homepage_url", value)} />
                     <EditableField label="전화" value={selectedDraft.phone} onChange={(value) => updateDraft("phone", value)} />
                     <EditableField label="주소" value={selectedDraft.road_address} onChange={(value) => updateDraft("road_address", value)} />
-                    <div className="grid gap-3 md:grid-cols-3">
+                    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
                       <EditableField label="시도" value={selectedDraft.sido} onChange={(value) => updateDraft("sido", value)} />
                       <EditableField label="시군구" value={selectedDraft.sigungu} onChange={(value) => updateDraft("sigungu", value)} />
                       <EditableField label="읍면동" value={selectedDraft.eupmyeondong} onChange={(value) => updateDraft("eupmyeondong", value)} />
@@ -845,7 +870,7 @@ export default function CrawlPreviewPage() {
                         value={selectedDraft.note}
                         onChange={(event) => updateDraft("note", event.target.value)}
                         rows={4}
-                        placeholder="확인한 출처나 보정 이유를 남깁니다"
+                        placeholder="확인한 출처와 보정 사유를 적어두세요"
                       />
                     </div>
                   </div>
@@ -861,17 +886,17 @@ export default function CrawlPreviewPage() {
                     </div>
                   )}
 
-                  <div className="flex flex-wrap gap-2">
-                    <Button onClick={saveInstitution} disabled={savingInstitutionId === selectedInstitution.institution_id}>
+                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                    <Button className="w-full" onClick={saveInstitution} disabled={savingInstitutionId === selectedInstitution.institution_id}>
                       <Save className="mr-2 h-4 w-4" />
                       {savingInstitutionId === selectedInstitution.institution_id ? "저장 중..." : "상세 저장"}
                     </Button>
-                    <Button variant="secondary" onClick={() => saveReviewStatus("pending")}>pending</Button>
-                    <Button variant="secondary" onClick={() => saveReviewStatus("approved")}>approved</Button>
-                    <Button variant="secondary" onClick={() => saveReviewStatus("rejected")}>rejected</Button>
+                    <Button className="w-full" variant="secondary" onClick={() => saveReviewStatus("pending")}>검토중</Button>
+                    <Button className="w-full" variant="secondary" onClick={() => saveReviewStatus("approved")}>승인</Button>
+                    <Button className="w-full" variant="secondary" onClick={() => saveReviewStatus("rejected")}>반려</Button>
                     <Button
+                      className="w-full bg-emerald-600 hover:bg-emerald-700 sm:col-span-2"
                       variant="default"
-                      className="bg-emerald-600 hover:bg-emerald-700"
                       onClick={registerInstitution}
                       disabled={selectedInstitution.reviewState?.status !== "approved" || !!selectedInstitution.isRegistered || registeringInstitutionId === selectedInstitution.institution_id}
                     >
@@ -908,7 +933,7 @@ function FilterSelect({
     <div className="space-y-2">
       <label className="text-sm font-medium text-slate-700">{label}</label>
       <Select value={value} onValueChange={onValueChange}>
-        <SelectTrigger>
+        <SelectTrigger className="w-full">
           <SelectValue />
         </SelectTrigger>
         <SelectContent>
@@ -935,9 +960,42 @@ function EditableField({
   return (
     <div className="space-y-2">
       <label className="text-sm font-medium text-slate-700">{label}</label>
-      <Input value={value} onChange={(event) => onChange(event.target.value)} />
+      <Input className="w-full" value={value} onChange={(event) => onChange(event.target.value)} />
     </div>
   );
+}
+
+function formatInstitutionTypeLabel(type: string) {
+  const labels: Record<string, string> = {
+    metro_learning_center: "광역 평생학습관",
+    women_family_center: "여성가족 평생교육기관",
+    metro_hub: "광역 거점기관",
+    district_lifelong_center: "구 평생학습관",
+    university_extension: "대학 부설 평생교육원",
+    dong_lifelong_center: "동 평생학습센터",
+    employment_support_center: "고용·직업 지원 기관",
+    public_office: "공공기관",
+    education_office: "교육청 소관 기관",
+    public_school: "학교",
+    remote_lifelong: "원격 평생교육시설",
+    civic_lifelong: "시민사회단체 부설 평생교육시설",
+    media_lifelong: "언론기관 부설 평생교육시설",
+    community_center: "주민자치센터",
+    public_library: "공공도서관",
+    museum: "박물관·미술관",
+    welfare_center: "사회복지관",
+    disability_welfare: "장애인 복지시설",
+    disability_employment: "장애인 직업고용시설",
+    arts_culture: "문화예술 관련 시설",
+    other_facility: "기타 시설",
+    other_public_partner: "기타 공공협력기관",
+    employment_training: "지식·인력개발 평생교육시설",
+    workplace_lifelong: "사업장 부설 평생교육시설",
+    school_disability_lifelong: "학교형태 장애인 평생교육시설",
+    other_private_lifelong: "기타 민간 평생교육시설",
+  };
+
+  return labels[type] || type || "-";
 }
 
 function classifyOwnership(item: CrawlInstitution) {
@@ -955,16 +1013,8 @@ function classifyOwnership(item: CrawlInstitution) {
     type.includes("district") ||
     type.includes("dong") ||
     type.includes("women") ||
-    type.includes("employment") ||
-    [
-      "public_office",
-      "education_office",
-      "public_school",
-      "community_center",
-      "public_library",
-      "museum",
-      "arts_culture",
-    ].includes(type)
+    type.includes("employment_support") ||
+    ["public_office", "education_office", "public_school", "community_center", "public_library", "museum", "arts_culture"].includes(type)
   ) {
     return "공공";
   }
@@ -1004,8 +1054,59 @@ function MetricCard({
 }
 
 function ReviewStatusBadge({ status }: { status: ReviewStatus }) {
-  if (status === "approved") return <Badge className="bg-emerald-600">approved</Badge>;
-  if (status === "rejected") return <Badge variant="destructive">rejected</Badge>;
-  if (status === "pending") return <Badge className="bg-amber-500 text-white">pending</Badge>;
-  return <Badge variant="outline">unreviewed</Badge>;
+  if (status === "approved") return <Badge className="bg-emerald-600">승인</Badge>;
+  if (status === "rejected") return <Badge variant="destructive">반려</Badge>;
+  if (status === "pending") return <Badge className="bg-amber-500 text-white">검토중</Badge>;
+  return <Badge variant="outline">미검토</Badge>;
+}
+
+function formatSourceLabelClean(label: string) {
+  return label;
+}
+
+function formatRegionNameClean(regionId: string, regionName?: string) {
+  const labels: Record<string, string> = {
+    daejeon: "대전",
+    seoul: "서울",
+    busan: "부산",
+    daegu: "대구",
+    incheon: "인천",
+    gwangju: "광주",
+    ulsan: "울산",
+    sejong: "세종",
+    gyeonggi: "경기",
+    gangwon: "강원",
+    chungbuk: "충북",
+    chungnam: "충남",
+    jeonbuk: "전북",
+    jeonnam: "전남",
+    gyeongbuk: "경북",
+    gyeongnam: "경남",
+    jeju: "제주",
+  };
+
+  return labels[regionId] || regionName || regionId;
+}
+
+function formatReviewStatusLabelClean(status: string) {
+  const labels: Record<string, string> = {
+    approved: "승인",
+    pending: "검토중",
+    rejected: "반려",
+    unreviewed: "미검토",
+  };
+
+  return labels[status] || status;
+}
+
+function getDistrictImportLabelClean(buttonId: string) {
+  const labels: Record<string, string> = {
+    donggu: "동구 포털 가져오기",
+    junggu: "중구 포털 가져오기",
+    seogu: "서구 포털 가져오기",
+    yuseong: "유성구 포털 가져오기",
+    daedeok: "대덕구 포털 가져오기",
+  };
+
+  return labels[buttonId] || buttonId;
 }
