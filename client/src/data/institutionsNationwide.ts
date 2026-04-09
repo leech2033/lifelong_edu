@@ -1,6 +1,7 @@
 import type { InstitutionSummary } from "@/types/institution";
 import seoulInstitutions from "@/pages/institutions/seoul_data.json";
 import daejeonInstitutions from "@/pages/institutions/daejeon_data.json";
+import daejeonRegisteredInstitutions from "@/pages/institutions/daejeon_registered_data.json";
 import busanInstitutions from "@/pages/institutions/busan_data.json";
 import daeguInstitutions from "@/pages/institutions/daegu_data.json";
 import incheonInstitutions from "@/pages/institutions/incheon_data.json";
@@ -192,6 +193,7 @@ const gwangjuInstitutions: InstitutionSummary[] = [
 const rawInstitutions: InstitutionSummary[] = [
   ...(seoulInstitutions as InstitutionSummary[]),
   ...(daejeonInstitutions as InstitutionSummary[]),
+  ...(daejeonRegisteredInstitutions as InstitutionSummary[]),
   ...(busanInstitutions as InstitutionSummary[]),
   ...(daeguInstitutions as InstitutionSummary[]),
   ...(incheonInstitutions as InstitutionSummary[]),

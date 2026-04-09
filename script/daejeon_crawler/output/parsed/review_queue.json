@@ -1,0 +1,352 @@
+[
+  {
+    "source_id": "dj_dile_home",
+    "name": "유성구 통합도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "한밭도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "갈마도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "가수원도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "둔산도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "서구어린이도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "대덕구 평생학습도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "안산도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "용운도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "성남도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "동구공공도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "가양도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "동구평생학습관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "대덕구평생학습원",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "유성구평생학습원",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "한밭도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dile_home",
+    "name": "한남대학교 평생교육원",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_junggu_lifelong_home",
+    "name": "동 평생학습센터",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "서구 평생학습원",
+    "sigungu": null,
+    "confidence_score": 0.55,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "평생학습관",
+    "sigungu": null,
+    "confidence_score": 0.55,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "갈마도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "가수원도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "둔산도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "월평도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "2026년 도서관의 날, 도서관주간 행사 2026-03-26",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name": "어린이도서관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dllc_home",
+    "name": "평생학습관 페이스북",
+    "sigungu": null,
+    "confidence_score": 0.45,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dllc_home",
+    "name": "2026년 대전평생학습관 학부모 재능나눔단 선발 결과 공고",
+    "sigungu": null,
+    "confidence_score": 0.45,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dllc_home",
+    "name": "2026년 대전평생학습관 학부모 상담사 선발 결과 공고",
+    "sigungu": null,
+    "confidence_score": 0.45,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_dllc_home",
+    "name": "평생학습관 교육일정",
+    "sigungu": null,
+    "confidence_score": 0.45,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "평생학습관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "대덕구 평생학습관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "대덕구 작은도서관 현황",
+    "sigungu": null,
+    "confidence_score": 0.55,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "2026년 제2차 대덕구 평생학습관 프로그램 강...",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "2026년 1회차 평생학습관 프로그램 성과공유회...",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "“배움의 즐거움 나눈다” 대전 대덕구 평생학습관 성...",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "대덕구 평생학습관 음악연습실 대관 수요조사",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "평생학습관 1회차 성과공유회 개최",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "대덕구 평생학습관, 봄맞이 ‘입춘대길’ 일러스...",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name": "찾아오시는길",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_donggu_lifelong_home",
+    "name": "평생학습관",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_donggu_lifelong_home",
+    "name": "동평생학습센터",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_donggu_lifelong_home",
+    "name": "평생학습관 더보기",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_donggu_lifelong_home",
+    "name": "도서관 더보기",
+    "sigungu": null,
+    "confidence_score": 0.55,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name": "유성구 평생학습원",
+    "sigungu": null,
+    "confidence_score": 0.85,
+    "reasons": "missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name": "유성구 평생학습센터",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name": "구암평생학습센터 프로그램 보기",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name": "전민평생학습센터 프로그램 보기",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name": "평생학습센터 결제하기 바로가기",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name": "평생학습센터 홈페이지 바로가기",
+    "sigungu": null,
+    "confidence_score": 0.5,
+    "reasons": "low_confidence,missing_address,missing_phone"
+  }
+]

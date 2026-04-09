@@ -1,0 +1,4593 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="대전평생교육진흥원">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="대전평생교육진흥원">
+    <meta property="og:description" content="대전평생교육진흥원">
+    <meta property="og:url" content="http://nurim.dile.or.kr">
+    <meta name="naver-site-verification" content="75b3388d9e642fe6da4e41f5d758c7f558c9d83d" />
+    <meta name="google-site-verification" content="4JRcGuzLETIffe8mCyul7IV3M1YSsXek1XIQXm3KdaU" />
+    <title>대전평생교육진흥원</title>
+    <link rel="stylesheet" href="/cmsh/dile.or.kr/css/base.css?ver=202604081335">
+    <link rel="stylesheet" href="/cmsh/dile.or.kr/css/slick.css?ver=202604081335">
+    <link rel="stylesheet" href="/cmsh/dile.or.kr/css/layout.css?ver=202604081335">
+    <link rel="stylesheet" href="/cmsh/dile.or.kr/css/common.css?ver=202604081335">
+    <link rel="stylesheet" href="/cmsh/dile.or.kr/css/main.css?ver=202604081335">
+    <link rel="stylesheet" href="/cmsh/dile.or.kr/css/print.css?ver=202604081335">
+    <script src="/cmsh/dile.or.kr/js/jquery.min.js"></script>
+    <script src="/cmsh/dile.or.kr/js/slick.js"></script>
+    <script src="/cmsh/dile.or.kr/js/jquery.rwdImageMaps.min.js"></script>
+    <script>var mainKakao = 'main';</script>
+    <script src="/cmsh/dile.or.kr/js/common.js?ver=202604081335"></script>
+    <script src="/cmsh/dile.or.kr/js/main.js?ver=202604081335"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- <script src="/cmsh/dile.or.kr/js/wow.min.js?ver=202604081335"></script> -->
+    <!-- <script> new WOW().init(); </script> -->
+
+    <script language="Javascript" src="/cmsh/nurim.dile.or.kr/js/eBookOpener.js"></script> <!-- 정기간행물 -->
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<script type="text/javascript">
+/* ********************************************************
+* 페이지 로드 시 팝업창  오픈함수 호출
+******************************************************** */
+function fn_egov_init_PopupManage(){
+	
+}
+function fn_setup_layer_popup(popupId) {
+	$.ajax({
+	    type: "POST",
+	    url: "/icms/popup/getLayerPopup.do?popup_id="+popupId,
+	    success: function(data) {
+	    	if(data != ""){
+	    		//console.log(data);	    		
+	    		//$('body').append(divLayer);
+	    		$('body').prepend(data);
+			}
+	    }
+	    , error: function(data, status, err) { 
+			alert('서버와의 통신이 실패했습니다.'); 
+		}
+	});
+
+}
+/* ********************************************************
+* 팝업창  오픈
+******************************************************** */
+function fn_egov_popupOpen_PopupManage(popupId,fileUrl,width,height,top,left,stopVewAt){
+
+	var url = "/icms/popup/openPopupPage.do?";
+	url = url + "fileUrl=" + fileUrl;
+	url = url + "&stopVewAt=" + stopVewAt;
+	url = url + "&popupId=" + popupId;
+	var name = popupId;
+	var openWindows = window.open(url,name,"width="+width+",height="+height+",top="+top+",left="+left+",toolbar=no,status=no,location=no,scrollbars=yes,menubar=no,resizable=yes");
+
+	if(window.focus && openWindows) { openWindows.focus(); }
+}
+/* ********************************************************
+* 팝업창  오픈 쿠키 정보 OPEN
+******************************************************** */
+function fnGetCookie(name) {
+	  var prefix = name + "=";
+
+	  var cookieStartIndex = document.cookie.indexOf(prefix);
+	  if (cookieStartIndex == -1) return null;
+	  var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length);
+	  if (cookieEndIndex == -1) cookieEndIndex = document.cookie.length;
+
+	  return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+
+function fnPopupCheck(divName, popupId) {
+  fnSetCookiePopup( popupId, "done" , 1);
+  var objDiv = document.getElementById(divName);  
+  objDiv.style.display = "none";
+}
+
+/* ********************************************************
+ * 쿠키설정
+ ******************************************************** */
+function fnSetCookiePopup( name, value, expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    //alert(todayDate.toGMTString());
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+window.onload = function() {
+	var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
+    fn_egov_init_PopupManage();
+	// if( navigator.platform){
+	// 	if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
+	// 	}else{
+	// 		var windowWidth = $(window).width();
+    //         if(windowWidth > 1022){
+    //             fn_egov_init_PopupManage();
+    //         }
+	// 	}
+	// }
+};
+</script>
+
+
+<!-- Wrap -->
+<div id="wrap">
+    <!-- Header -->
+    
+    
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	function fn_portal(){
+		var request_url = "/index.do";
+		var link = '';
+		link = encodeURIComponent(request_url);
+		siblingDomainPortalRedirect(link);
+	}
+	function fn_learning() {
+		var request_url = "/ilms/learning/officeList.do";
+		var link = '';
+		link = encodeURIComponent(request_url);
+		siblingDomainRedirect(link);
+	}
+
+	function fn_nuriRedirect(){
+		var request_url = "/index.do";
+		var link = '';
+		link = encodeURIComponent(request_url);
+		siblingDomainNuriRedirect(link);
+	}
+
+	function fn_media() {
+		var request_url = "/index.do";
+		var link = '';
+		link = encodeURIComponent(request_url);
+		siblingDomainOnBaeumRedirect(link);
+		/*window.open('https://on.dile.or.kr/main/index.jsp','대전온배움', '');*/
+	}
+
+	function fn_guide(){
+		var _left = Math.ceil((window.screen.width / 2) - (200 / 2));
+		var _top = Math.ceil((window.screen.height /2) - (300 / 2));
+
+		var popupX = (document.body.offsetWidth / 2) - (900 / 2);
+		// 만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
+
+		var popupY= (document.body.offsetHeight / 2) - (700 / 2);
+		// 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+		window.open('/front/common/viewGuideVdo.do','이용자 가이드', 'width=910, height=520, scrollbars=no left='+popupX+', top='+popupY);
+	}
+
+	function fn_memLink(menuId){
+		var doMain = "https://nurim.dile.or.kr";
+		location.href = doMain+"/index.do?menu_id="+menuId;
+
+	}
+
+	function mbookzView(album, max, page) {
+		if (page) {
+			OpenEBook.dirPage = page;
+		} else {
+			OpenEBook.dirPage = 1;
+			page = 1;
+		}
+		OpenEBook.albumID = album;
+		if (max)
+			OpenEBook.maxWin = max;
+		OpenEBook.eBookUrl = album + "/view.html?FdirectPageNum[]=" + page;
+		OpenEBook.OpenBook();
+	}
+
+</script>
+		<!-- Skip Content -->
+		<div id="skip_nav"><a href="#content">본문 바로가기</a></div>
+		<!-- // Skip Content -->
+		<!-- Header -->
+		<header id="header">
+			<!-- 헤더 상단 -->
+			<div class="area_top">
+				<div class="inr">
+					<div class="util_l">
+						<ul class="lst">
+							<li class="n01"><a href="/index.do">대전평생교육<br class="br_m">진흥원</a></li>
+							<li class="n02"><a href="javascript:;" onClick="fn_portal();">대전평생학습<br class="br_m">포털</a></li>
+							<li class="n03"><a href="javascript:;" onClick="fn_learning();">수강신청</a></li>
+							
+							
+							<li class="n04"><a href="javascript:;" onClick="fn_media();">온라인<br class="br_m">학습</a></li>
+							<li class="n05"><a href="https://www.lllcard.kr/daejeon" target="_blank">평생교육<br class="br_m">이용권</a></li>
+						</ul>
+					</div>
+					<div class="util_r">
+						<!-- 로그인 -->
+						<ul class="lst_login">
+							
+							<li><a href="javascript:;" onClick="fn_memLink('00003206');" class="login"><span>로그인</span></a></li>
+							<li><a href="javascript:;" onClick="fn_memLink('00003207');" class="join"><span>회원가입</span></a></li>
+							
+							
+						</ul>
+						<!-- // 로그인 -->
+					</div>
+				</div>
+			</div>
+			<!-- // 헤더 상단 -->
+			<!-- 헤더 GNB -->
+			<nav class="gnb_wrap">
+				<!-- 로고 area -->
+				<div class="area_logo">
+					<h1 class="logo"><a href="/index.do"><img src="/cmsh/dile.or.kr/images/common/logo_header.png" alt="대전평생교육진흥원"></a></h1>
+				</div>
+				<!-- // 로고 area -->
+				<div class="inr">
+					<h2 class="hidden">주메뉴</h2>
+					<ul id="gnb" class="whole">
+						
+						<li>
+							<a href="/index.do?menu_id=00005279"><span>기관소개</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005284">인사말</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005285">연혁</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005286">비전 및 목표</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005287">기관 상징</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005288">인재상</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005289">조직도</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005290">오시는 길</a>
+</li>
+</ul>
+</div>
+						</li>
+						<li>
+							<a href="/index.do?menu_id=00005280"><span>주요사업</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005291">평생교육 정책연구</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005292">평생교육 네트워크 지원</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005390">대전 시민명예학위제</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005293">대전시민대학</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005294">대전배달강좌</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005295">연합교양대학</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005296">대전광역시문해교육센터</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005297">대전시립중고등학교</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005298">대전온배움</a>
+</li>
+<li>
+    <a href="https://www.lllcard.kr/daejeon" target="_blank">평생교육이용권</a>
+</li>
+</ul>
+</div>
+						</li>
+						<li>
+							<a href="/index.do?menu_id=00005281"><span>참여마당</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005620">이벤트게시판</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005300">문의게시판</a>
+</li>
+</ul>
+</div>
+						</li>
+						<li>
+							<a href="/index.do?menu_id=00005282"><span>기관소식</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005301">공지사항</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005302">채용정보</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005303">진흥원소식</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005305">포토갤러리</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005306">언론보도</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005307">정기간행물 (1호 ~ 74호)</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005710">정기간행물 (75호 ~ )</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005304">정책정보</a>
+</li>
+</ul>
+</div>
+						</li>
+						<li>
+							<a href="/index.do?menu_id=00005283"><span>열린경영</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005308">윤리경영</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005313">임직원윤리헌장</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005315">청렴자료실</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005314">클린신고센터</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005309">인권경영</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005316">인권경영선언문</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005317">인권침해신고센터</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005318">고객만족경영</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005311">정보공개</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005319">정보공개청구 안내</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005321">정보공개청구</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005312">경영공시</a>
+</li>
+</ul>
+</div>
+						</li>
+					</ul>
+					<div class="gnb_bg">
+						<div class="inr">
+							<div class="tit_area">
+								<p class="txt">배우고 성숙해지는 <span>일류시민,</span></p>
+								<p class="tit">학습도시 대전</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Util -->
+				<div class="util_r">
+					<div class="btn_notice"><a href="https://blog.naver.com/diledile" target="_blank">학습소식</a></div>
+					<div class="gnb_sitemap"><a href="#">전체메뉴</a></div>
+					<!-- 전체메뉴 -->
+					<div class="sitemap_wrap">
+						<div class="stm_header">
+							<div class="inr">
+								<div class="stm_logo">전체메뉴</div>
+								<button class="btn_close">사이트맵 닫기</button>
+							</div>
+						</div>
+						<div class="stm_container">
+							<div class="inr">
+								<ul class="stm_lst">
+									
+									<li><h2>기관소개</h2><div><ul class="snb">
+<li class=''>
+    <a href="/index.do?menu_id=00005284">인사말</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005285">연혁</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005286">비전 및 목표</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005287">기관 상징</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005288">인재상</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005289">조직도</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005290">오시는 길</a>
+</li>
+</ul>
+</div></li>
+									<li><h2>주요사업</h2><div><ul class="snb">
+<li class=''>
+    <a href="/index.do?menu_id=00005291">평생교육 정책연구</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005292">평생교육 네트워크 지원</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005390">대전 시민명예학위제</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005293">대전시민대학</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005294">대전배달강좌</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005295">연합교양대학</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005296">대전광역시문해교육센터</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005297">대전시립중고등학교</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005298">대전온배움</a>
+</li>
+<li class=''>
+    <a href="https://www.lllcard.kr/daejeon" target="_blank">평생교육이용권</a>
+</li>
+</ul>
+</div></li>
+									<li><h2>참여마당</h2><div><ul class="snb">
+<li class=''>
+    <a href="/index.do?menu_id=00005620">이벤트게시판</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005300">문의게시판</a>
+</li>
+</ul>
+</div></li>
+									<li><h2>기관소식</h2><div><ul class="snb">
+<li class=''>
+    <a href="/index.do?menu_id=00005301">공지사항</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005302">채용정보</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005303">진흥원소식</a>
+<ul>
+<li class=''>
+    <a href="/index.do?menu_id=00005305">포토갤러리</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005306">언론보도</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005307">정기간행물 (1호 ~ 74호)</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005710">정기간행물 (75호 ~ )</a>
+</li>
+</ul>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005304">정책정보</a>
+</li>
+</ul>
+</div></li>
+									<li><h2>열린경영</h2><div><ul class="snb">
+<li class=''>
+    <a href="/index.do?menu_id=00005308">윤리경영</a>
+<ul>
+<li class=''>
+    <a href="/index.do?menu_id=00005313">임직원윤리헌장</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005315">청렴자료실</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005314">클린신고센터</a>
+</li>
+</ul>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005309">인권경영</a>
+<ul>
+<li class=''>
+    <a href="/index.do?menu_id=00005316">인권경영선언문</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005317">인권침해신고센터</a>
+</li>
+</ul>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005318">고객만족경영</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005311">정보공개</a>
+<ul>
+<li class=''>
+    <a href="/index.do?menu_id=00005319">정보공개청구 안내</a>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005321">정보공개청구</a>
+</li>
+</ul>
+</li>
+<li class=''>
+    <a href="/index.do?menu_id=00005312">경영공시</a>
+</li>
+</ul>
+</div></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // 전체메뉴 -->
+				</div>
+				<!-- // Util -->
+			</nav>
+			<!-- //헤더 GNB -->
+			<!-- 모바일 전체메뉴 -->
+			<nav class="wholeview_wrap">
+				<button type="button" class="btn_wv" title="축소됨"><span class="sp_ui">전체메뉴</span></button>
+				<div id="wholeview">
+					<div class="inr">
+						<!-- head -->
+						<div class="head">
+							<a href="/index.do" class="home">홈으로</a>
+							
+							<button type="button" class="w_close_btn">닫기</button>
+						</div>
+						<div class="area_login">
+							
+								<a href="https://nurim.dile.or.kr/index.do?menu_id=00003206" class="login">로그인</a>
+								<a href="https://nurim.dile.or.kr/index.do?menu_id=00003207" class="join">회원가입</a>
+							
+							
+
+
+						</div>
+						<!-- // head -->
+						<!-- 전체메뉴 -->
+<!-- 						<h2 class="title_wv">menu</h2> -->
+						<ul class="nav">
+
+							
+							<li><a href="/index.do?menu_id=00005279"><span>기관소개</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005284">인사말</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005285">연혁</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005286">비전 및 목표</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005287">기관 상징</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005288">인재상</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005289">조직도</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005290">오시는 길</a>
+</li>
+</ul>
+</div></li>
+							<li><a href="/index.do?menu_id=00005280"><span>주요사업</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005291">평생교육 정책연구</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005292">평생교육 네트워크 지원</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005390">대전 시민명예학위제</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005293">대전시민대학</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005294">대전배달강좌</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005295">연합교양대학</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005296">대전광역시문해교육센터</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005297">대전시립중고등학교</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005298">대전온배움</a>
+</li>
+<li>
+    <a href="https://www.lllcard.kr/daejeon" target="_blank">평생교육이용권</a>
+</li>
+</ul>
+</div></li>
+							<li><a href="/index.do?menu_id=00005281"><span>참여마당</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005620">이벤트게시판</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005300">문의게시판</a>
+</li>
+</ul>
+</div></li>
+							<li><a href="/index.do?menu_id=00005282"><span>기관소식</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005301">공지사항</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005302">채용정보</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005303">진흥원소식</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005305">포토갤러리</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005306">언론보도</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005307">정기간행물 (1호 ~ 74호)</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005710">정기간행물 (75호 ~ )</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005304">정책정보</a>
+</li>
+</ul>
+</div></li>
+							<li><a href="/index.do?menu_id=00005283"><span>열린경영</span></a><div><ul>
+<li>
+    <a href="/index.do?menu_id=00005308">윤리경영</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005313">임직원윤리헌장</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005315">청렴자료실</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005314">클린신고센터</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005309">인권경영</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005316">인권경영선언문</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005317">인권침해신고센터</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005318">고객만족경영</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005311">정보공개</a>
+<ul>
+<li>
+    <a href="/index.do?menu_id=00005319">정보공개청구 안내</a>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005321">정보공개청구</a>
+</li>
+</ul>
+</li>
+<li>
+    <a href="/index.do?menu_id=00005312">경영공시</a>
+</li>
+</ul>
+</div></li>
+
+
+						</ul>
+						<!-- 전체메뉴 -->
+					</div>
+				</div>
+				<!-- 메뉴배경-->
+				<div class="dim_wv">
+				</div>
+				<!-- 메뉴배경-->
+			</nav>
+			<!-- // 모바일 전체메뉴 -->
+		</header>
+		<!-- // Header -->
+    <!-- // Header -->
+    <!-- Container -->
+    <div id="container">
+        <!-- Content -->
+        <div id="content" class="cont_main">
+            <!-- ms01 -->
+            <div class="ms01">
+                <div class="inr">
+                    <!-- 팝업존 -->
+                    <div class="slickwrap popupzone">
+                        <div class="slider">
+                            
+
+
+
+
+
+
+
+
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="http://nurim.dile.or.kr/index.do?menu_id=00003220&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00029&amp;nttId=8991&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03" target="_blank">
+				<img src="/cms_images/banner/20260402010237349.jpg" alt="2026년 2학기 대전시민대학 수강신청 안내">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="http://www.dile.or.kr/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8935&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03" target="_blank">
+				<img src="/cms_images/banner/20260320091635901.jpg" alt="연합교양대학 인문학의 향기 열린 특강 안내">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://www.dile.or.kr/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8935&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03" target="_blank">
+				<img src="/cms_images/banner/20260320091527219.jpg" alt="연합교양대학 대전의 재발견 사전신청 안내">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://dile.or.kr/index.do?menu_id=00005314" target="_blank">
+				<img src="/cms_images/banner/20260123092324970.png" alt="진흥원 클린신고센터 웹배너">
+			</a>
+		
+		
+	</div>
+</div>
+
+			
+
+                        </div>
+                        <div class="nav">
+                            <div class="area_ctrl">
+                                <span class="count"></span>
+                            </div>
+                            <div class="area_ctrl2">
+                                <button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+                                <button type="button" class="play active"><span class="sp_main">슬라이드 재생</span></button>
+                                <button type="button" class="pause"><span class="sp_main">슬라이드 정지</span></button>
+                                <button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 팝업존 -->
+                    <!-- 사업소개 -->
+                    <div class="learn_area">
+                        <ul class="lst">
+                            <li class="n01">
+                                <a href="http://nurim.dile.or.kr/index.do">
+                                    <span class="txt">기관정보, 강사정보, 공유공간 등 <br> 모두 이곳에서!</span>
+                                    <span class="tit">대전평생학습포털</span>
+                                </a>
+                            </li>
+                            <li class="n02">
+                                <a href="https://sugang.dile.or.kr/ilms/learning/learningList.do?inst_id=OFFICE_00002430&searchCondition=1">
+                                    <span class="txt">시민들에게 다양한 학습 <br> 프로그램 제공</span>
+                                    <span class="tit">대전시민대학</span>
+                                </a>
+                            </li>
+                            <li class="n03">
+                                <a href="https://nurim.dile.or.kr/index.do?menu_id=00005277">
+                                    <span class="txt">교육 소외계층 대상 <br> 찾아가는 평생학습</span>
+                                    <span class="tit">대전배달강좌</span>
+                                </a>
+                            </li>
+                            <li class="n04">
+                                <a href="https://on.dile.or.kr/index.do">
+                                    <span class="txt">시·공간 제약 없는 <br> 온라인강좌</span>
+                                    <span class="tit">대전온on배움</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 사업소개 -->
+                </div>
+            </div>
+            <!-- ms02 -->
+            <div class="ms02">
+                <div class="inr">
+                    <!-- 알림소식 -->
+                    <div class="article_area">
+                        <h2 class="s_title">알림소식</h2>
+                        <div class="tabMenu">
+                            <ul class="tab_lst">
+                                <li><a href="#article01" class="tab_select active">공지사항</a></li>
+                                <li><a href="#article02" class="tab_select">채용정보</a></li>
+                                <li><a href="#article03" class="tab_select">보도자료</a></li>
+                            </ul>
+                            
+
+
+
+
+
+
+
+
+
+
+<div id="article01" class="tab_box active">
+	<div class="slickwrap newszone">
+		<div class="slider">
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=9001&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.04<em class="day">08</em></span>
+						<span class="cate">대전장애인평생교육이용권</span>
+						<span class="tit">2026년 대전광역시 장애인 평생교육이용권 선정 결과 공고</span>
+						<span class="txt">2026년 대전광역시 장애인 평생교육이용권 이용자 선정 결과를 다음과 같이 공고합니다.
+
+○ 선정인원 : 312명(공고문 내 붙임1 참고)
+○ 이용권 바우처 금액: 350,000원(NH농협 채움카드 포인트 충전)
+○ 지원내용: 평생교육강좌 수강료 및 교재비에 사용할 수 있는 포인트
+○ 사용 개시일: NH농협에서 별도 문자 통보
+○ 사용 가능 기간: NH농협 채움카드 한도 충전 후 ~ 2026.9.30.(수)까지
+
+★ NH농협 채움카드 2026.5.13.(수)까지 필히 발급(인근 NH농협은행 영업점 방문 문의)
+- 기한 내 카드를 만들지 않으면 포인트 지급이 많이 늦어질 수 있음
+
+문의 : 042-250-2700(내선 4번, 대전평생교육이용권상담센터)</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8935&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.03<em class="day">17</em></span>
+						<span class="cate">협력사업부</span>
+						<span class="tit">연합교양대학 [인문학의 향기]/[대전의 재발견] 열린 특강 사전신청 안내</span>
+						<span class="txt">연합교양대학 [인문학의 향기]/[대전의재발견] 열린 특강에 여러분을 초대합니다. 많은 참여 바랍니다.&nbsp;&nbsp;
+
+- 일시 및 내용: [대전의 재발견] / 카이스트 조성호 교수/ 카이스트실패연구소, 실패해도 괜찮아! /&nbsp; 2026. 5. 8. (금) 14:00 ~ 16:00
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [인문학의 향기] / 한양대학교 정재찬 교수/ 우리가 인생이라 부르는 것들-일과 삶에 관하여/&nbsp;&nbsp;2026. 5. 29. (금) 14:00 ~ 16:00
+- 장소 :&nbsp; &nbsp;대전시청 대강당(3F) (주소: 대전 서구 둔산로 100)
+- 대상&nbsp; :&nbsp; 대전시민 누구나&nbsp;
+
+*&nbsp;사전신청 접수링크 :&nbsp;
+[대전의 재발견]&nbsp; 2026. 5. 8. (금)&nbsp; 링크클릭 ►&nbsp;https://naver.me/x52h2MZJ
+[인문학의 향기]&nbsp;&nbsp;2026. 5. 29. (금)&nbsp;링크클릭 ►&nbsp;https://naver.me/GRDMDGW6
+
+- 문의&nbsp; : 042-250-2747
+
+&nbsp;</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8892&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.02<em class="day">23</em></span>
+						<span class="cate">시민대학부</span>
+						<span class="tit">2026년 대전시민대학 학사일정</span>
+						<span class="txt">
+
+
+* 상기 일정은 상황에 따라 변동 될 수 있습니다.
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8880&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.02<em class="day">20</em></span>
+						<span class="cate">학습지원부</span>
+						<span class="tit">2026년 찾아가는 시민안전교육 강사 최종 합격자 발표</span>
+						<span class="txt">
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=7391&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2025.06<em class="day">10</em></span>
+						<span class="cate">시민대학부</span>
+						<span class="tit">2025년 대전 시민명예학위제 인정기관(61개) 안내</span>
+						<span class="txt">2025년 대전 시민명예학위제 인정기관(61개) 안내</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8950&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.03<em class="day">24</em></span>
+						<span class="cate">경영지원부</span>
+						<span class="tit">2026년 대전온on배움 학습영상 콘텐츠 제작 용역 경쟁입찰 공고</span>
+						<span class="txt">
+
+※ 보다 자세한 내용은 국가종합전자조달 나라장터(https://www.g2b.go.kr)에서 확인하시기 바랍니다.
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8945&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.03<em class="day">12</em></span>
+						<span class="cate">장애인평생교육이용권</span>
+						<span class="tit">2026년 대전광역시 장애인 평생교육이용권 신청 접수 공고(1차)</span>
+						<span class="txt">대전광역시 공고 제2026-526호
+&nbsp;
+
+2026년 대전광역시 장애인 평생교육이용권 신청 접수 공고
+
+
+경제적 여건에 따른 교육격차를 완화하고, 성인 장애인의 자기계발 및 자아실현을 지원하기 위한 2026년 대전광역시 장애인 평생교육이용권 신청 접수를 다음과 같이 공고합니다.
+
+&nbsp;
+
+2026. 3. 11.
+
+대전광역시장
+
+이 장 우
+&nbsp;
+
+1. 지원개요
+
+◦ 사업명 : 2026년 대전광역시 장애인 평생교육이용권 지원사업
+
+◦ 신청대상 : 신청일 기준 대전광역시에 거주하는 19세 이상* 등록 장애인
+
+* 연령 적용기준일 : 2007. 12. 31. 이전 출생자
+
+※ 주민등록주소지 상의 대전광역시 거주자만 신청 가능 
+
+※ 소득 수준에 관계 없이 19세 이상 등록 장애인 신청 가능하나 저소득층(기초생활수급자, 차상위계층) 우선 지원
+
+- 중복지원 불가: 타 평생교육이용권(일반&middot;디지털&middot;노인)과 중복지원 불가
+
+◦ 지원내용 : 평생교육강좌 수강료 및 해당 강좌 수강에 필요한 교재비에 사용할 수 있는 장애인 평생교육이용권 지원(1인당 최대 35만원)
+
+※ 본인 사용&middot;수강 원칙, 강좌와 무관한 교재 및 유무선 전자&middot;통신기기 등 구매 불가
+
+※ 이용자 준수사항 및 부정사용 관련 사항 확인 필수
+
+◦ 지원규모 : 324명 내외(단, 사용 현황에 따라 선정 규모 조정 가능)
+
+◦ 사용기관 : 평생교육이용권 사용기관*에서 카드를 결제하여 사용 가능
+
+* 대전광역시 평생교육이용권 누리집(www.lllcard.kr/daejeon)에 접속하여 사용가능기관 목록 확인
+&nbsp;
+
+2. 신청 및 문의
+
+◦ 신청기간 : &lsquo;26년 3월 16일(월) 10:00 ~ &lsquo;26년 4월 3일(금) 17:00
+
+※ 신청 현황에 따라 변경될 수 있음. 변경 시 사전 고지 예정
+
+※ 마감시한 이후 제출 불가하며, 신청완료 미확인에 따른 불이익은 신청인의 책임으로 확인 필수
+
+◦ 신청방법 : 정부24(www.gov.kr)를 통한 온라인 신청&nbsp;
+
+- 접수기간 중 현장접수 일정을 별도 수립하여 운영하오니, 구체적인 세부사항 등은 첨부된 파일을 확인 부탁드립니다.
+- 문의처 : 대전평생교육진흥원 장애인평생교육이용권 상담센터 042-250-2700(4번)
+
+<h1 class="hwp_editor_board_content" data-hjsonver="1.0" data-jsonlen="13172" style="font-style: italic;">&nbsp;</h1>
+&nbsp;
+
+<h1 class="hwp_editor_board_content" data-hjsonver="1.0" data-jsonlen="49005">&nbsp;</h1>
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005301&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00358&amp;nttId=8932&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+						
+						<span class="date">2026.03<em class="day">05</em></span>
+						<span class="cate">협력사업부</span>
+						<span class="tit">2026년 생활권 중심 평생학습 지원사업 선정 결과 및 제출 서류 안내</span>
+						<span class="txt">
+
+
+.sn-notice {
+      max-width: 920px;
+      margin: 16px auto;
+      padding: 0 8px;
+      color: #1d2433;
+      font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(231, 241, 255, 0.9) 0%, rgba(231, 241, 255, 0) 40%),
+        radial-gradient(circle at 90% 100%, rgba(245, 249, 255, 0.95) 0%, rgba(245, 249, 255, 0) 42%),
+        linear-gradient(180deg, #f8fbff 0%, #f4f8ff 100%);
+      border-radius: 16px;
+    }
+    .sn-notice * {
+      box-sizing: border-box;
+    }
+    .sn-notice-card {
+      background: #ffffff;
+      border: 1px solid #dbe2f0;
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .sn-notice-lead {
+      margin: 0 0 12px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid #bfd6f3;
+      background: linear-gradient(135deg, #e7f1ff 0%, #f5f9ff 100%);
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #0f2f5c;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+    .sn-notice-sublead,
+    .sn-notice h1 {
+      margin: 0 0 8px;
+      color: #003f77;
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+    }
+    .sn-notice h1 {
+      margin-bottom: 16px;
+    }
+    .sn-notice h2 {
+      margin: 22px 0 8px;
+      font-size: 1.05rem;
+      color: #223055;
+      text-indent: 1ch;
+    }
+    .sn-notice ul {
+      margin: 8px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .sn-notice li {
+      margin: 4px 0;
+      text-indent: 2ch;
+    }
+    .sn-notice-note {
+      color: #55607a;
+      font-size: 0.95rem;
+      margin: 6px 0 0;
+      text-indent: 2ch;
+    }
+    .sn-notice-strong {
+      margin: 8px 0 0;
+      font-weight: 700;
+      color: #2d3f6c;
+      font-size: 0.98rem;
+      text-indent: 2ch;
+    }
+    .sn-notice-address {
+      margin-top: 4px;
+      color: #55607a;
+      font-size: 0.95rem;
+      word-break: keep-all;
+      text-indent: 2ch;
+    }
+    .sn-notice-logo {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px dashed #dbe2f0;
+      text-align: right;
+    }
+    .sn-notice-logo img {
+      width: 220px;
+      max-width: 70%;
+      height: auto;
+      display: inline-block;
+    }
+    @media (max-width: 640px) {
+      .sn-notice-card {
+        padding: 16px;
+      }
+      .sn-notice-lead,
+      .sn-notice-sublead,
+      .sn-notice h1,
+      .sn-notice h2 {
+        letter-spacing: 0;
+      }
+    }
+
+<section aria-label="사업계획 제출서류 안내" class="sn-notice-card">
+2026년 생활권 중심 평생학습 지원사업 선정 결과와 제출 서류를 안내드립니다.
+
+Ⅰ. 선정기관 여부는 첨부파일을 확인해 주세요.
+
+<h1>Ⅱ. 사업계획 제출서류 안내</h1>
+
+<h2>1. 사업계획 수정</h2>
+
+
+	가. 기 제출한 신청서를 기준으로 변경사항 신청 및 승인 진행
+	나. 변경 가능 항목: 일정, 강사
+
+
+신청기간: 2026. 3. 9.(월) ~ 3. 13.(금)
+
+<h2>2. 사업실행계획서 제출 준비</h2>
+
+
+	가. 사업 추진기관(단체)은 신청서와 동일해야 함
+	나. 사업비 확정금액을 기준으로 사업실행계획서 수립
+	다. 강의기간은 신청서 기준으로 작성하되, 사업비 교부시점을 반영해 조정
+	라. 프로그램 운영은 11월 6일까지 종료되어야 함
+
+
+제출기간: 2026. 3. 9.(월) ~ 3. 13.(금)
+
+<h2>3. 제출서류</h2>
+
+
+	가. 협약서 [서식1] 2부
+	나. 청렴이행서약서 [서식2]
+	다. 사업비 신청서 [서식3]
+	라. 사업실행계획서 [서식4]
+	마. 통장 및 체크카드 사본
+	바. 각종 증빙서류(기관(단체)등록증 사본, 강사이력서 및 증빙서류 등)
+
+
+* 첨부파일을 사용(가부터 라까지 서식)
+
+제출기간: 2026. 3. 9.(월) ~ 3. 13.(금)
+
+제출방법
+
+
+	가. 이메일 제출: 123@dile.or.kr
+	나. 이후 원본 서류를 우편 또는 방문 제출
+
+
+우편 제출처: (34917) 대전광역시 중구 중앙로 116, 8층(대흥동, 대전신용보증재단) 대전평생교육진흥원 협력사업부 이병철
+
+<h2>4. 사업설명회(협약체결 및 교육)</h2>
+
+
+	가. 협약체결
+	나. 사업기관 1명 이상 필수 참석
+
+
+일시: 2026. 3. 18.(수) 14:00
+
+장소: 커먼즈필드 모두의 공터(도로명: 대전 중구 중앙로 85 1층)
+
+
+
+
+</span>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="nav nav2">
+			<div class="area_ctrl">
+				<button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+				<span class="count"></span>
+				<button type="button" class="play active"><span class="sp_main">슬라이드 재생</span></button>
+				<button type="button" class="pause"><span class="sp_main">슬라이드 정지</span></button>
+				<button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+			</div>
+		</div>
+	</div>
+	<span class="btn_more"><a href="/index.do?menu_id=00005301" class="sp_main">공지사항 더보기</a></span>
+</div>
+	
+	
+	
+			
+		
+			    
+
+
+
+
+
+
+
+
+
+
+<div id="article02" class="tab_box">
+	<div class="slickwrap newszone">
+		<div class="slider">
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8981&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.03<em class="day">27</em></span>
+					<span class="cate">경영지원부</span>
+					<span class="tit">[공고 2026-24] 대전시립중고등학교 기간제 교사(과학) 채용 최종 합격자</span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-24호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 직원
+
+			(기간제 교원_과학) 최종 합격자
+
+			&nbsp;
+
+			임시직 교직 5급 상당 학력인정 대전시립중&middot;고등학교 기간제 교원 채용 최종 합격자를 공고합니다.
+
+			&nbsp;
+
+			2026년 3월 27일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 최종 합격자 
+
+
+	
+		
+			
+			연번
+			
+			
+			분야
+			
+			
+			응시번호
+			
+			
+			성명
+			
+		
+		
+			
+			1
+			
+			
+			과학
+			
+			
+			1003
+			
+			
+			김○희
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+
+2. 임용 예정일: 2026. 4. 1.(수)  
+
+&nbsp;
+
+&nbsp;
+
+3. 문의: 경영지원부(☎250-2726)
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8926&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.03<em class="day">18</em></span>
+					<span class="cate">이은혜</span>
+					<span class="tit">[공고 2026-22] 대전시립중고등학교 기간제 교사(과학) 채용 최종(예비) 합격자 </span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-22호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 직원
+
+			(기간제 교원_과학) 최종(예비) 합격자 공고
+
+			&nbsp;
+
+			임시직 교직 5급 상당 학력인정 대전시립중&middot;고등학교 기간제 교원 채용 최종(예비) 합격자를 공고합니다.
+
+			&nbsp;
+
+			2026년 3월 18일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 최종(예비)합격자 
+
+
+	
+		
+			
+			연번
+			
+			
+			응시번호
+			
+			
+			성명
+			
+			
+			생월일
+			
+			
+			순위
+			
+		
+		
+			
+			1
+			
+			
+			1003
+			
+			
+			김○희
+			
+			
+			0202
+			
+			
+			1순위
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+
+2. 최종(예비)합격자 안내 
+
+가. 서류제출 및 결격사유 등 조회: 2026. 3. 18.(수) ~ 3. 27.(금)
+
+나. 제출서류 
+
+
+	
+		
+			
+			&nbsp;
+
+			제출서류
+			
+			
+			비고
+			
+		
+		
+			
+			1. 사진 1매(반명함판)
+			
+			
+			PDF스캔파일
+
+			전자메일
+
+			(long@dile.or.kr)로
+
+			우선 송부 후,
+
+			원본 제출
+
+			※ 원본제출 必
+			
+		
+		
+			
+			2. 최종학위증명서 1부
+			
+		
+		
+			
+			3. 주민등록표 등본, 초본(군경력 포함), 가족관계증명서 각 1부
+			
+		
+		
+			
+			4. 기본증명서, 신원진술서 각 1부
+			
+		
+		
+			
+			5. 채용 신체검사서 1부 / 최근 1개월 이내 실시한 것
+
+			※ 채용 건강검진 대체 통보서(직장제출용) 제출 가능
+			
+		
+		
+			
+			6. 결핵검진 결과서 1부
+
+			※ 결핵검진결과가 공무원 채용신체검사서에 포함된 경우는 제외 가능
+			
+		
+		
+			
+			7. 마약검사결과 통보서 1부 / 최근 1년 이내 실시한 것
+			
+		
+	
+
+
+
+3. 최종합격자 발표: 2026. 3. 27.(금)&nbsp;&nbsp;/ 진흥원 홈페이지
+
+&nbsp;
+
+4. 임용기간: 2026. 4. 1.(수) ~ 2027. 2. 28.(일)  
+
+&nbsp;
+
+5. 최종(예비)합격자 유의사항 
+
+가. 합격자 통지 후 신원조회, 기타 부적합한 결격사유 등이 있을 경우  합격이 취소될 수 있음
+
+나. 제출일까지 서류를 제출하지 않을 경우 임용 의사가 없는 것으로 간주함
+&nbsp;
+
+6. 예비합격자
+
+가. 예비합격자 선정: 채용인원의 3배수 내에서 고득점자 순으로 예비 합격자를 선정하되, 유효기간은 최종합격자 발표 후 6개월 이내로 함
+나. 차순위 예비합격자 명단 
+
+
+	
+		
+			
+			연번
+			
+			
+			응시번호
+			
+			
+			성명
+			
+			
+			생월일
+			
+			
+			순위
+			
+		
+		
+			
+			1
+			
+			
+			1004
+			
+			
+			김○영
+			
+			
+			1126
+			
+			
+			2순위
+			
+		
+		
+			
+			2
+			
+			
+			1001
+			
+			
+			김○현
+			
+			
+			0310
+			
+			
+			3순위
+			
+		
+	
+
+
+※ 최종(예비)합격자가 채용신체검사 및 신원조회 등의 결격사유가 있거나 임용 포기, 임용 후 
+
+중도 퇴사 등의 사정으로 결원을 보충할 필요가 있을 때에는 합격자 발표일로부터 6개월 내 
+
+예비합격자 중 추가 임용할 수 있음
+
+&nbsp;
+
+7. 문의: 경영지원부(☎250-2726) 
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8934&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.03<em class="day">12</em></span>
+					<span class="cate">경영지원부</span>
+					<span class="tit">[공고 2026-21] 대전시립중고등학교 기간제 교사(과학) 채용 서류전형 합격자 </span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-21호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 
+
+			직원(기간제 교원_과학) 서류전형 합격자 공고
+
+			&nbsp;
+
+			임시직 교직 5급 상당 학력인정 대전시립중&middot;고등학교 기간제 교원 채용 서류전형 합격자 및 면접전형 일정을 공고합니다.
+
+			&nbsp;
+
+			2026년 3월 12일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 서류전형 합격자 및 면접전형 일정: 2026. 3. 13.(금)
+
+
+	
+		
+			
+			연번
+			
+			
+			응시번호
+			
+			
+			성명
+			
+			
+			생월일
+			
+			
+			면접 시작 시간
+			
+		
+		
+			
+			1
+			
+			
+			1001
+			
+			
+			김○현
+			
+			
+			0310
+			
+			
+			14:30
+			
+		
+		
+			
+			2
+			
+			
+			1002
+			
+			
+			이○영
+			
+			
+			1010
+			
+			
+			14:40
+			
+		
+		
+			
+			3
+			
+			
+			1003
+			
+			
+			김○희
+			
+			
+			0202
+			
+			
+			14:50
+			
+		
+		
+			
+			4
+			
+			
+			1004
+			
+			
+			김○영
+			
+			
+			1126
+			
+			
+			15:00
+			
+		
+		
+			
+			5
+			
+			
+			1005
+			
+			
+			이○성
+			
+			
+			1202
+			
+			
+			15:10
+			
+		
+	
+
+
+※ 개별 면접 시작 시간 15분 전까지 대기장소로 입실 완료
+
+&nbsp;
+
+2. 면접전형 장소 및 필수 지참물 
+
+가. 면접전형 장소
+
+1) 심사장소: 대전신용보증재단 빌딩 11층 
+
+2) 대기장소: 대전신용보증재단 빌딩 11층 교육장
+
+※ 주소: 대전 중구 중앙로 116(대흥동) 
+
+※ 주차공간 협소로 대중교통 이용 요망
+
+나. 응시자 필수 지참물: 신분증(주민등록증, 운전면허증, 여권 중 택1)
+
+※ 신분증 미소지 시 면접전형 응시 불가
+&nbsp;
+
+3. 면접형식 및 평정요소
+
+가. 면접형식: 개별면접
+
+나. 평정요소: 공익에 대한 이해도와 가치관, 전문지식과 그 응용능력, 의사발표의 정확성과 논리성, 예의품행 및 성실성, 창의력, 의지력 및 발전가능성
+
+※ 위원의 과반수가 평정요소 5개 항목 중 2개 항목 이상을 &ldquo;하&rdquo;로 평정하였거나, 위원의 과반수가 어느 하나의 동일한 평정요소에 대하여 &ldquo;하&rdquo;로 평정한 경우에는 불합격 처리
+
+&nbsp;
+
+4. 향후일정
+
+
+	
+		
+			
+			연번
+			
+			
+			구분
+			
+			
+			일정
+			
+			
+			내용
+			
+		
+		
+			
+			1
+			
+			
+			인사위원회 개최
+			
+			
+			2026. 3. 17.(화)
+			
+			
+			채용의 공정성 및 타당성 검토
+			
+		
+		
+			
+			2
+			
+			
+			예비합격자 발표
+			
+			
+			2026. 3. 18.(수)
+
+			※ 진흥원 홈페이지
+			
+			
+			채용예정 인원의 3배수 내에서 종합점수 고득점자 순으로 예비합격자를 선정하되, 유효기간은 최종합격자 발표일로부터 6개월로 함
+
+			※ 동점자 발생시 가산특전사항에 따른 상위 평정 요소* 고득점자 순으로 예비합격자 순위 결정
+
+			* 상위 평정요소: (①순위) 공익에 대한 이해도와  가치관, (②순위) 전문지식과 그 응용능력
+			
+		
+		
+			
+			3
+			
+			
+			임용서류 제출 및 
+
+			결격사유 조회
+			
+			
+			2026. 3. 18.(수) 
+
+			~ 3. 27.(금) 
+			
+			
+			※ 예비합격자 1순위부터 실시, 1순위 합격 취소 시 예비합격자 순위대로 실시
+
+			※ 결격사유 발생 시 합격을 취소할 수 있음 
+			
+		
+		
+			
+			4
+			
+			
+			최종합격자 발표
+			
+			
+			2026. 2. 27.(금)
+			
+			
+			※ 홈페이지 및 개별연락(최종합격자에 한함)
+			
+		
+		
+			
+			5
+			
+			
+			임용예정일
+			
+			
+			2026. 4. 1.(수) 
+			
+		
+		
+			
+			6
+			
+			
+			기타사항
+			
+			
+			상기&nbsp; 일정&nbsp; 및&nbsp; 시간은&nbsp; 변경될&nbsp; 수&nbsp; 있으며,&nbsp;&nbsp;기타 사항은&nbsp;&nbsp;공고문에&nbsp; 의함
+			
+		
+		
+			
+			7
+			
+			
+			문의
+			
+			
+			경영지원부(☎042-250-2726) 
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8912&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.02<em class="day">27</em></span>
+					<span class="cate">이은혜</span>
+					<span class="tit">[공고 2026-20] 대전시립중고등학교 기간제 교사(과학) 채용 2차 재공고</span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-20호]
+
+&nbsp;
+
+
+	
+		
+			
+			(재)대전평생교육진흥원
+
+			직원(기간제 교원_과학) 채용 2차 재공고
+
+			&nbsp;
+
+			재단법인 대전평생교육진흥원에서는 2026학년도 학력인정 대전시립중&middot;고등학교 학사 운영을 위해 직원 채용을 다음과 같이 공고하오니 유능한 인재의 많은 응시를 바랍니다.
+
+			&nbsp;
+
+			2026년 2월 27일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+1. 모집내용
+
+○ (인원) 임시직 교직 5급 상당 / 1명 
+
+
+	
+		
+			
+			구분
+			
+			
+			인원
+			
+			
+			업무내용
+			
+			
+			근무시간
+			
+		
+		
+			
+			교직
+			
+			
+			과학
+			
+			
+			1명
+			
+			
+			&bull; 2026학년도 학력인정 대전시립중&middot;고등학교 교육과정에 따른 교과 수업
+
+			&bull; 2026학년도 업무분장에 의거한 업무
+
+			&bull; 기타 학교장이 부여하는 업무
+			
+			
+			주 5일 근무
+
+			주 2~3회 주&middot;야간(~21:30) 수업 병행
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+
+2. 계약조건
+
+
+	
+		
+			
+			직급(직렬)
+			
+			
+			구분
+			
+			
+			채용기간
+			
+			
+			보수수준
+			
+			
+			비고
+			
+		
+		
+			
+			5급 상당
+
+			(교직)
+			
+			
+			기간제
+
+			교원
+			
+			
+			과학
+			
+			
+			&lsquo;26. 4. 1. ~ &rsquo;27. 2. 28. / 11개월
+			
+			
+			2026년도
+
+			내부규정에 의함
+			
+			
+			&nbsp;
+			
+		
+	
+
+
+※ 진흥원 보수규정 &lt;별표 2&gt; 직원 기본연봉책정 기준표에 따름
+
+※ 채용 기간은 학교 상황 및 학사일정에 변동될 수 있음
+
+※ 기타 복리후생 혜택사항은 진흥원 규정에 의함
+
+
+
+3. 시험일정 및 전형정보
+
+&nbsp;
+
+○ (채용 공고 및 응시원서 접수) 
+
+
+	
+		
+			
+			구분
+			
+			
+			내용
+			
+			
+			비고
+			
+		
+		
+			
+			공고기간
+			
+			
+			&lsquo;26. 2. 27.(금) ~ 3. 10.(화)
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			접수기간
+			
+			
+			&lsquo;26. 3. 4.(수) ~ 3. 10.(화) 18:00
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			공고방법
+			
+			
+			온라인 공고
+
+			(진흥원, 대전시, 대전시교육청, 정부 클린아이 잡플러스 홈페이지 등)
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			접수
+
+			방법
+			
+			
+			e-mail
+			
+			
+			이메일 long@dile.or.kr
+			
+			
+			현장접수
+
+			불가
+			
+		
+		
+			
+			문 의 처
+			
+			
+			(재)대전평생교육진흥원 경영지원부 (042-250-2726)
+			
+			
+			&nbsp;
+			
+		
+	
+
+
+※ 채용 일정은 상황에 따라 변경될 수 있음
+
+※ 접수는 마감일 근무 종료시간(18:00) 내 도착분에 한하여 유효함
+
+※ 이메일 발송 후 경영지원부(250-2726)로 접수 확인 필수
+
+&nbsp;
+
+○ (서류전형) 
+
+
+	
+		
+			
+			구분
+			
+			
+			내용
+			
+			
+			비고
+			
+		
+		
+			
+			일시/장소
+			
+			
+			&lsquo;26. 3. 11.(수) / 진흥원 본원
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			심사위원
+			
+			
+			내부위원 3명
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			심사방법
+			
+			
+			채용자격 기준에 따라 적격 여부 판단
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			합격자 발표
+			
+			
+			&lsquo;26. 3. 12.(목) / 진흥원 홈페이지
+			
+			
+			&nbsp;
+			
+		
+	
+
+
+
+○ (면접전형) 
+
+
+	
+		
+			
+			구분
+			
+			
+			내용
+			
+			
+			비고
+			
+		
+		
+			
+			일시/장소
+			
+			
+			&lsquo;26. 3. 13.(금) / 진흥원 본원 예정
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			심사위원
+			
+			
+			총 3명 / 외부 위원 2명, 내부 위원 1명
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			면접대상
+			
+			
+			서류전형 합격자
+			
+			
+			신분증 확인
+			
+		
+		
+			
+			면접방법
+			
+			
+			&middot;전문 지식, 창의력, 성실성 등 종합 평가를 통해 직무수행에 필요한 능력 및 적격성 검증
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			&middot;평가기준(5개 항목): 공익에 대한 이해도와 가치관(15점), 전문 지식과 그 응용 능력(30점), 의사 발표의 정확성과 논리성(20점), 예의 품행 및 성실성(15점), 창의력, 의지력 및 발전 가능성(20점)
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			&middot;위원의 과반수가 평정 요소 5개 항목 중 2개 항목 이상을 &ldquo;하&rdquo;로 평정하였거나, 위원의 과반수가 어느 하나의 동일한 평정 요소에 대하여 &ldquo;하&rdquo;로 평정한 경우에는 불합격 처리
+			
+			
+			&nbsp;
+			
+		
+		
+			
+			&middot;평가점수 평균이 70점 미만인 경우, 예비합격자(3배수 이내) 대상에서 제외
+			
+			
+			&nbsp;
+			
+		
+	
+
+
+
+
+○ (채용절차 및 최종선발 심의) 
+
+- 인사위원회를 거쳐 면접점수의 고득점 순위에 의해 최종합격 결정
+
+※ 동점자 발생 시 가산특전사항에 따른 상위 평정요소, 평가기준(전문지식과 그 응용능력) 고득점자 순으로 합격자 결정
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 예비합격자 발표: &lsquo;26. 3. 18.(수) / 진흥원 홈페이지
+
+- 서류제출 및 결격사유 조회: &lsquo;26. 3. 18.(수) ~ 3. 27.(금) 
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 최종합격자 발표: &lsquo;26. 3. 27.(금) / 진흥원 홈페이지
+
+- 임용예정일: &lsquo;26. 4. 1.(수) 
+
+※ 일정은 상황에 따라 변경될 수 있음&nbsp;
+
+※ 자세한 내용은 첨부파일에서&nbsp;확인 바람
+
+
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8922&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.02<em class="day">27</em></span>
+					<span class="cate">경영지원부</span>
+					<span class="tit">[공고 2026-19] 대전시립중고등학교(기간제 교원_정보·한문) 최종 합격자</span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-19호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 직원
+
+			(기간제 교원_정보&middot;한문) 최종 합격자
+
+			&nbsp;
+
+			임시직 교직 5급 상당 학력인정 대전시립중&middot;고등학교 기간제 교원 채용 최종 합격자를 공고합니다.
+
+			&nbsp;
+
+			2026년 2월 27일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 최종 합격자 
+
+
+	
+		
+			
+			연번
+			
+			
+			분야
+			
+			
+			응시번호
+			
+			
+			성명
+			
+		
+		
+			
+			1
+			
+			
+			정보
+			
+			
+			2001
+			
+			
+			하○○
+			
+		
+		
+			
+			2
+			
+			
+			한문
+			
+			
+			4002
+			
+			
+			유○○
+			
+		
+	
+
+
+
+&nbsp;
+
+2. 임용 예정일: 2026. 3. 3.(화)  
+
+&nbsp;
+
+3. 문의: 경영지원부(☎250-2726)
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8904&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.02<em class="day">27</em></span>
+					<span class="cate">경영지원부</span>
+					<span class="tit">[공고 2026-18] 학력인정 대전시립중고등학교장 최종 합격자</span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-18호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 직원
+
+			(학력인정 대전시립중고등학교장) 최종 합격자 
+
+			&nbsp;
+
+			임기제 1급(학력인정 대전시립중&middot;고등학교장) 채용 최종 합격자를 공고합니다.
+
+			&nbsp;
+
+			2026년 2월 27일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 최종 합격자 
+
+
+	
+		
+			
+			구분
+			
+			
+			응시번호
+			
+			
+			성명
+			
+		
+		
+			
+			교장
+			
+			
+			1002
+			
+			
+			우○○
+			
+		
+	
+
+
+&nbsp;
+
+2. 임용 예정일: 2026. 3. 3.(화)  
+
+&nbsp;
+
+3. 문의: 경영지원부(☎250-2726)
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8893&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.02<em class="day">23</em></span>
+					<span class="cate">경영지원부</span>
+					<span class="tit">[공고 2026-16] 대전시립중고등학교 기간제 교원(정보/한문) 최종(예비) 합격자</span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-16호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 직원
+
+			(기간제 교원_정보&middot;한문) 최종(예비) 합격자 공고
+
+			&nbsp;
+
+			임시직 교직 5급 상당 학력인정 대전시립중&middot;고등학교 기간제 교원 채용 최종(예비) 합격자를 공고합니다.
+
+			&nbsp;
+
+			2026년 2월 23일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 최종(예비)합격자 
+
+
+	
+		
+			
+			연번
+			
+			
+			분야
+			
+			
+			응시번호
+			
+			
+			성명
+			
+			
+			생월일
+			
+			
+			순위
+			
+		
+		
+			
+			1
+			
+			
+			정보
+			
+			
+			2001
+			
+			
+			하○○
+			
+			
+			1028
+			
+			
+			1순위
+			
+		
+		
+			
+			2
+			
+			
+			한문
+			
+			
+			4002
+			
+			
+			유○○
+			
+			
+			0227
+			
+			
+			1순위
+			
+		
+	
+
+
+&nbsp;
+
+2. 최종(예비)합격자 안내 
+
+가. 서류제출 및 결격사유 등 조회: 2026. 2. 23.(월) ~ 2. 27.(금)
+
+나. 제출서류 
+
+
+	
+		
+			
+			제출서류
+			
+			
+			비고
+			
+		
+		
+			
+			1. 사진 1매(반명함판)
+			
+			
+			PDF스캔파일
+
+			전자메일
+
+			(long@dile.or.kr)로
+
+			우선 송부 후,
+
+			원본 제출
+
+			※ 원본제출 必
+			
+		
+		
+			
+			2. 최종학위증명서 1부
+			
+		
+		
+			
+			3. 주민등록표 등본, 초본(군경력 포함), 가족관계증명서 각 1부
+			
+		
+		
+			
+			4. 기본증명서, 신원진술서 각 1부
+			
+		
+		
+			
+			5. 채용 신체검사서 1부 / 최근 1개월 이내 실시한 것
+
+			※ 채용 건강검진 대체 통보서(직장제출용) 제출 가능
+			
+		
+		
+			
+			6. 결핵검진 결과서 1부
+
+			※ 결핵검진결과가 공무원 채용신체검사서에 포함된 경우는 제외 가능
+			
+		
+		
+			
+			7. 마약검사결과 통보서 1부 / 최근 1년 이내 실시한 것
+			
+		
+	
+
+
+
+3. 최종합격자 발표: 2026. 2. 27.(금) / 진흥원 홈페이지
+
+&nbsp;
+
+4. 임용기간: 2026. 3. 3.(화) ~ 2027. 2. 28.(일)  
+
+&nbsp;
+
+5. 최종(예비)합격자 유의사항 
+
+가. 합격자 통지 후 신원조회, 기타 부적합한 결격사유 등이 있을 경우 합격이 취소될 수 있음
+
+나. 제출일까지 서류를 제출하지 않을 경우 임용의사가 없는 것으로 간주 
+
+&nbsp;
+
+6. 예비합격자: 없음 
+
+&nbsp;
+
+7. 문의: 경영지원부(☎250-2726) 
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005302&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00357&amp;nttId=8873&amp;bbsTyCode=BBST03&amp;bbsAttrbCode=BBSA03">
+					
+					<span class="date">2026.02<em class="day">23</em></span>
+					<span class="cate">경영지원</span>
+					<span class="tit">[공고 2026-15호] 학력인정 대전시립중고등학교장 최종(예비) 합격자 공고</span>
+					<span class="txt">[대전평생교육진흥원 공고 제2026-15호]
+
+
+	
+		
+			
+			(재)대전평생교육진흥원 직원
+
+			(학력인정 대전시립중고등학교장) 최종(예비) 합격자 공고
+
+			&nbsp;
+
+			임기제 1급(학력인정 대전시립중&middot;고등학교장) 채용 최종(예비) 합격자를 공고합니다.
+
+			&nbsp;
+
+			2026년 2월 23일
+
+			&nbsp;
+
+			(재)대전평생교육진흥원장
+			
+		
+	
+
+
+&nbsp;
+
+1. 최종(예비)합격자 
+
+
+	
+		
+			
+			구분
+			
+			
+			응시번호
+			
+			
+			성명
+			
+			
+			생월일
+			
+			
+			순위
+			
+		
+		
+			
+			교장
+			
+			
+			1002
+			
+			
+			우○○
+			
+			
+			0309
+			
+			
+			1순위
+			
+		
+	
+
+
+&nbsp;
+
+2. 최종(예비)합격자 안내 
+
+가. 서류제출 및 결격사유 등 조회: 2026. 2. 23.(월) ~ 2. 27.(금)
+
+- 예비합격자 1순위부터 실시, 1순위 합격 취소 시 예비합격자 순위대로 실시
+
+나. 제출서류 
+
+
+	
+		
+			
+			제출서류
+			
+			
+			비고
+			
+		
+		
+			
+			1. 사진 1매(반명함판)
+			
+			
+			PDF스캔파일
+
+			전자메일
+
+			(long@dile.or.kr)로
+
+			우선 송부 후,
+
+			원본 제출
+
+			※ 원본제출 必
+			
+		
+		
+			
+			2. 최종학위증명서 1부
+			
+		
+		
+			
+			3. 주민등록표 등본, 초본(군경력 포함), 가족관계증명서 각 1부
+			
+		
+		
+			
+			4. 기본증명서, 신원진술서 각 1부
+			
+		
+		
+			
+			5. 채용 신체검사서 1부 / 최근 1개월 이내 실시한 것
+
+			※ 채용 건강검진 대체 통보서(직장제출용) 제출 가능
+			
+		
+		
+			
+			6. 결핵검진 결과서 1부
+
+			※ 결핵검진결과가 공무원 채용신체검사서에 포함된 경우는 제외 가능
+			
+		
+		
+			
+			7. 마약검사결과 통보서 1부 / 최근 1년 이내 실시한 것
+			
+		
+	
+
+
+
+3. 최종합격자 발표: 2026. 2. 27.(금) / 진흥원 홈페이지
+
+&nbsp;
+
+4. 임용기간: 2026. 3. 3.(화)부터 3년
+
+&nbsp;
+
+5. 최종(예비)합격자 유의사항 
+
+가. 합격자 통지 후 신원조회, 기타 부적합한 결격사유 등이 있을 경우 합격이 취소될 수 있음
+
+나. 제출일까지 서류를 제출하지 않을 경우 임용의사가 없는 것으로 간주 
+
+&nbsp;
+
+6. 예비합격자 안내 
+
+가. 예비합격자 선정: 채용인원의 3배수 내에서 고득점자 순으로 예비 합격자를 선정하되, 유효기간은 최종합격자 발표 후 6개월 이내로 함 
+
+나. 차순위 예비합격자 명단
+
+
+	
+		
+			
+			구분
+			
+			
+			응시번호
+			
+			
+			성명
+			
+			
+			생월일
+			
+			
+			순위
+			
+		
+		
+			
+			교장
+			
+			
+			1003
+			
+			
+			김○○
+			
+			
+			0416
+			
+			
+			2순위
+			
+		
+	
+
+
+※ 최종(예비)합격자가 채용신체검사 및 신원조회 등의 결격사유가 있거나 임용 포기, 임용 후 
+
+중도 퇴사 등의 사정으로 결원을 보충할 필요가 있을 때에는 합격자 발표일로부터 6개월 내 
+
+예비합격자 중 추가 임용할 수 있음
+
+&nbsp;
+
+7. 문의: 경영지원부(☎250-2726)
+
+&nbsp;
+
+&nbsp;
+</span>
+            		</a>
+        		</div>
+    		</div>
+    		
+		</div>
+		<div class="nav nav2">
+			<div class="area_ctrl">
+				<button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+				<span class="count"></span>
+				<button type="button" class="play active"><span class="sp_main">슬라이드 재생</span></button>
+				<button type="button" class="pause"><span class="sp_main">슬라이드 정지</span></button>
+				<button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+			</div>
+		</div>
+	</div>
+	<span class="btn_more"><a href="/index.do?menu_id=00005302" class="sp_main">채용정보 더보기</a></span>
+</div>
+
+
+
+
+
+			    
+
+
+
+
+
+
+
+
+
+
+<div id="article03" class="tab_box">
+	<div class="slickwrap newszone">
+		<div class="slider">
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8943&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.03<em class="day">06</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">2026 대전 평생학습 시민홍보단 발대식 개최</span>
+						<span class="txt">&nbsp;
+
+
+	
+		
+			
+			2026 대전 평생학습 시민홍보단 발대식 개최
+			
+		
+	
+
+
+&nbsp;
+
+ㅇ 대전평생교육진흥원(원장 이주연)은 2월 27일(금) 오후 2시 30분, &lsquo; 2026 대전 평생학습 시민홍보단 발대식 및 역량강화 교육&rsquo;을 개최했다.
+
+&nbsp;
+
+ㅇ 공개모집을 통해 시민기자 7명과 시민PD 5명, 총 12명이 선정됐으며, 발대식에서는 위촉장 수여와 활동 안내, 교육이 진행됐다.
+
+&nbsp;
+
+ㅇ 이날 행사는 진흥원 소개와 취재 방향 안내를 시작으로, 시민기자&middot;시민PD의 역할 설명과 질의응답 순으로 이어졌으며, 이후 협업형 콘텐츠 제작을 주제로 한 교육이 진행됐다.
+
+&nbsp;
+
+ㅇ 교육에서는 프로젝트형 홍보를 효과적으로 수행하기 위한 기획력과 취재&middot;촬영 역량, 팀 기반 협업 방식 등을 중심으로 실무 역량을 강화하는 내용으로 운영됐다.
+
+&nbsp;
+
+ㅇ 이주연 원장은 &ldquo;시민홍보단은 평생학습의 가치를 시민의 눈높이에서 가장 현장감 있게 전달하는 핵심 역할을 맡고 있다&rdquo;며, &ldquo;여러분의 진정성 있는 기록이 더 많은 시민에게 평생학습의 의미와 즐거움을 전하는 계기가 되길 바란다&rdquo;고 강조했다.
+
+&nbsp;
+
+ㅇ 시민홍보단은 앞으로 온라인 웹진 「배움 다잇다」, SNS, 학습채널 「대전컴온TV」를 통해 평생학습 정책과 학습자 사례, 지역 현장의 다양한 이야기를 시민의 시각으로 전달할 예정이다.
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8924&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.03<em class="day">06</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">2026 대전 시민명예학위제 제1기 시민명예박사,  제2기 시민명예석사 입학식 개최</span>
+						<span class="txt">&nbsp;
+
+
+	
+		
+			
+			2026 대전 시민명예학위제 제1기 시민명예박사, 
+
+			제2기 시민명예석사 입학식 개최
+			
+		
+	
+
+
+&nbsp;
+
+ㅇ 대전평생교육진흥원(원장 이주연)은 커먼즈필드 대전 모두의 공터에서 입학생과 관계자 등 80여 명이 참석한 가운데&lsquo;2026년 대전 시민명예학위제 제1기 시민명예박사, 제2기 시민명예석사 입학식&rsquo;을 개최했다고 2일 밝혔다.
+
+&nbsp;
+
+ㅇ 이번 입학식에는 대전 시민명예학위제에 새롭게 참여하는 학습자를 환영하고, 시민명예석&middot;박사 과정 전반에 대한 이해를 돕기 위해 마련되었으며, 입학식에 이어 과정 운영 안내, 전공별 학습 방향 공유, 지도교수진과의 만남 등 오리엔테이션으로 진행됐다. 
+
+&nbsp;
+
+ㅇ 대전 시민명예학위제는 2024년부터 운영되고 있는 대전광역시 대표 평생학습 모델로, 시민의 평생학습 성과를 체계적으로 인정하고 심화학습을 통해 역량을 강화하여 지역사회 일류시민 리더 양성을 목표로 하는 대전시장 명의의 비공인 시민명예학위(학사&middot;석사&middot;박사) 수여 제도이다.
+
+&nbsp;
+
+ㅇ 이주연 대전평생교육진흥원장은 &ldquo;대전 시민명예학위제는 시민의 학습 경험을 삶과 지역사회로 확장하는 의미 있는 배움의 과정&rdquo;이라며&ldquo;시민명예석&middot;박사 과정이 개인의 성장과 지역사회를 함께 성장시키는 의미있는 전환점이 되길 기대한다&rdquo;고 말했다.
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8933&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.03<em class="day">06</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">대전시립중·고등학교 교원 모집</span>
+						<span class="txt">&nbsp;
+
+
+	
+		
+			
+			대전시립중&middot;고등학교 교원 모집
+
+			대전평생교육진흥원, 2월 3일까지 이메일 접수 
+			
+		
+	
+
+
+&nbsp;
+
+○ 대전평생교육진흥원(원장 이주연)은 학력인정 대전시립중&middot;고등학교 교장과 기간제 교사를 모집한다. 
+
+&nbsp;
+
+○ 채용 인원은 교장 1명, 한문&middot;과학&middot;정보 교사 각 1명 등 총 4명이다. 지원 방법은 진흥원 홈페이지(dile.or.kr) 기관소식&ndash;채용정보에서 양식을 내려받아 오는 2월 3일 18:00시까지 이메일(long@dile.or.kr)로 접수하면 된다. 
+
+&nbsp;
+
+○ 진흥원이 운영하는 대전시립중&middot;고등학교는 지난 2020년 대전광역시와 대전광역시교육청이 공동 설립한 평생교육 시설로, 배움의 기회를 놓친 시민들에게 학력 취득의 기회를 제공하고 있다.
+
+&nbsp;
+
+○ 문의: 채용담당 250-2726.
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8750&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.02<em class="day">04</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">‘생활권중심평생학습지원사업’참여 기관·단체 공모</span>
+						<span class="txt">&nbsp;
+
+
+	
+		
+			
+			&lsquo;생활권중심평생학습지원사업&rsquo;참여 기관&middot;단체 공모
+
+			-&nbsp;&nbsp;대전평생교육진흥원, 2월 5일까지 누리집 접수 -
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+
+ㅇ 대전평생교육진흥원(원장 이주연)은 「2026년 생활권중심평생학습지원사업」에 참여할 기관&middot;단체를 2월 2일(월)부터 5일(목)까지 모집한다.
+
+&nbsp;
+
+ㅇ 본 사업은 시민이 거주하고 생활하는 일상 공간에서 평생학습에 쉽게 접근할 수 있도록 지원함으로써, 학습이 개인의 성장에 그치지 않고 지역 공동체 회복과 사회적 가치 창출로 확장되도록 하는 데 목적이 있다. 교육소외계층을 포함해 청&middot;장년, 노년층, 마을주민, 학습공동체 등 다양한 시민을 대상으로 생활밀착형 학습 경험을 제공한다. 
+
+&nbsp;
+
+ㅇ 선정된 기관&middot;단체는 2026년 4월부터 11월까지 생활권 기반 평생학습 프로그램을 운영하게 되며, 강사료&middot;교재비&middot;재료비 등 프로그램 운영에 필요한 경비를 지원받는다. 특히 2026년에는 학습 결과가 지역사회로 환원되는 &lsquo;학습&ndash;실천 연계 프로그램&rsquo; 운영과 질적 성과 관리를 강화할 계획이다. 
+
+&nbsp;
+
+ㅇ 이번 모집은 지역 평생교육 기회 확대와 평생학습 문화 확산을 위한 생활권 중심 평생학습 지원사업으로, 기본형 10개 기관, 도약형 13개 기관을 선정할 예정이다. 자세한 사항은 대전평생교육진흥원 누리집(www.dile.or.kr) 통해 확인할 수 있다.
+
+&nbsp;
+
+ㅇ 이주연 원장은 &ldquo;생활권 중심 평생학습은 시민의 일상 속에서 자연스럽게 배움이 이루어지고, 그 성과가 지역사회로 환원되는데 의미가 있다&rdquo;며 &ldquo;지역 내 다양한 기관&middot;단체와의 협력을 통해 지속 가능한 평생학습 생태계를 조성해 나가겠다&rdquo;고 말했다.
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8740&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.02<em class="day">04</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">시민 안전을 책임질 주인공은 누구? 시민안전교육 강사 모집</span>
+						<span class="txt">&nbsp;
+
+&nbsp;
+
+
+	
+		
+			
+			시민 안전을 책임질 주인공은 누구? 시민안전교육 강사 모집
+
+			- 6일까지 접수...안전취약계층 대상 맞춤형 안전교육 운영 -
+			
+		
+	
+
+
+&nbsp;
+
+&nbsp;
+
+□ 대전평생교육진흥원은 유아&middot;노인&middot;장애인 등 안전취약계층과 대전시민을 대상으로 운영하는 &lsquo;찾아가는 시민안전교육&rsquo; 프로그램의 강사를 내달 6일까지 모집한다.
+
+&nbsp;
+
+ㅇ&lsquo;찾아가는 시민안전교육&rsquo;은 대전시민 5명 이상이 강좌를 신청하면 안전교육 전문 강사가 직접 현장을 찾아가 교육을 진행하는 프로그램으로, 시민의 안전의식 향상과 생활 속 안전문화 확산을 목표로 하고 있다.
+
+&nbsp;
+
+ㅇ 모집 분야는 ▲일상생활안전 ▲교통안전 ▲재난안전 ▲범죄안전 ▲보건안전으로 5개 분야이다. 지원 자격은 안전교육 관련 자격증을 소지하고 강의 경력 1년 이상인 자 또는 안전교육 관련 근무 경력 5년 이상인 자이다.
+
+&nbsp;
+
+ㅇ 접수는 진흥원 홈페이지(www.dile.or.kr) 공지사항에서 지원서를 내려받아 작성한 후, 접수기간 내 방문 제출하면 된다. 제출처는 대전시 중구 중앙로 116, 대전신용보증재단 건물 8층이다.
+
+&nbsp;
+
+ㅇ 자세한 사항은 진흥원 시민안전교육 담당(☎ 042-250-2788)으로 문의하면 된다.
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8620&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.01<em class="day">19</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">2026년 대전배달강좌 현장점검단 모집</span>
+						<span class="txt">2026년 대전배달강좌 현장점검단 모집
+
+- 월 28일부터 30일까지 접수&nbsp;-
+
+&nbsp;
+
+
+
+□ 대전평생교육진흥원(원장 이주연)은 30일까지 대전배달강좌 현장점검단을 모집한다.
+
+&nbsp;
+
+ㅇ 현장점검단은 배달강좌가 진행되는 교육 장소에 방문하여 운영사항을 확인, 우수사례 발굴 및 홍보활동 등을 하고 소정의 교통비를 지급 받으며 봉사활동 시간을 인정받는다.
+
+&nbsp;
+
+ㅇ 신청접수는 28일(수) 09:00시부터 30일(금) 15:00시까지이며, 접수방법은 대전평생교육진흥원 (www.dile.or.kr) &gt; 기관소식 &gt; 공지사항에서 지원서를 내려받아 작성 후 대전신용보증재단 8층 학습지원부로 서면 제출을 하면 된다.
+
+&nbsp;
+
+ㅇ 2012년부터 시작된 대전배달강좌는 교육 접근성이 열악한 교육소외계층을 대상으로 5인 이상이 강좌를 신청하면 원하는 시간과 장소에 강사를 보내주는 대전시 평생교육 서비스이다. 
+
+&nbsp;
+
+ㅇ 보다 자세한 사항은 대전배달강좌(042-250-2731)로 문의하면 된다. 
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8592&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2026.01<em class="day">19</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">‘2026 대전 평생학습 시민홍보단’모집</span>
+						<span class="txt">&lsquo;2026 대전 평생학습 시민홍보단&rsquo;모집
+
+- 대전평생교육진흥원, 2월 1일까지 이메일 접수 -
+
+
+
+ㅇ 대전평생교육진흥원(원장 이주연)은 평생학습 현장의 생생한 이야기를 시민의 눈높이에서 전달할 &lsquo;2026 대전 평생학습 시민홍보단&rsquo;을 모집한다.
+
+&nbsp;
+
+ㅇ 모집 기간은 2026년 1월 14일부터 2월 1일까지이며, 지원자는 진흥원 홈페이지(dile.or.kr) 공지사항에서 지원서를 내려받아 이메일(dcuhem@dile.or.kr)로 접수하면 된다.
+
+&nbsp;
+
+ㅇ 시민홍보단은 온라인 웹진 「배움 다잇다」와 SNS, 학습채널 「대전컴온TV」를 통해 평생학습 정책과 학습자 사례, 지역의 다양한 평생학습 현장의 소식을 소개하는 역할을 한다.
+
+&nbsp;
+
+ㅇ 모집 분야는 시민기자와 시민PD로, 만 19세 이상으로 대전 생활권에서 활동 가능하며, 평일 주간 대면 활동 참여가 가능한 시민 누구나 지원할 수 있다.
+
+&nbsp;
+
+ㅇ 시민기자는 기사 취재&middot;작성과 홍보 콘텐츠 제작, 시민PD는 평생학습 프로그램 및 학습 사례 영상 제작에 참여한다. 홍보단에게는 소정의 원고료&middot;제작료 지급, 콘텐츠 제작 교육, 우수 활동자 시상 등 혜택이 제공된다.
+
+&nbsp;
+
+ㅇ 문의는 홍보&middot;마케팅 담당(☎ 042-250-2711)으로 하면 된다.
+
+&nbsp;
+</span>
+					</a>
+				</div>
+			</div>
+			
+				
+				
+				
+				
+				
+				
+
+			<div class="item">
+				<div class="inr">
+					<a href="/index.do?menu_id=00005306&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00354&amp;nttId=8361&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+						<span class="date">2025.12<em class="day">04</em></span>
+						<span class="cate">전략기획부</span>
+						<span class="tit">대전평생교육진흥원, ‘대전시 평생교육 성과공유회’ 성료</span>
+						<span class="txt">대전평생교육진흥원, &lsquo;대전시 평생교육 성과공유회&rsquo; 성료
+&nbsp;
+
+□ 대전평생교육진흥원(원장 최선희)은 지난 25일, 대전평생교육진흥원(중구 중앙로 101) 일대에서 &ldquo;2025년 대전시 평생교육 성과공유회&rdquo;를 개최했다고 밝혔다.
+
+□ 대전시, 5개 자치구, 대학, 민간단체, 시민 등 900여명이 참석한 이날 행사는 평생학습 동아리 성과공유회, 평생교육 홍보&middot;체험부스, 정책세미나, 평생학습 작품전, 문해교육 시화전 등이 진행됐다.
+
+□ 대전시 평생교육의 성과를 공유하고 이를 통해 지역 평생교육의 발전을 도모하기 위해 마련된 이날 행사는 평생교육기관 관계자, 학습자, 시민과 함께 성과를 나누고 노하우를 공유하며, 대전시 평생교육 성과확산에 기여했다는 평가를 받았다.
+
+□ 최선희 원장은 &ldquo;평생교육 관계자들의 헌신 덕분에 대전시 평생교육이 발전하고 있다&rdquo;며 &ldquo;2026년에는 올해 성과와 의견을 반영해 시민의 평생학습을 위해 대전지역 평생교육 컨트롤 타워로서의 역할을 충실히 하겠다&rdquo;고 말했다.</span>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="nav nav2">
+			<div class="area_ctrl">
+				<button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+				<span class="count"></span>
+				<button type="button" class="play active"><span class="sp_main">슬라이드 재생</span></button>
+				<button type="button" class="pause"><span class="sp_main">슬라이드 정지</span></button>
+				<button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+			</div>
+		</div>
+	</div>
+	<span class="btn_more"><a href="/index.do?menu_id=00005306" class="sp_main">보도자료 더보기</a></span>
+</div>
+	
+	
+	
+			
+		
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ms03 -->
+            <div class="ms03">
+                <div class="inr">
+                    <!-- 진흥원 갤러리 -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slickwrap galleryzone">
+    <h2 class="s_title">진흥원 갤러리</h2>
+    <div class="slider">
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8980&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000120701KqhixRsl&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.03.27</span>
+                    </div>
+                    <span class="tit">대전평생교육진흥원, 대전과학기술대학교와 AI·디지털 전환 교육 협력 업무협약 체결</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8942&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000116275ipM8fWSr&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.03.06</span>
+                    </div>
+                    <span class="tit">대전평생교육진흥원 × 대전고암미술문화재단 협약 체결</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8941&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_0000000001162744egFJJgF&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.03.06</span>
+                    </div>
+                    <span class="tit">2026 대전평생교육진흥원 시민홍보단 발대식 개최</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8925&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000116605Tsc432Qi&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.03.09</span>
+                    </div>
+                    <span class="tit">건양대학교 총장, 대전평생교육진흥원 방문</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8682&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000113239OykqrLH1&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.01.30</span>
+                    </div>
+                    <span class="tit">대전평생교육진흥원,  목원대학교 RISE 사업 우수 협력 기관 선정</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8580&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000112834DM11k45c&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.01.13</span>
+                    </div>
+                    <span class="tit">2026 대전시 교육정책전략국 신임 국장, 대전평생교육진흥원 방문</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8560&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_0000000001125149pc3F1YJ&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.01.09</span>
+                    </div>
+                    <span class="tit">대전평생교육진흥원 제7대 이주연 원장 취임식 개최</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8530&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_0000000001124107cYG9757&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2026.01.08</span>
+                    </div>
+                    <span class="tit">2026년 대전시민대학 강사 오리엔테이션</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8460&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000112141ikuGk9Lz&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2025.12.18</span>
+                    </div>
+                    <span class="tit">2025 제2회 대전 시민명예학위수여식 개최</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                <a href="/index.do?menu_id=00005305&amp;menu_link=/icms/bbs/selectBoardArticle.do&amp;bbsId=BBS_00355&amp;nttId=8450&amp;bbsTyCode=BBST07&amp;bbsAttrbCode=BBSA03">
+                    <span class="img"><img src="/icms/file/getImage.do?atchFileId=FILE_000000000112121EVcMBn5F&fileSn="  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt=""></span>
+                    <div class="info_wp">
+                        <span class="cate">전략기획부</span>
+                        <span class="date">2025.12.18</span>
+                    </div>
+                    <span class="tit">배움에는 늦음이 없습니다! &#039;2025 대전 문해교육 성과공유회 및 시화전&#039; 개최</span>
+                    
+                    
+                </a>
+                </div>
+            </div>
+        
+    </div>
+    <div class="nav">
+        <div class="area_ctrl">
+            <span class="dots"></span>
+        </div>
+        <button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+        <button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+    </div>
+    <span class="btn_more"><a href="/index.do?menu_id=00005305" class="btn_more">갤러리 더보기</a></span>
+</div>
+
+                </div>
+            </div>
+            <!-- ms04 -->
+            <div class="ms04">
+                <div class="inr">
+                    <!-- 주요서비스 -->
+                    <div class="service_area">
+                        <div class="inr">
+                            <div class="tit_area">
+                                <h2 class="s_title">주요서비스</h2>
+                                <span class="txt">대전평생교육진흥원의 주요서비스를 바로 만나보세요!</span>
+                            </div>
+                            <ul class="lst">
+                                <li class="n01"><a href="/index.do?menu_id=00005297">대전시립<br class="mobile">중고등학교</a></li>
+                                <li class="n02"><a href="/index.do?menu_id=00005304">정책정보</a></li>
+                                <li class="n03"><a href="/index.do?menu_id=00005620">이벤트</a></li>
+                                <li class="n04"><a href="/index.do?menu_id=00005300">문의게시판</a></li>
+                                <li class="n05"><a href="/index.do?menu_id=00005319">정보공개</a></li>
+                                <li class="n06"><a href="/index.do?menu_id=00005322">경영공시</a></li>
+                                <li class="n07"><a href="/index.do?menu_id=00005289">조직도</a></li>
+                                <li class="n08"><a href="/index.do?menu_id=00005290">오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 간행물 -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slickwrap newsletter">
+    <div class="slider">
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202512/23/NEWSLETTER_202512230316313350','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000112223fBO5HXOF"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움 다잇다 제74호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202509/30/NEWSLETTER_202509300223194800','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_0000000001050736PeKqySQ"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움 다잇다 제73호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202506/30/NEWSLETTER_202506301111039460','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000090357sdgkAOCi"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움 다잇다 제72호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202504/14/NEWSLETTER_202504140412380050','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000077522QWHlDDaj"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움 다잇다 제71호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202412/26/NEWSLETTER_202412260404233270','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000061074oxStCCFy"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제70호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202410/11/NEWSLETTER_202410110806513840','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000056872iJCOSTiA"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제69호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202409/19/NEWSLETTER_202409190622286810','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000056202PGAAwkdE"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제68호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202409/13/NEWSLETTER_202409130119105650','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_0000000000561222G2ZuYPp"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제67호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202401/01/NEWSLETTER_202301011126087370/MAGAZINE66','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057704rNTB4DAR"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제66호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202310/01/NEWSLETTER_202310011126087370/MAGAZINE65','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057700rK6sdAVj"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제65호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202307/01/NEWSLETTER_202307011126087370/MAGAZINE64','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057702Y23rEJ8Z"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제64호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202304/01/NEWSLETTER_202304011126087370/MAGAZINE63','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057698MNoQFYQb"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제63호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202212/01/NEWSLETTER_202212011126087370/MAGAZINE62','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057696wf5JN2L6"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제62호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202210/01/NEWSLETTER_202210011126087370/MAGAZINE61','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057694yhKY6TXL"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제61호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202207/01/NEWSLETTER_202207011126087370/MAGAZINE60','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057690WWuWeKhp"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제60호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202203/01/NEWSLETTER_202203011126087370/MAGAZINE59','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057692WxeJiBcJ"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">배움다잇다 제59호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202201/01/NEWSLETTER_202201011126087370/MAGAZINE58','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057680RfvwloNs"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 58호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202111/01/NEWSLETTER_202111011126087370/MAGAZINE57','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057688q1yIc5aV"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 57호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202109/01/NEWSLETTER_202109011126087370/MAGAZINE56','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057678RzqEmCoe"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 56호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202107/01/NEWSLETTER_202107011126087370/MAGAZINE55','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057686QVPTcmIA"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 55호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202105/01/NEWSLETTER_202105011126087370/MAGAZINE54','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057684eYnVRlU3"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 54호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202103/01/NEWSLETTER_202103011126087370/MAGAZINE53','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_00000000005768202STGWuA"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 53호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202101/01/NEWSLETTER_202101011126087370/MAGAZINE52/autoalbum/page/201214144149945','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057676EBCvSWZB"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 52호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202011/01/NEWSLETTER_201911011126087370/MAGAZINE51/autoalbum/page/201030134704230','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057674FZ7qfxtG"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 51호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202009/01/NEWSLETTER_201909011126087370/MAGAZINE50/autoalbum/page/200824110641759','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057672e6L8WO7b"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 50호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202007/01/NEWSLETTER_201907011126087370/MAGAZINE49/autoalbum/page/200630100656016','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057670tzBzsmRf"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 49호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202005/01/NEWSLETTER_201905011126087370/MAGAZINE48/autoalbum/page/200504103119211','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057668QxEkHJGH"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 48호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202003/01/NEWSLETTER_201903011126087370/MAGAZINE47/autoalbum/page/200313170618528','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_0000000000576601tKWFVwa"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 47호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/202001/01/NEWSLETTER_202001011126087370/MAGAZINE46/autoalbum/page/191223160231684','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057658WRBx2i5u"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 46호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201911/01/NEWSLETTER_201911011126087370/MAGAZINE45/autoalbum/page/191105162413781','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057666TRlDSVn2"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 45호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201909/01/NEWSLETTER_201909011126087370/MAGAZINE44/autoalbum/page/190904173745517','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_00000000005765404CTZq0V"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 44호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201907/01/NEWSLETTER_201907011126087370/MAGAZINE43/autoalbum/page/190705111203633','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057648NrjqMvnz"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 43호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201905/01/NEWSLETTER_201905011126087370/MAGAZINE42/autoalbum/page/190508115555555','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057664VKqNEwjw"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 42호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201903/01/NEWSLETTER_201903011126087370/MAGAZINE41/autoalbum/page/190327164116678','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057640l1MFI26q"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 41호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201901/01/NEWSLETTER_201901011126087370/MAGAZINE40/autoalbum/page/181221093317832','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057646EbdTzqgX"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 40호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201812/01/NEWSLETTER_201812011126087370/MAGAZINE39/autoalbum/page/181106121216617','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057638qLmTA2ok"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 39호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201809/01/NEWSLETTER_201809011126087370/MAGAZINE38/autoalbum/page/180903134823297','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_000000000057644rh9NugC1"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 38호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="inr">
+                    <a href="javascript:;" onclick="javascript:mbookzView('/newsletter/201808/01/NEWSLETTER_201808011126087370/MAGAZINE37/autoalbum/page/180710160501022','Y', 1);">
+                        <span class="img">
+                            <img src="/icms/file/getImage.do?atchFileId=FILE_0000000000576421ZpDJSJ8"  onError="this.src='/cms_images/icms/front/common/noimage/noimage.png'" alt="">
+                        </span>
+                        <div class="info_wp">
+                            <span class="cate">정기간행물</span>
+                            <span class="tit">대전평생교육 37호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+    </div>
+    <div class="nav">
+        <div class="area_ctrl">
+            <button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+            <button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+        </div>
+    </div>
+    <a href="/index.do?menu_id=00005307" class="more"> +더보기</a>
+</div>
+
+                    <!--
+		    <div class="slickwrap newsletter">
+				<div class="slider">
+					<div class="item">
+						<div class="inr">
+							<a href="javascript:;" onClick="javascript:mbookzView('/ebook/brdebook/202407/10/8189217c7d4bd090a36e2da2bbe6acbc','Y', 1);">
+								<span class="img">
+									<img src="/cmsh/dile.or.kr/images/main/img_newsletter03.jpg" alt="">
+								</span>
+								<div class="info_wp">
+									<span class="cate">정기간행물</span>
+									<span class="tit">배움다잇다 제 68호</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="inr">
+							<a href="javascript:;" onClick="javascript:mbookzView('/ebook/brdebook/202404/11/6a2d33b3520276f737541e321fae51e6','Y', 1);">
+								<span class="img">
+									<img src="/cmsh/dile.or.kr/images/main/img_newsletter01.jpg" alt="">
+								</span>
+								<div class="info_wp">
+									<span class="cate">정기간행물</span>
+									<span class="tit">배움다잇다 제 67호</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="nav">
+					<div class="area_ctrl">
+						<button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+						<button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+					</div>
+				</div>
+				<a href="/index.do?menu_id=00005307" class="more"> +더보기</a>
+			</div> -->
+                </div>
+            </div>
+            <!-- ms05 -->
+            <div class="ms05">
+                <div class="inr">
+                    <!-- 소통공간 -->
+                    <div class="sns_area">
+                        <h2 class="s_title">SNS</h2>
+                        <ul class="tab_lst">
+                            <li class="blog"><a href="https://blog.naver.com/prologue/PrologueList.naver?blogId=diledile" target="_blank" class="active">블로그</a></li>
+                            <li class="facebook"><a href="https://www.facebook.com/MasterDile?locale=ko_KR" target="_blank">페이스북</a></li>
+                            <li class="youtube"><a href="https://www.youtube.com/@djcomeonTV" target="_blank">유튜브</a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/dile_2011/" target="_blank">인스타그램</a></li>
+                            <li class="kakao"><a href="https://pf.kakao.com/_UUlqxb" target="_blank">카카오톡채널</a></li>
+                        </ul>
+                        <div class="slickwrap blogzone">
+                            <h3 class="m_tit"><span>블로그</span></h3>
+                            <div class="slider">
+                                 <div class='item'>  <div class='inr'>	    <a href='https://blog.naver.com/PostView.naver?blogId=diledile&logNo=224235723096&redirect=Dlog' target='_blank' title='새창'>		    <span class='img'><img src='/sns/blogImg1.png' alt=' '></span>			<span class='tit'>[당첨자 발표] 대전평생교육진흥원 뉴스레터 구독 이벤트 당첨자 발표!</span>		</a>	</div></div><div class='item'>  <div class='inr'>		<a href='https://blog.naver.com/PostView.naver?blogId=diledile&logNo=224231627410&redirect=Dlog' target='_blank' title='새창'>			<span class='img'><img src='/sns/blogImg2.png' alt=' '></span>			<span class='tit'>대전평생교육진흥원-대전과학기술대학교, AI·디지털 전환 시대 인재양성을 위한 업무협약 체결</span>		</a>	</div></div><div class='item'>  <div class='inr'>		<a href='https://blog.naver.com/PostView.naver?blogId=diledile&logNo=224230317618&redirect=Dlog' target='_blank' title='새창'>			<span class='img'><img src='/sns/blogImg3.png' alt=' '></span>			<span class='tit'>[이벤트] 퀴즈 풀고 CU 쿠폰 받자! 2026 대전평생교육진흥원 인지도 퀴즈 이벤트</span>		</a>	</div></div><div class='item'>  <div class='inr'>		<a href='https://blog.naver.com/PostView.naver?blogId=diledile&logNo=224227523498&redirect=Dlog' target='_blank' title='새창'>			<span class='img'><img src='/sns/blogImg4.png' alt=' '></span>			<span class='tit'>[연구보고서] 대전지역 장애인 평생교육 활성화 방안 연구</span>		</a>	</div></div>
+                            </div>
+                            <div class="nav nav2">
+                                <div class="area_ctrl">
+                                    <button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+                                    <span class="count"></span>
+                                    <button type="button" class="play active"><span class="sp_main">슬라이드 재생</span></button>
+                                    <button type="button" class="pause"><span class="sp_main">슬라이드 정지</span></button>
+                                    <button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="btn_more"><a href="https://blog.naver.com/diledile">갤러리 더보기</a></span>
+                    </div>
+                    <!-- // 소통공간 -->
+                </div>
+            </div>
+            <!-- ms06 -->
+            <div class="ms06">
+                <div class="inr">
+                    <!-- 사이트 링크 -->
+                    <div class="slickwrap sitezone">
+                        <h2 class="s_title">사이트 링크</h2>
+                        <div class="slider">
+                            
+
+
+
+
+
+
+
+
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://daejeon.go.kr/" target="_blank">
+				<img src="/cms_images/banner/20240830094533852.png" alt="대전광역시">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://band.us/band/63004733" target="_blank">
+				<img src="/cms_images/banner/20240830094638806.png" alt="행복키움 대전광역시 BAND">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://www.nile.or.kr/" target="_blank">
+				<img src="/cms_images/banner/20240830094723065.png" alt="국가평생교육진흥원">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://www.mois.go.kr/" target="_blank">
+				<img src="/cms_images/banner/20240830103036760.png" alt="행정안전부 공직비리 익명신고">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://www.eshare.go.kr/" target="_blank">
+				<img src="/cms_images/banner/20240830103346454.png" alt="공공개방자원 多가치 나눔터 공유누리">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://www.acrc.go.kr/" target="_blank">
+				<img src="/cms_images/banner/20240830103445431.png" alt="국민권익위원회가 운영하는 청렴포털 부패공익신고">
+			</a>
+		
+		
+	</div>
+</div>
+
+<div class="item">
+	<div class="inr">
+		
+			<a href="https://www.lllcard.kr/daejeon" target="_blank">
+				<img src="/cms_images/banner/20250818034250141.png" alt="평생교육바우처">
+			</a>
+		
+		
+	</div>
+</div>
+
+
+
+			
+
+                        </div>
+                        <div class="nav">
+                            <div class="area_ctrl">
+                                <button type="button" class="prev"><span class="sp_main">이전 슬라이드</span></button>
+                                <button type="button" class="play active"><span class="sp_main">슬라이드 재생</span></button>
+                                <button type="button" class="pause"><span class="sp_main">슬라이드 정지</span></button>
+                                <button type="button" class="next"><span class="sp_main">다음 슬라이드</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //사이트 링크 -->
+                </div>
+            </div>
+        </div>
+        <!-- // Content -->
+    </div>
+    <!-- // Container -->
+    <!-- Footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inr">
+		<!-- Footer Top -->
+		<div class="footer_top">
+			<ul class="area_l">
+				<li><a href="/index.do?menu_id=00005353">이용약관</a></li>
+				<li class="privacy"><a href="/index.do?menu_id=00005352">개인정보처리방침</a></li>
+				<li><a href="/index.do?menu_id=00005354">영상정보처리기기 운영·관리 방침</a></li>
+				<li><a href="/index.do?menu_id=00005355">이메일주소무단수집거부</a></li>
+				<li><a href="/index.do?menu_id=00005356">저작권보호정책</a></li>
+				<li><a href="/index.do?menu_id=00005290">찾아오시는 길</a></li>
+			</ul>
+			<div class="area_r">
+				<!-- 관련기관 -->
+				<div class="cssSelect related">
+					<button type="button" class="open_select"><span>관련사이트</span></button>
+					<div class="box_select">
+						<ul>
+							<li><a href="https://lib.yuseong.go.kr/" target="_blank">유성구 통합도서관</a></li>
+							<li><a href="https://www.daejeon.go.kr/hanbatlibrary/index.do" target="_blank">한밭도서관</a></li>
+							<li><a href="https://www.daejeon.go.kr/ada/index.do" target="_blank">행정자료실</a></li>
+							<li><a href="https://www.seogu.go.kr/learning/galmalib/index.do" target="_blank">갈마도서관</a></li>
+							<li><a href="https://www.seogu.go.kr/learning/gasuwonlib/index.do" target="_blank">가수원도서관</a></li>
+							<li><a href="https://www.seogu.go.kr/learning/dunsanlib/index.do" target="_blank">둔산도서관</a></li>
+							<li><a href="https://www.seogu.go.kr/learning/childlib/index.do" target="_blank">서구어린이도서관</a></li>
+							<li><a href="https://lib.daedeok.go.kr/daedeoklib/index.do" target="_blank">대덕구 평생학습도서관</a></li>
+							<li><a href="https://lib.ansan.go.kr/" target="_blank">안산도서관</a></li>
+							<li><a href="https://www.donggu.go.kr/dg/lib" target="_blank">용운도서관</a></li>
+							<li><a href="https://www.snlib.go.kr/intro/index.do" target="_blank">성남도서관</a></li>
+							<li><a href="https://www.donggu.go.kr/dg/lib" target="_blank">동구공공도서관</a></li>
+							<li><a href="https://gy.gangseo.seoul.kr/" target="_blank">가양도서관</a></li>
+							<li><a href="https://dsecc.djsch.kr/djsecc/main.do" target="_blank">학생교육문화원</a></li>
+							<li><a href="https://www.icdonggu.go.kr/lll/" target="_blank">동구평생학습관</a></li>
+							<li><a href="https://lll.daedeok.go.kr/" target="_blank">대덕구평생학습원</a></li>
+							<li><a href="https://lifelong.yuseong.go.kr/" target="_blank">유성구평생학습원</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 관련사이트가기 -->
+				<div class="cssSelect related">
+					<button type="button" class="open_select"><span>협약기관안내</span></button>
+					<div class="box_select">
+						<ul>
+							<li><a href="http://djbook.or.kr/" target="_blank">희망의책대전본부</a></li>
+							<li><a href="https://www.daejeon.go.kr/hanbatlibrary/index.do" target="_blank">한밭도서관</a></li>
+							<li><a href="https://cafe.daum.net/krbookv" target="_blank">계룡문고</a></li>
+							<li><a href="https://daejeon.pass.or.kr/" target="_blank">대전광역시사회서비스원</a></li>
+							<li><a href="https://dcaf.or.kr/" target="_blank">대전문화재단</a></li>
+							<li><a href="http://www.bongsa365.or.kr/" target="_blank">(사)대전광역시자원봉사연합회</a></li>
+							<li><a href="https://www.djjunggu.go.kr/" target="_blank">중구청</a></li>
+							<li><a href="https://info.korail.com/" target="_blank">한국철도공사 대전역</a></li>
+							<li><a href="https://www.mpva.go.kr/mpva/bnfc.do?key=1085&deptCode=20" target="_blank">대전지방보훈청</a></li>
+							<li><a href="http://lec.hnu.kr/" target="_blank">한남대학교 평생교육원</a></li>
+							<li><a href="http://www.djakom.or.kr/" target="_blank">대전광역시한의사회</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Footer Top -->
+		<!-- Copyright -->
+		<div class="wrap_copyright">
+			<div class="area_l">
+				<span class="logo"><img src="/cmsh/dile.or.kr/images/common/logo_footer.png" alt="대전평생교육진흥원"></span>
+				<div class="area_copyright">
+					<p class="address">
+						본원 34912 대전광역시 중구 중앙로 116, 8층(대흥동, 대전신용보증재단빌딩) <br>
+						대전시민대학 34863 대전광역시 중구 중앙로 101(선화동, 옛 충남도청) <br>
+						대표자 : 이주연 | 대표전화 : 042-250-2700 | 팩스 : 042-250-2709 | 사업자등록번호 : 305-82-19360
+					</p>
+					<p class="copyright">Copyright ⓒ Daejeon Institute for Lifelong Education All Rights Reserved.</p>
+				</div>
+			</div>
+			<div class="area_r">
+				<div class="cs_time">9시~18시(토,일,공휴일 제외)</div>
+				<div class="cs_tel">042-250-2700</div>
+			</div>
+		</div>
+		<!-- // Copyright -->
+	</div>
+</footer>
+<!-- // Footer -->
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "7f1b0129be7624";
+	if(window.wcs) {
+		wcs_do();
+	}
+</script>
+    <!-- // Footer -->
+</div>
+<!-- // Wrap -->
+</body>
+</html>

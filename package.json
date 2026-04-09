@@ -10,6 +10,8 @@
     "start": "cross-env NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
     "report:institution-quality": "tsx script/generate_institution_review_list.ts",
+    "firebase:build": "npm.cmd run build",
+    "firebase:deploy": "firebase deploy --only hosting",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {

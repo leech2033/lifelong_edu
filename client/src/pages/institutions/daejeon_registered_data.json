@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dj-curated-0001",
+    "name": "대전평생학습관",
+    "region": "대전광역시",
+    "detail_region": "대전광역시 광역",
+    "category": "공공",
+    "address": "대전광역시 중구 대흥로 151",
+    "phone": "042-220-0510",
+    "tags": [
+      "공공",
+      "광역기관"
+    ],
+    "status": "운영중",
+    "homepage": "https://www.dllc.or.kr",
+    "sourceQuality": "verified"
+  }
+]

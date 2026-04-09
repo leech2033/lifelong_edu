@@ -78,9 +78,9 @@ export default function Institutions() {
     <Layout>
       <div className="bg-slate-50 py-12 border-b border-slate-200">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl font-bold text-slate-900 mb-4">?됱깮援먯쑁湲곌? 李얘린</h1>
+          <h1 className="text-3xl font-bold text-slate-900 mb-4">평생교육기관 찾기</h1>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            ?꾧뎅 17媛??쒕룄???됱깮援먯쑁湲곌? ?뺣낫瑜??뺤씤?섍퀬, ?섏뿉寃?留욌뒗 援먯쑁 ?꾨줈洹몃옩??李얠븘蹂댁꽭??
+            전국 17개 시도의 평생교육기관 정보를 확인하고, 나에게 맞는 교육 프로그램을 찾아보세요.
           </p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export default function Institutions() {
                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                  )}
               >
-                ?꾩껜蹂닿린
+                전체보기
               </Button>
               <div className="w-px h-6 bg-slate-200 mx-2 self-center" />
               {regions.map((region) => (
@@ -193,14 +193,15 @@ export default function Institutions() {
         {/* View Toggle & Count */}
         <div className="flex justify-between items-center mb-6">
           <p className="text-slate-600 font-medium">
-            <span className="font-bold text-slate-900">{new URLSearchParams(search).get("region") === "all" ? "?꾩껜" : selectedRegionName}</span> 寃?됯껐怨? 珥?<span className="text-primary font-bold">{filteredInstitutions.length}</span>嫄?          </p>
+            <span className="font-bold text-slate-900">{new URLSearchParams(search).get("region") === "all" ? "전체" : selectedRegionName}</span> 검색 결과 총 <span className="text-primary font-bold">{filteredInstitutions.length}</span>건
+          </p>
           <div className="bg-slate-100 p-1 rounded-lg flex gap-1">
             <Button 
               variant={viewMode === 'grid' ? "outline" : "ghost"} 
               size="sm" 
               onClick={() => setViewMode('grid')}
               className={viewMode === 'grid' ? "shadow-sm bg-white border-slate-200" : "text-slate-500 border-transparent"}
-              title="移대뱶??蹂닿린"
+              title="카드형 보기"
             >
               <div className="grid grid-cols-2 gap-0.5 w-4 h-4">
                 <div className="bg-current rounded-[1px]"></div>
@@ -208,25 +209,26 @@ export default function Institutions() {
                 <div className="bg-current rounded-[1px]"></div>
                 <div className="bg-current rounded-[1px]"></div>
               </div>
-              <span className="ml-2 hidden sm:inline">移대뱶</span>
+              <span className="ml-2 hidden sm:inline">카드</span>
             </Button>
             <Button 
               variant={viewMode === 'list' ? "outline" : "ghost"} 
               size="sm" 
               onClick={() => setViewMode('list')}
               className={viewMode === 'list' ? "shadow-sm bg-white border-slate-200" : "text-slate-500 border-transparent"}
-              title="由ъ뒪?명삎 蹂닿린"
+              title="목록형 보기"
             >
-              <List className="h-4 w-4 mr-2" /> 紐⑸줉
+              <List className="h-4 w-4 mr-2" /> 목록
             </Button>
             <Button 
               variant={viewMode === 'map' ? "outline" : "ghost"} 
               size="sm" 
               onClick={() => setViewMode('map')}
               className={viewMode === 'map' ? "shadow-sm bg-white border-slate-200" : "text-slate-500 border-transparent"}
-              title="吏??蹂닿린"
+              title="지도 보기"
             >
-              <MapIcon className="h-4 w-4 mr-2" /> 吏??            </Button>
+              <MapIcon className="h-4 w-4 mr-2" /> 지도
+            </Button>
           </div>
         </div>
 
@@ -281,9 +283,9 @@ export default function Institutions() {
                   </CardContent>
                   <CardFooter className="p-6 pt-0 border-t border-slate-50 mt-4 bg-slate-50/50">
                     <div className="w-full flex justify-between items-center mt-4">
-                      <span className="text-xs text-slate-400">理쒓렐 ?낅뜲?댄듃: 2025.01.02</span>
+                      <span className="text-xs text-slate-400">최근 업데이트: 2025.01.02</span>
                       <Button variant="link" className="p-0 h-auto text-primary font-semibold" asChild>
-                        <Link href={`/institutions/detail/${inst.id}`}>?곸꽭蹂닿린</Link>
+                        <Link href={`/institutions/detail/${inst.id}`}>상세보기</Link>
                       </Button>
                     </div>
                   </CardFooter>
@@ -292,7 +294,7 @@ export default function Institutions() {
             ) : (
               <div className="col-span-full py-12 text-center bg-slate-50 rounded-xl border border-dashed border-slate-200">
                 <MapPin className="h-12 w-12 mx-auto text-slate-300 mb-4" />
-                <h3 className="text-lg font-medium text-slate-900 mb-2">?깅줉??湲곌????놁뒿?덈떎</h3>
+                <h3 className="text-lg font-medium text-slate-900 mb-2">등록된 기관이 없습니다</h3>
                 <p className="text-slate-500">
                   해당 지역({selectedRegionName})에는 현재 등록된 기관 데이터가 없습니다.
                   <br />
@@ -309,19 +311,19 @@ export default function Institutions() {
              <div className="p-6 border-b border-slate-200 bg-slate-50/50 flex justify-between items-center">
                 <div>
                   <h3 className="font-bold text-lg text-slate-900">
-                    {new URLSearchParams(search).get("region") === "all" ? "?꾩껜 湲곌? 紐⑸줉" : `${selectedRegionName} 湲곌? 紐⑸줉`}
+                    {new URLSearchParams(search).get("region") === "all" ? "전체 기관 목록" : `${selectedRegionName} 기관 목록`}
                   </h3>
-                  <p className="text-sm text-slate-500 mt-1">珥?{filteredInstitutions.length}媛쒖쓽 湲곌????깅줉?섏뼱 ?덉뒿?덈떎.</p>
+                  <p className="text-sm text-slate-500 mt-1">총 {filteredInstitutions.length}개의 기관이 등록되어 있습니다.</p>
                 </div>
                 <div className="flex gap-2">
                    <Select defaultValue="10">
                      <SelectTrigger className="w-[120px] h-9 bg-white">
-                       <SelectValue placeholder="10媛쒖뵫 蹂닿린" />
+                       <SelectValue placeholder="10개씩 보기" />
                      </SelectTrigger>
                      <SelectContent>
-                       <SelectItem value="10">10媛쒖뵫 蹂닿린</SelectItem>
-                       <SelectItem value="20">20媛쒖뵫 蹂닿린</SelectItem>
-                       <SelectItem value="50">50媛쒖뵫 蹂닿린</SelectItem>
+                       <SelectItem value="10">10개씩 보기</SelectItem>
+                       <SelectItem value="20">20개씩 보기</SelectItem>
+                       <SelectItem value="50">50개씩 보기</SelectItem>
                      </SelectContent>
                    </Select>
                 </div>
@@ -332,12 +334,12 @@ export default function Institutions() {
                <table className="w-full text-sm text-left border-collapse">
                  <thead className="text-xs text-slate-700 uppercase bg-slate-100 border-y border-slate-200">
                    <tr>
-                     <th className="px-6 py-4 font-bold text-center w-[80px]">踰덊샇</th>
+                     <th className="px-6 py-4 font-bold text-center w-[80px]">번호</th>
                      <th className="px-6 py-4 font-bold text-center w-[120px]">지역</th>
                      <th className="px-6 py-4 font-bold">기관명</th>
-                     <th className="px-6 py-4 font-bold">二쇱냼</th>
+                     <th className="px-6 py-4 font-bold">주소</th>
                      <th className="px-6 py-4 font-bold w-[140px]">연락처</th>
-                     <th className="px-6 py-4 font-bold text-center w-[100px]">?곹깭</th>
+                     <th className="px-6 py-4 font-bold text-center w-[100px]">상태</th>
                    </tr>
                  </thead>
                  <tbody className="divide-y divide-slate-100">
@@ -393,8 +395,8 @@ export default function Institutions() {
                            <div className="h-12 w-12 bg-slate-100 rounded-full flex items-center justify-center mb-3">
                              <Search className="h-6 w-6 text-slate-400" />
                            </div>
-                           <p className="font-medium text-slate-900">?깅줉??湲곌????놁뒿?덈떎.</p>
-                           <p className="text-xs text-slate-500 mt-1">寃??議곌굔??蹂寃쏀븯嫄곕굹 ?ㅻⅨ 吏??쓣 ?좏깮?댁＜?몄슂.</p>
+                           <p className="font-medium text-slate-900">등록된 기관이 없습니다.</p>
+                           <p className="text-xs text-slate-500 mt-1">검색 조건을 변경하거나 다른 지역을 선택해 주세요.</p>
                          </div>
                        </td>
                      </tr>
@@ -407,7 +409,7 @@ export default function Institutions() {
              {filteredInstitutions.length > 0 && (
                <div className="p-4 border-t border-slate-200 flex justify-center items-center gap-1 bg-slate-50/30">
                  <Button variant="outline" size="icon" className="h-8 w-8" disabled>
-                   <span className="sr-only">?댁쟾 ?섏씠吏</span>
+                   <span className="sr-only">이전 페이지</span>
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                  </Button>
                  <Button variant="outline" size="sm" className="h-8 w-8 bg-primary text-white border-primary hover:bg-primary hover:text-white">1</Button>
@@ -416,7 +418,7 @@ export default function Institutions() {
                  <Button variant="ghost" size="sm" className="h-8 w-8">4</Button>
                  <Button variant="ghost" size="sm" className="h-8 w-8">5</Button>
                  <Button variant="outline" size="icon" className="h-8 w-8">
-                   <span className="sr-only">?ㅼ쓬 ?섏씠吏</span>
+                   <span className="sr-only">다음 페이지</span>
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                  </Button>
                </div>
@@ -448,21 +450,21 @@ export default function Institutions() {
             <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-slate-200 max-w-xs">
               <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                {selectedRegionName} 二쇱슂 湲곌?
+                {selectedRegionName} 주요 기관
               </h4>
               <p className="text-xs text-slate-500 mb-3">지도에 표시된 기관: {filteredInstitutions.length}개</p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs">
                   <span className="w-3 h-3 rounded-full bg-blue-500 block"></span>
-                  <span>怨듦났湲곌? (援ъ껌/二쇰??쇳꽣)</span>
+                  <span>공공기관 (구청/주민센터)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="w-3 h-3 rounded-full bg-emerald-500 block"></span>
-                  <span>?됱깮?숈뒿愿/?쇳꽣</span>
+                  <span>평생학습관/센터</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="w-3 h-3 rounded-full bg-orange-500 block"></span>
-                  <span>誘쇨컙 援먯쑁湲곌?</span>
+                  <span>민간 교육기관</span>
                 </div>
               </div>
             </div>

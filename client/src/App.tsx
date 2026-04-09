@@ -20,13 +20,17 @@ import LocalProgramList from "@/pages/local/index";
 import LocalProgramDetail from "@/pages/local/detail";
 import Dashboard from "@/pages/dashboard";
 import InstitutionQualityPage from "@/pages/internal/institution-quality";
+import DaejeonCrawlPage from "@/pages/internal/daejeon-crawl";
 
 function Router() {
+  const enableInternalPages = import.meta.env.VITE_ENABLE_INTERNAL_PAGES === "true";
+
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/institutions" component={Institutions} />
       <Route path="/institutions/detail/:id" component={InstitutionDetail} />
+      <Route path="/institutions/crawl-temp" component={DaejeonCrawlPage} />
       
       {/* Damoa Routes */}
       <Route path="/damoa" component={DamoaCourseList} />
@@ -41,9 +45,10 @@ function Router() {
       <Route path="/online-courses" component={OnlineLectureList} />
 
       <Route path="/contests" component={Contests} />
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/dashboard/:sub" component={Dashboard} />
-      <Route path="/internal/institution-quality" component={InstitutionQualityPage} />
+      {enableInternalPages && <Route path="/dashboard" component={Dashboard} />}
+      {enableInternalPages && <Route path="/dashboard/:sub" component={Dashboard} />}
+      {enableInternalPages && <Route path="/internal/institution-quality" component={InstitutionQualityPage} />}
+      <Route path="/temp/daejeon-crawl" component={DaejeonCrawlPage} />
       <Route path="/application" component={ApplicationSubmit} />
       <Route path="/application/submit" component={ApplicationSubmit} />
       <Route path="/resources" component={Resources} />

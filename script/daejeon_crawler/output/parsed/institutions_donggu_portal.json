@@ -1,0 +1,107 @@
+[
+  {
+    "institution_id": "dj-0001",
+    "canonical_name": "동구 평생학습포털",
+    "display_name": "동구 평생학습포털",
+    "institution_type": "other_public_partner",
+    "operator_name": "대전광역시 동구",
+    "homepage_url": "https://www.donggu.go.kr/lll/www/index.do",
+    "phone": "042-259-7001",
+    "road_address": "대전 동구 카카오톡 친구추가 동구와 카톡친구하고 동구소식 편하게 확인하세요 대전동구 평생학습 기관을 한눈에 원하시는 지역을 선택하시면 해당지역의 평생교육기관을 보실 수 있습니다. 동구전체 중앙동 신인동 효동 판암1동 판암2동 용운동 대동 자양동 가양1동 가양2동 용전동 성남동 홍도동 삼성동 대청동 산내동 강좌정보 1826 개 신청마감 [용운동 북카페] 북카페 프로그램 / 셀프건강 셀프닥터-- 재료비 무료 및 일정변경 북카페 북카페 용운점 교육기간 26.04.16",
+    "sido": "대전광역시",
+    "sigungu": "동구",
+    "eupmyeondong": "대전동",
+    "operation_status": "운영중",
+    "confidence_score": 1.0,
+    "source_count": 1,
+    "source_ids": [
+      "dj_donggu_lifelong_home"
+    ],
+    "last_crawled_at": "2026-04-08",
+    "last_verified_at": null
+  },
+  {
+    "institution_id": "dj-0002",
+    "canonical_name": "평생학습관",
+    "display_name": "평생학습관",
+    "institution_type": "district_lifelong_center",
+    "operator_name": "대전광역시 동구",
+    "homepage_url": "https://www.donggu.go.kr/lll/www/contents.do?key=775",
+    "phone": null,
+    "road_address": null,
+    "sido": "대전광역시",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "operation_status": "재확인필요",
+    "confidence_score": 0.5,
+    "source_count": 1,
+    "source_ids": [
+      "dj_donggu_lifelong_home"
+    ],
+    "last_crawled_at": "",
+    "last_verified_at": null
+  },
+  {
+    "institution_id": "dj-0003",
+    "canonical_name": "동평생학습센터",
+    "display_name": "동평생학습센터",
+    "institution_type": "dong_lifelong_center",
+    "operator_name": "대전광역시 동구",
+    "homepage_url": "https://www.donggu.go.kr/lll/www/contents.do?key=773",
+    "phone": null,
+    "road_address": null,
+    "sido": "대전광역시",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "operation_status": "재확인필요",
+    "confidence_score": 0.5,
+    "source_count": 1,
+    "source_ids": [
+      "dj_donggu_lifelong_home"
+    ],
+    "last_crawled_at": "",
+    "last_verified_at": null
+  },
+  {
+    "institution_id": "dj-0004",
+    "canonical_name": "평생학습관 더보기",
+    "display_name": "평생학습관 더보기",
+    "institution_type": "district_lifelong_center",
+    "operator_name": "대전광역시 동구",
+    "homepage_url": "https://www.donggu.go.kr/lll/www/selectUserEduList.do?key=733&schDeptUserId=OFFICE_0001011",
+    "phone": null,
+    "road_address": null,
+    "sido": "대전광역시",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "operation_status": "재확인필요",
+    "confidence_score": 0.5,
+    "source_count": 1,
+    "source_ids": [
+      "dj_donggu_lifelong_home"
+    ],
+    "last_crawled_at": "",
+    "last_verified_at": null
+  },
+  {
+    "institution_id": "dj-0005",
+    "canonical_name": "도서관 더보기",
+    "display_name": "도서관 더보기",
+    "institution_type": "public_library",
+    "operator_name": "대전광역시 동구",
+    "homepage_url": "https://www.donggu.go.kr/lll/www/selectUserEduList.do?schId=&key=733&schType=dept&schDeptType=도서관",
+    "phone": null,
+    "road_address": null,
+    "sido": "대전광역시",
+    "sigungu": null,
+    "eupmyeondong": null,
+    "operation_status": "재확인필요",
+    "confidence_score": 0.55,
+    "source_count": 1,
+    "source_ids": [
+      "dj_donggu_lifelong_home"
+    ],
+    "last_crawled_at": "",
+    "last_verified_at": null
+  }
+]

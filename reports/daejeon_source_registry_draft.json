@@ -1,0 +1,364 @@
+[
+  {
+    "source_id": "dj_dile_home",
+    "name_ko": "대전평생교육진흥원 메인",
+    "owner": "대전평생교육진흥원",
+    "coverage_level": "metro",
+    "region_scope": ["대전광역시"],
+    "base_url": "https://dile.or.kr",
+    "entry_url": "https://dile.or.kr/index.do",
+    "source_kind": "portal_home",
+    "transport": "static_html",
+    "extraction_mode": "bs4",
+    "expected_entities": [
+      "광역 평생교육 허브 기관",
+      "관련 사이트 링크",
+      "사업별 운영기관 단서",
+      "공지사항"
+    ],
+    "parser_family": "dile_home",
+    "refresh_cadence": "daily",
+    "priority": 100,
+    "trust_score": 1.0,
+    "verification_status": "verified_2026_04_08",
+    "dedupe_keys": ["homepage_url", "phone", "canonical_name"],
+    "output_hints": {
+      "should_seed_links": true,
+      "should_collect_related_sites": true,
+      "should_track_notices": true
+    },
+    "notes": "광역 허브. 관련 사이트와 협약기관 링크를 추출해 자치구/교육청/대학 부설 기관 후보를 확장한다."
+  },
+  {
+    "source_id": "dj_dile_notice_honorary_degree_2025",
+    "name_ko": "2025년 대전 시민명예학위제 인정기관(61개) 공지",
+    "owner": "대전평생교육진흥원",
+    "coverage_level": "metro",
+    "region_scope": ["대전광역시"],
+    "base_url": "https://dile.or.kr",
+    "entry_url": "https://dile.or.kr/index.do?bbsAttrbCode=BBSA03&bbsId=BBS_00358&bbsTyCode=BBST03&menu_id=00005301&menu_link=%2Ficms%2Fbbs%2FselectBoardArticle.do&nttId=7391",
+    "source_kind": "board_detail_attachment",
+    "transport": "static_html_plus_attachment",
+    "extraction_mode": "bs4_and_ocr",
+    "expected_entities": [
+      "인정기관 목록",
+      "기관명",
+      "기관 수"
+    ],
+    "parser_family": "dile_board_attachment",
+    "refresh_cadence": "monthly",
+    "priority": 95,
+    "trust_score": 0.95,
+    "verification_status": "verified_2026_04_08",
+    "dedupe_keys": ["canonical_name"],
+    "output_hints": {
+      "attachment_expected": true,
+      "ocr_required_if_image_only": true,
+      "requires_manual_review": true
+    },
+    "notes": "첨부 파일이 JPG일 가능성이 높다. 기관명 일괄 확보용 시드 소스로 사용하고 상세 정보는 다른 공식 사이트에서 보강한다."
+  },
+  {
+    "source_id": "dj_junggu_lifelong_home",
+    "name_ko": "대전 중구 평생학습관",
+    "owner": "대전광역시 중구",
+    "coverage_level": "district",
+    "region_scope": ["대전광역시 중구"],
+    "base_url": "https://www.djjunggu.go.kr",
+    "entry_url": "https://www.djjunggu.go.kr/lll/index.do",
+    "source_kind": "district_portal",
+    "transport": "static_html",
+    "extraction_mode": "bs4",
+    "expected_entities": [
+      "중구 평생학습관",
+      "평생학습기관안내",
+      "동 평생학습센터",
+      "공지사항"
+    ],
+    "parser_family": "junggu_portal",
+    "refresh_cadence": "daily",
+    "priority": 92,
+    "trust_score": 0.98,
+    "verification_status": "verified_2026_04_08",
+    "dedupe_keys": ["homepage_url", "canonical_name", "phone"],
+    "output_hints": {
+      "should_expand_menu_pages": true,
+      "district_code": "junggu"
+    },
+    "notes": "메인 메뉴에 평생학습기관안내와 동 평생학습센터가 분리되어 있어 목록형과 상세형 파서를 따로 두는 것이 안전하다."
+  },
+  {
+    "source_id": "dj_junggu_institution_guide",
+    "name_ko": "대전 중구 평생학습기관안내",
+    "owner": "대전광역시 중구",
+    "coverage_level": "district",
+    "region_scope": ["대전광역시 중구"],
+    "base_url": "https://www.djjunggu.go.kr",
+    "entry_url": "https://www.djjunggu.go.kr/lll/index.do?menuId=0000",
+    "source_kind": "institution_directory",
+    "transport": "static_html_or_query_html",
+    "extraction_mode": "bs4",
+    "expected_entities": [
+      "중구 내 평생학습기관",
+      "기관 상세 페이지 URL"
+    ],
+    "parser_family": "junggu_institution_directory",
+    "refresh_cadence": "weekly",
+    "priority": 90,
+    "trust_score": 0.92,
+    "verification_status": "seed_from_verified_menu",
+    "dedupe_keys": ["canonical_name", "address", "phone"],
+    "output_hints": {
+      "discovery_from_home_menu_text": "평생학습기관안내",
+      "follow_detail_links": true
+    },
+    "notes": "정확한 쿼리 파라미터는 구현 시 메뉴 링크 추적로 확정한다. 메인 페이지에서 링크를 먼저 해석하는 방식으로 구현한다."
+  },
+  {
+    "source_id": "dj_junggu_dong_centers",
+    "name_ko": "대전 중구 동 평생학습센터",
+    "owner": "대전광역시 중구",
+    "coverage_level": "district_subcenter",
+    "region_scope": ["대전광역시 중구"],
+    "base_url": "https://www.djjunggu.go.kr",
+    "entry_url": "https://www.djjunggu.go.kr/lll/index.do",
+    "source_kind": "subcenter_directory",
+    "transport": "static_html",
+    "extraction_mode": "bs4",
+    "expected_entities": [
+      "은행선화동 평생학습센터",
+      "목동 평생학습센터",
+      "기타 동 단위 센터"
+    ],
+    "parser_family": "junggu_dong_centers",
+    "refresh_cadence": "weekly",
+    "priority": 88,
+    "trust_score": 0.92,
+    "verification_status": "verified_menu_presence_2026_04_08",
+    "dedupe_keys": ["canonical_name", "district_subdivision"],
+    "output_hints": {
+      "extract_menu_labels": true,
+      "create_subcenter_entities": true
+    },
+    "notes": "동 이름이 메뉴 텍스트로 노출된다. 메뉴만 있는 경우에도 최소 기관 엔터티를 생성하고 상세 정보는 추후 보강한다."
+  },
+  {
+    "source_id": "dj_seogu_lifelong_home",
+    "name_ko": "대전 서구 평생학습원",
+    "owner": "대전광역시 서구",
+    "coverage_level": "district",
+    "region_scope": ["대전광역시 서구"],
+    "base_url": "https://www.seogu.go.kr",
+    "entry_url": "https://www.seogu.go.kr/library/contents/study/main.jsp",
+    "source_kind": "district_portal",
+    "transport": "static_html",
+    "extraction_mode": "bs4",
+    "expected_entities": [
+      "서구 평생학습원",
+      "평생학습관",
+      "연계 도서관"
+    ],
+    "parser_family": "seogu_portal",
+    "refresh_cadence": "daily",
+    "priority": 91,
+    "trust_score": 0.98,
+    "verification_status": "verified_2026_04_08",
+    "dedupe_keys": ["homepage_url", "canonical_name", "phone"],
+    "output_hints": {
+      "split_primary_and_library_entities": true,
+      "library_entities_need_program_flag": true
+    },
+    "notes": "서구 평생학습원 메인에 갈마·가수원·둔산·월평·어린이도서관이 함께 노출된다. 도서관은 독립 기관으로 유지하되 평생교육 운영 여부를 별도 플래그로 관리한다."
+  },
+  {
+    "source_id": "dj_dllc_home",
+    "name_ko": "대전평생학습관",
+    "owner": "대전광역시교육청",
+    "coverage_level": "metro_education_office",
+    "region_scope": ["대전광역시"],
+    "base_url": "https://www.dllc.or.kr",
+    "entry_url": "https://www.dllc.or.kr",
+    "source_kind": "education_office_portal",
+    "transport": "static_html_or_playwright",
+    "extraction_mode": "bs4_with_playwright_fallback",
+    "expected_entities": [
+      "대전평생학습관",
+      "기관 소개",
+      "강좌 및 공지"
+    ],
+    "parser_family": "dllc_home",
+    "refresh_cadence": "daily",
+    "priority": 89,
+    "trust_score": 0.96,
+    "verification_status": "verified_by_search_result_and_cross_link",
+    "dedupe_keys": ["homepage_url", "canonical_name"],
+    "output_hints": {
+      "retry_with_browser_on_timeout": true
+    },
+    "notes": "검색 결과와 중구/진흥원 링크에서 재확인됨. 직접 fetch 타임아웃이 날 수 있어 브라우저 fallback을 기본 경로에 포함한다."
+  },
+  {
+    "source_id": "dj_donggu_lifelong_home",
+    "name_ko": "대전 동구 평생학습포털",
+    "owner": "대전광역시 동구",
+    "coverage_level": "district",
+    "region_scope": ["대전광역시 동구"],
+    "base_url": "https://www.donggu.go.kr",
+    "entry_url": "https://www.donggu.go.kr/lll/www/index.do",
+    "source_kind": "district_portal",
+    "transport": "static_html_or_playwright",
+    "extraction_mode": "bs4_with_playwright_fallback",
+    "expected_entities": [
+      "동구 평생학습관",
+      "동구 내 평생학습기관 또는 센터",
+      "공지"
+    ],
+    "parser_family": "donggu_portal",
+    "refresh_cadence": "daily",
+    "priority": 87,
+    "trust_score": 0.9,
+    "verification_status": "seed_from_hub_link_timeout_on_fetch",
+    "dedupe_keys": ["canonical_name", "address", "phone"],
+    "output_hints": {
+      "retry_with_browser_on_timeout": true,
+      "district_code": "donggu"
+    },
+    "notes": "허브 링크와 과거 작업 산출물에서 확인됐으나 직접 fetch 시 타임아웃 가능성이 있다. Playwright 기반 링크 추적을 우선 적용한다."
+  },
+  {
+    "source_id": "dj_yuseong_lifelong_home",
+    "name_ko": "대전 유성구 평생학습원",
+    "owner": "대전광역시 유성구",
+    "coverage_level": "district",
+    "region_scope": ["대전광역시 유성구"],
+    "base_url": "https://lifelong.yuseong.go.kr",
+    "entry_url": "https://lifelong.yuseong.go.kr",
+    "source_kind": "district_portal",
+    "transport": "static_html_or_playwright",
+    "extraction_mode": "bs4_with_playwright_fallback",
+    "expected_entities": [
+      "유성구 평생학습원",
+      "구암 평생학습센터 등 센터 단위 기관",
+      "공지 및 강좌"
+    ],
+    "parser_family": "yuseong_portal",
+    "refresh_cadence": "daily",
+    "priority": 87,
+    "trust_score": 0.9,
+    "verification_status": "seed_from_hub_link_timeout_on_fetch",
+    "dedupe_keys": ["canonical_name", "address", "phone"],
+    "output_hints": {
+      "retry_with_browser_on_timeout": true,
+      "district_code": "yuseong"
+    },
+    "notes": "직접 fetch 타임아웃이 확인되어 브라우저 렌더링을 기본 fallback으로 둔다. 기존 첨부 자산명에 구암 평생학습센터가 있어 하위 센터 추출 가능성이 높다."
+  },
+  {
+    "source_id": "dj_daedeok_lifelong_home",
+    "name_ko": "대전 대덕구 평생학습원",
+    "owner": "대전광역시 대덕구",
+    "coverage_level": "district",
+    "region_scope": ["대전광역시 대덕구"],
+    "base_url": "https://lll.daedeok.go.kr",
+    "entry_url": "https://lll.daedeok.go.kr",
+    "source_kind": "district_portal",
+    "transport": "static_html_or_playwright",
+    "extraction_mode": "bs4_with_playwright_fallback",
+    "expected_entities": [
+      "대덕구 평생학습원",
+      "평생학습도서관 연계 기관",
+      "공지 및 강좌"
+    ],
+    "parser_family": "daedeok_portal",
+    "refresh_cadence": "daily",
+    "priority": 87,
+    "trust_score": 0.91,
+    "verification_status": "hub_link_opened_without_content_lines",
+    "dedupe_keys": ["canonical_name", "address", "phone"],
+    "output_hints": {
+      "retry_with_browser_on_empty_html": true,
+      "district_code": "daedeok"
+    },
+    "notes": "허브 링크는 존재하나 fetch 결과 라인 파싱이 불안정하다. HTML이 비어 보이면 Playwright snapshot 기반으로 다시 읽는다."
+  },
+  {
+    "source_id": "dj_nurim_course_catalog",
+    "name_ko": "대전 평생학습 포털 누림",
+    "owner": "대전평생교육진흥원",
+    "coverage_level": "metro",
+    "region_scope": ["대전광역시"],
+    "base_url": "https://nurim.dile.or.kr",
+    "entry_url": "https://nurim.dile.or.kr",
+    "source_kind": "course_catalog",
+    "transport": "dynamic_html",
+    "extraction_mode": "playwright",
+    "expected_entities": [
+      "운영기관명",
+      "강좌 제공기관",
+      "기관 상세 URL 단서"
+    ],
+    "parser_family": "nurim_catalog",
+    "refresh_cadence": "daily",
+    "priority": 82,
+    "trust_score": 0.88,
+    "verification_status": "linked_from_verified_dile_home",
+    "dedupe_keys": ["canonical_name", "homepage_url"],
+    "output_hints": {
+      "derive_institution_candidates_from_course_provider": true,
+      "do_not_override_primary_contact_fields": true
+    },
+    "notes": "기관 기본정보보다 운영기관명 보강에 유리하다. 허브 소스가 없는 기관 후보를 탐지하는 보조 소스로 사용한다."
+  },
+  {
+    "source_id": "dj_sugang_course_catalog",
+    "name_ko": "대전 평생학습 수강신청",
+    "owner": "대전평생교육진흥원",
+    "coverage_level": "metro",
+    "region_scope": ["대전광역시"],
+    "base_url": "https://sugang.dile.or.kr",
+    "entry_url": "https://sugang.dile.or.kr",
+    "source_kind": "course_catalog",
+    "transport": "dynamic_html",
+    "extraction_mode": "playwright",
+    "expected_entities": [
+      "수강 운영기관",
+      "강좌 개설기관",
+      "최근 운영 여부 단서"
+    ],
+    "parser_family": "sugang_catalog",
+    "refresh_cadence": "daily",
+    "priority": 80,
+    "trust_score": 0.86,
+    "verification_status": "linked_from_verified_dile_home",
+    "dedupe_keys": ["canonical_name", "homepage_url"],
+    "output_hints": {
+      "derive_operation_status_from_recent_courses": true
+    },
+    "notes": "최근 강좌 개설 유무를 통해 운영 상태를 보조 판정한다. 기관명만 제공되는 경우가 많아 정규화 단계가 중요하다."
+  },
+  {
+    "source_id": "dj_hannam_lec_seed",
+    "name_ko": "한남대학교 평생교육원",
+    "owner": "한남대학교",
+    "coverage_level": "university",
+    "region_scope": ["대전광역시"],
+    "base_url": "https://lec.hnu.kr",
+    "entry_url": "https://lec.hnu.kr",
+    "source_kind": "university_seed",
+    "transport": "static_html_or_playwright",
+    "extraction_mode": "bs4_with_playwright_fallback",
+    "expected_entities": [
+      "대학 부설 평생교육원"
+    ],
+    "parser_family": "university_extension_home",
+    "refresh_cadence": "weekly",
+    "priority": 70,
+    "trust_score": 0.85,
+    "verification_status": "linked_from_verified_dile_notice_page",
+    "dedupe_keys": ["canonical_name", "homepage_url"],
+    "output_hints": {
+      "treat_as_seed_pattern_for_other_universities": true
+    },
+    "notes": "대전 대학 부설 기관 자동화의 시드. 이후 배재대, 목원대, 충남대 등은 별도 university registry generator로 확장한다."
+  }
+]

@@ -1,0 +1,678 @@
+
+
+
+
+
+
+<script>
+	var ctx = "/library";
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="author" content="대전 서구 평생학습원">
+	<meta name="keywords" lang="ko" content="대전 서구 평생학습원">
+	<title>대전광역시 서구 평생학습원</title>
+	<link href="/learning/css/learning/2020/mall.css" rel="stylesheet" type="text/css">
+	<script type='text/javascript' src='/library/js/study/jquery-1.11.2.min.js'></script>
+	<script type="text/javascript" src="/library/js/study/jquery.bxslider.js"></script><!-- 메인이미지롤링 -->
+	<script type="text/javascript">var G_CONTEXT_PATH = "/library";</script>
+	<script type="text/javascript">		
+		// 모바일 메뉴 보기
+		function fn_mgnbView(val){			
+		   	if(val == '1'){		   		
+		   		//햄버거 보기 클릭시 메뉴 보이기	
+		   		document.getElementById("mgnbWrap").style.display = 'block';		   		
+		   		
+		   		//body 높이 값 구해 적용하기
+		   		$('#mgnbWrap').css('height', $("body").outerHeight());
+		   		$('#gnb').css('height', $("body").outerHeight()-100);
+		   		
+		   		//창 사이즈 조절시  조건
+		   		$(window).resize(function() {		   			
+					var windowWidth =  $(window).outerWidth();					
+					if(windowWidth <= 1130) { 						
+						document.getElementById("mgnbWrap").style.display = 'block';
+						$('#mgnbWrap').css('height', $("body").outerHeight());
+						$('#gnb').css('height', $("body").outerHeight()-130);
+					} else {						
+						$('#mgnbWrap').css('height', '0');
+						$('#gnb').css('height', 'auto');
+						$('#gnb > li > .subWrap01').removeClass('subWrapView');
+					}					
+			   	});   		
+		   		
+		   	} else if(val == '2'){
+		   		//닫기 버튼 클릭시 메뉴 숨기기
+		   		document.getElementById("mgnbWrap").style.display = 'none';
+		   		
+		   		//창 사이즈 조절시  조건
+		   		$(window).resize(function() {			
+		   			var windowWidth =  $(window).outerWidth();					
+					if(windowWidth <= 1130) {				
+						document.getElementById("mgnbWrap").style.display = 'none';				
+					} else {						
+						document.getElementById("mgnbWrap").style.display = 'block';						
+					}					
+			   	});		   		
+		   	}		 	
+		}
+		
+		$(document).ready(function(){
+			var windowWidth =  $(window).outerWidth();
+			
+			//최근공지사항  TAb			
+			$('.libntcWRp01 > a').click(function(){
+				var tab_id = $(this).attr('data-tab');
+	
+				$('.libntcWRp01 > a').removeClass('on');
+				$('.libntcWRp01 > .noRelst').removeClass('dipView01');
+	
+				$(this).addClass('on');
+				$("#"+tab_id).addClass('dipView01');
+			});		
+			
+			
+			//교협공지
+			$('.libntcWRp02 > a').click(function(){
+				var tab_id = $(this).attr('data-tab');
+	
+				$('.libntcWRp02 > a').removeClass('on');
+				$('.libntcWRp02 > .dipViewno02').removeClass('dipView02');
+	
+				$(this).addClass('on');
+				$("#"+tab_id).addClass('dipView02');
+			});		
+			 
+			
+			
+						
+			if(windowWidth > 1130) {
+				//서브메뉴 보이기
+				$('#gnb > li > a').bind('focus mouseover',function(){
+					var sub_id = $(this).attr('data-sub');
+		
+					$('#gnb > li > a').removeClass('on');
+					$('#gnb > li > .subWrap01').removeClass('subWrapView');
+		
+					$(this).addClass('on');
+					//$("#"+sub_id).addClass('subWrapView'); //하나씩 나오게				
+					$(".subWrap01").addClass('subWrapView'); //전체 나오게
+					$(".gnbBgset").addClass('subWrapView');
+				});				
+			
+				//서브메뉴 숨기기	
+				$('header').bind('mouseleave',function(){				
+					$('#gnb > li > .subWrap01').removeClass('subWrapView');
+					$('.gnbBgset').removeClass('subWrapView');
+				});	
+			} else {				
+				$('#gnb > li > .subWrap01').addClass('subWrapView');
+				$('.gnbBgset').addClass('subWrapView');
+			}
+			
+		});
+		
+	// 메인 팝업존 컨트롤러 
+	 $(document).ready(function() {
+            $('#slides').bxSlider({
+               controls: false,
+               pager: true,
+               speed:1000,
+
+               // CONTROLS
+               nextText: 'Next',
+               prevText: 'Prev',
+               nextSelector: null,
+               prevSelector: null,
+               autoControls: true,
+               startText: 'Start',
+               stopText: 'Stop',
+               autoControlsCombine: true,
+               autoControlsSelector: null,
+
+               // AUTO
+               auto: true,
+               pause: 5000,
+               autoStart: true,
+               autoDirection: 'next',
+               autoHover: false,
+               autoDelay: 0,
+               autoSlideForOnePage: true
+           });
+       });
+	 
+	
+</script>
+	
+</head>
+<body class="bg01">
+	<header>
+		
+
+
+
+<script>
+	var ctx = "/library";
+</script>
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+<div class="hadWrap">	
+	<h2 class="logo"><a href="/learning/contents/study/main.jsp"><span class="noTitleset01">대전광역시 서구 평생학습원</span></a></h2>
+	<a href="#hamBug" onclick="fn_mgnbView(1);return false;" id="hamBug"><span class="bgcon"></span><span class="bgcon"></span><span class="bgcon"></span><span class="title">메뉴보기</span></a>
+	<div id="mgnbWrap">
+		<a href="#mwclose" onclick="fn_mgnbView(2);return false;" id="mwclose"><span>닫기</span></a>
+		<ul id="gnb">
+			
+				
+			
+				
+			
+				
+			
+				
+					<li class="first">
+						<a href="/library/learning/study/contents/learning/content/content.motion?mnucd=MENU0700006" data-sub="subMn4"><span>인사말</span></a>
+					</li>
+				
+			
+				
+					<li >
+						<a href="/library/learning/study/contents/learning/content/content.motion?mnucd=MENU0700007" data-sub="subMn5"><span>비전과 목표</span></a>
+					</li>
+				
+			
+				
+					<li >
+						<a href="/library/learning/study/contents/learning/content/content.motion?mnucd=MENU0700008" data-sub="subMn6"><span>조직과 업무</span></a>
+					</li>
+				
+			
+				
+					<li >
+						<a href="/library/learning/study/contents/learning/content/content.motion?mnucd=MENU0700009" data-sub="subMn7"><span>오시는길</span></a>
+					</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		</ul>
+	</div>	
+</div>
+	</header>
+	
+<!-- 팝업 스타일 -->    
+<style>
+/* 리스트 썸네일 */
+ul.pZline > li > a > img {
+	width: 700px;
+	height: 400px !important;
+}
+
+/* 레이어 팝업 영역 */
+.layer_pop_01 {
+	width: auto;
+	top: 110px;
+	left: 30%;
+	z-index: 600000000;
+	position: absolute;
+	display: block;
+	border: 1px solid #363636;
+	background: #363636; /* 하단 영역 배경과 자연스럽게 */
+}
+
+/* 팝업 이미지 */
+.layer_pop_01 a img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/* 하단 버튼 영역 */
+.layer_pop_01 .layer_bottom {
+	position: relative;
+	z-index: 10;
+	background: #363636;
+	height: 35px;
+	line-height: 35px;   /* 텍스트 수직 정렬 핵심 */
+	box-sizing: border-box;
+	padding: 0 10px;
+	clear: both;         /* 이미지와 완전 분리 */
+}
+
+/* 체크박스 영역 */
+.layer_pop_01 .layer_bottom .checkbox {
+	color: #fff;
+	font-size: 15px;
+	display: inline-block;
+	line-height: 35px;
+}
+
+.layer_pop_01 .layer_bottom .checkbox label {
+	color: #fff;
+	vertical-align: middle;
+}
+
+/* 닫기 버튼 */
+.layer_pop_01 .layer_bottom .radio {
+	float: none;
+	position: absolute;
+	right: 3%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.layer_pop_01 .layer_bottom .radio input {
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 4px 6px;
+	width: 50px;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+/* 모바일 대응 */
+@media (max-width: 767px) {
+	.layer_pop_01 {
+		left: 0;
+	}
+
+	.layer_pop_01 img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+</style>
+
+
+
+    
+<!-- 하드코딩 팝업  -->    
+<div class="layer_pop_01" id="layerpopsv1">
+	<a href="#" onclick="return false;">
+		<img src="/learning/images/learning/popup/pagestop.jpg"
+		     alt=""
+		     class="popup_img">
+	</a>
+
+	<div class="layer_bottom">
+		<span class="checkbox">
+			<input tabindex="2" type="checkbox" id="check01"
+			       onclick="closeWin('layerpopsv1');">
+			<label for="check01">하루동안 이 창을 열지 않음</label>
+		</span>
+		<span class="radio">
+			<input tabindex="3" type="button" value="닫기"
+			       onclick="document.getElementById('layerpopsv1').style.display='none';">
+		</span>
+	</div>
+</div>
+
+<script language="Javascript" type="text/javascript">
+	cookiedata = document.cookie;
+	if (cookiedata.indexOf("layerpopsv1=done") < 0){
+  		document.getElementById('layerpopsv1').style.display = "inline";
+ 	}else{
+	      document.getElementById('layerpopsv1').style.display = "none";
+    }
+</script> 
+
+
+
+
+	
+	<div class="visual">
+		<h3 class="txtExp01"><span class="noTitleset01">우리가 만들어가는 평생학습 서구평생학습원</span></h3>			
+		<div class="pZonewrap" id="popupzone">		
+			<ul class="pZline" id="slides">
+			    <!-- 하드코딩 배너 -->
+			    
+			
+			    <!-- 동적 배너 -->
+			    
+			</ul>
+		</div>
+	</div>
+	<div class="qlink1">
+		<div class="icon_box">
+			<div class="iconlf_box">
+				<h2 class="title"><a href="/learning/contents/learning/main.jsp" target="_blank">평생학습관</a></h2>
+				<div class="ico_box">
+					<ul>
+						<li><a href="https://www.seogu.go.kr/learning/damoa/contents/learning/edu/01/edu.01.001.motion?searchLecDivArray=01,02,03,04,05,06&mnucd=MENU0100061" target="_blank"><span class="icon01"></span>수강신청</a></li>
+						<li><a href="https://www.seogu.go.kr/e-learning/index.asp" target="_blank"><span class="icon02"></span>사이버강좌</a></li>
+						<li><a href="https://www.seogu.go.kr/learning/damoa/contents/learning/content/content.motion?mnucd=MENU1000035" target="_blank"><span class="icon03"></span>품앗이스쿨</a></li>
+						<li><a href="https://www.seogu.go.kr/learning/damoa/contents/learning/group/02/group.02.001.motion?mnucd=MENU0100027" target="_blank"><span class="icon04"></span>학습동아리</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="notList">
+		<div class="notice">
+			<div class="libntcWRp02">
+				<a href="#" onclick="return false;" class="po01 on" data-tab="edNot1"><span>평생학습관 공지사항</span></a>
+				<div class="dipViewno02 dipView02" id="edNot1">
+					<ul class="noRelst02">
+						
+						
+							<li>
+								<a href="/library/damoa/contents/learning/nanum/01/nanum.01.001.motion?mnucd=MENU0100030&bmode=detail&nttId=26006" target="_blank" title="새창열림">
+									<span class="title">★2026년 상반기 평생학습동아리 학습공간 지원 신청 안내★</span> 
+									<span class="day">2025-12-23</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/damoa/contents/learning/nanum/01/nanum.01.001.motion?mnucd=MENU0100030&bmode=detail&nttId=25865" target="_blank" title="새창열림">
+									<span class="title">[2026년 1학기 서구 평생학습관 정규 프로그램 수강생 모집]</span> 
+									<span class="day">2025-11-27</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/damoa/contents/learning/nanum/01/nanum.01.001.motion?mnucd=MENU0100030&bmode=detail&nttId=21313" target="_blank" title="새창열림">
+									<span class="title">14세 미만 회원가입 방법안내(아이핀 인증방법)</span> 
+									<span class="day">2023-03-13</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/damoa/contents/learning/nanum/01/nanum.01.001.motion?mnucd=MENU0100030&bmode=detail&nttId=9293" target="_blank" title="새창열림">
+									<span class="title">회원가입 시 휴대폰 인증 주의사항</span> 
+									<span class="day">2018-03-27</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/damoa/contents/learning/nanum/01/nanum.01.001.motion?mnucd=MENU0100030&bmode=detail&nttId=25883" target="_blank" title="새창열림">
+									<span class="title">[목원대학교와 함께하는] 원데이클래스 수강생 모집 안내</span> 
+									<span class="day">2025-12-03</span>
+								</a>
+							</li>
+						
+					</ul>
+					<a href="/library/damoa/contents/learning/nanum/01/nanum.01.001.motion?mnucd=MENU0100030" class="more" target="_blank" title="새창열림">더보기</a>
+				</div>				
+			</div>
+		</div>
+		<div class="libLwrap" data-page="1">
+			<div class="libntcWRp01">
+				<a href="#" onclick="return false;" class="po01 on" data-tab="reNot1"><span>갈마도서관</span></a>
+				<ul id="reNot1" class="noRelst dipView01">
+					
+						
+							<li>
+								<a href="/library/galmalib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0200041&bmode=detail&nttId=26482" target="_blank" title="새창열림">
+									<span class="title">2026 도서관의 날·도서관 주간 대국민 캠페인 안내</span> 
+									<span class="day">2026-04-02</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/galmalib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0200041&bmode=detail&nttId=26444" target="_blank" title="새창열림">
+									<span class="title">2026년 1차 이용자추천도서 구입 목록 공지 및 수령 안내</span> 
+									<span class="day">2026-03-26</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/galmalib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0200041&bmode=detail&nttId=26381" target="_blank" title="새창열림">
+									<span class="title">2026년 임신부 육아도서 꾸러미 신청안내(3.31~소진시)</span> 
+									<span class="day">2026-03-12</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/galmalib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0200041&bmode=detail&nttId=26320" target="_blank" title="새창열림">
+									<span class="title">하절기 운영시간 안내</span> 
+									<span class="day">2026-02-27</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/galmalib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0200041&bmode=detail&nttId=26115" target="_blank" title="새창열림">
+									<span class="title">2026년 4월 휴관일 안내</span> 
+									<span class="day">2026-01-24</span>
+								</a>
+							</li>
+					
+				</ul>
+				
+				<a href="#" onclick="return false;" class="po02" data-tab="reNot2"><span>가수원도서관</span></a>
+				<ul id="reNot2" class="noRelst">
+					
+						
+							<li>
+								<a href="/library/gasuwonlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0300041&bmode=detail&nttId=26484" target="_blank" title="새창열림">
+									<span class="title">2026년 4 ~ 6월 스마트도서관(도안동) 도서 목록(4.3. 기준)</span> 
+									<span class="day">2026-04-03</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/gasuwonlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0300041&bmode=detail&nttId=26483" target="_blank" title="새창열림">
+									<span class="title">2026년 1차 이용자추천도서 수령 안내</span> 
+									<span class="day">2026-04-03</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/gasuwonlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0300041&bmode=detail&nttId=26438" target="_blank" title="새창열림">
+									<span class="title">4월 휴관일</span> 
+									<span class="day">2026-03-24</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/gasuwonlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0300041&bmode=detail&nttId=26379" target="_blank" title="새창열림">
+									<span class="title">대전 공공도서관 노후장비 교체로 인한 통합도서관리시스템 및 홈페이지 일시 중단 안내</span> 
+									<span class="day">2026-03-11</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="/library/gasuwonlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0300041&bmode=detail&nttId=26371" target="_blank" title="새창열림">
+									<span class="title">2026년 대전 서구 임신부 육아도서 지원 사업 안내</span> 
+									<span class="day">2026-03-10</span>
+								</a>
+							</li>
+								
+				</ul>
+				
+				<a href="#" onclick="return false;" class="po03" data-tab="reNot3"><span>둔산도서관</span></a>
+				<ul id="reNot3" class="noRelst">
+					
+						
+							<li>
+								<a href="/library/dunsanlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0400041&bmode=detail&nttId=26445" target="_blank" title="새창열림">
+									<span class="day">2026-03-26</span>
+									<span class="title">2026년 제1차 신간도서 이용 및 이용자 추천도서 수령 안내</span> 
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/dunsanlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0400041&bmode=detail&nttId=26318" target="_blank" title="새창열림">
+									<span class="day">2026-02-27</span>
+									<span class="title">둔산도서관 자료기증 관련 안내</span> 
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/dunsanlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0400041&bmode=detail&nttId=26279" target="_blank" title="새창열림">
+									<span class="day">2026-02-25</span>
+									<span class="title">둔산도서관 3월 휴관일 안내</span> 
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/dunsanlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0400041&bmode=detail&nttId=26073" target="_blank" title="새창열림">
+									<span class="day">2026-01-10</span>
+									<span class="title">어린이자료실 교구 대출 서비스 종료를 알려드립니다.</span> 
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/dunsanlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0400041&bmode=detail&nttId=25825" target="_blank" title="새창열림">
+									<span class="day">2025-11-11</span>
+									<span class="title">도서관 내 콘센트 이용 안내</span> 
+								</a>
+							</li>
+						
+				</ul>
+				
+				<a href="#" onclick="return false;" class="po04" data-tab="reNot4"><span>월평도서관</span></a>
+				<ul id="reNot4" class="noRelst">
+					
+						
+							<li>
+								<a href="/library/wolpyeonglib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0600041&bmode=detail&nttId=26499" target="_blank" title="새창열림">
+									<span class="title">2026년 우리구 북스타트 배부 안내(4. 14.~)</span> 
+									<span class="day">2026-04-07</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/wolpyeonglib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0600041&bmode=detail&nttId=26474" target="_blank" title="새창열림">
+									<span class="title">2026년 1차 이용자 추천도서 대출 안내</span> 
+									<span class="day">2026-04-01</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/wolpyeonglib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0600041&bmode=detail&nttId=26450" target="_blank" title="새창열림">
+									<span class="title">2026년 도서관의 날, 도서관주간 행사</span> 
+									<span class="day">2026-03-26</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/wolpyeonglib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0600041&bmode=detail&nttId=26437" target="_blank" title="새창열림">
+									<span class="title">월평도서관 4월 휴관일 안내</span> 
+									<span class="day">2026-03-24</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/wolpyeonglib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0600041&bmode=detail&nttId=26375" target="_blank" title="새창열림">
+									<span class="title">2026년 대전 서구 임신부 육아도서 지원 사업 안내</span> 
+									<span class="day">2026-03-10</span>
+								</a>
+							</li>
+									
+				</ul>
+				
+				<a href="#" onclick="return false;" class="po05" data-tab="reNot5"><span>어린이도서관</span></a>
+				<ul id="reNot5" class="noRelst">
+					
+						
+							<li>
+								<a href="/library/childlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0500032&bmode=detail&nttId=26501" target="_blank" title="새창열림">
+									<span class="title">2026년 1차 이용자 신청도서 수령 방법 및 도서 목록 안내</span> 
+									<span class="day">2026-04-07</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/childlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0500032&bmode=detail&nttId=26498" target="_blank" title="새창열림">
+									<span class="title">2026년 우리구 북스타트 배부 안내(4. 14.~)</span> 
+									<span class="day">2026-04-07</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/childlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0500032&bmode=detail&nttId=26470" target="_blank" title="새창열림">
+									<span class="title">2026년 4월 어린이도서관 운영안내</span> 
+									<span class="day">2026-03-31</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/childlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0500032&bmode=detail&nttId=26449" target="_blank" title="새창열림">
+									<span class="title">어린이도서관 4월 휴관일 안내</span> 
+									<span class="day">2026-03-26</span>
+								</a>
+							</li>
+						
+							<li>
+								<a href="/library/childlib/contents/learning/board/09/board.09.001.motion?mnucd=MENU0500032&bmode=detail&nttId=26435" target="_blank" title="새창열림">
+									<span class="title">2026년 어린이도서관 문화예술 동아리 ' 아이랑 아트북' 회원 모집</span> 
+									<span class="day">2026-03-24</span>
+								</a>
+							</li>
+									
+				</ul>				
+			</div>			
+		</div>	
+	</div>
+	
+	<div class="qlink2">
+		<ul class="libGlk">
+			<li><a href="/learning/galmalib/index.do" class="bg01" target="_blank" title="새창열림"><span><span class="ovBgst01">갈마도서관</span><span class="ovArr01"></span></span></a></li>
+			<li><a href="/learning/gasuwonlib/index.do" class="bg02" target="_blank" title="새창열림"><span><span class="ovBgst02">가수원도서관</span><span class="ovArr01"></span></span></a></li>
+			<li><a href="/learning/dunsanlib/index.do" class="bg03" target="_blank" title="새창열림"><span><span class="ovBgst03">둔산도서관</span><span class="ovArr01"></span></span></a></li>
+			<li><a href="/learning/wolpyeonglib/index.do" class="bg04" target="_blank" title="새창열림"><span><span class="ovBgst04">월평도서관</span><span class="ovArr01"></span></span></a></li>
+			<li><a href="/learning/childlib/index.do" class="bg05" target="_blank" title="새창열림"><span><span class="ovBgst05">어린이도서관</span><span class="ovArr01"></span></span></a></li>			
+		</ul>
+	</div>
+	
+	<footer>	
+	
+<footer>
+	<div class="ftWrap">
+		<p><span class="lbName">평생학습원</span><span class="address">(35270) 대전광역시 서구 갈마중로21(갈마동, 갈마복합커뮤니티센터) ㅣ 연락처 : 042-288-4730</span></p>
+		<p class="cpy">Copyright(c) 2018 대전광역시 서구 평생학습원. All rights reserved.</p>
+
+		<!-- 평생학습원 통계 스크립트 20200502 -->	
+		<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+		<script type="text/javascript">
+		if(!wcs_add) var wcs_add = {};
+		wcs_add["wa"] = "94a5f15f6e797";
+		if(window.wcs) {
+		wcs_do();
+		}
+		</script>
+	</div>
+</footer>
+	</footer>
+</body>
+</html>
